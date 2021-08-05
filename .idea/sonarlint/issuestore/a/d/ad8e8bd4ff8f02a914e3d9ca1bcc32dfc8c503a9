@@ -1,0 +1,9 @@
+
+F
+java:S1481")Remove this unused "conn" local variable.(нц¤Є8ос╗О▒/
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(нц¤Є8Ти╝О▒/
+U
+java:S1854"8Remove this useless assignment to local variable "conn".(нц¤Є8ос╗О▒/
+F
+java:S2115")Add password protection to this database.(нц¤Є8Є╜ЎП▒/
