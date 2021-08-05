@@ -13,7 +13,7 @@ public class ActorDAO
 
     private ActorDAO() throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:RPRMovieApp.db";
+        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "/.RPRProjectapp/RPRMovieApp.db";
         Connection conn = DriverManager.getConnection(url);
     }
 

@@ -3,7 +3,7 @@ package sample.models;
 import java.util.Date;
 import java.util.List;
 
-public class Movie
+public class Film
 {
     private int id;
     private String name;
@@ -12,7 +12,7 @@ public class Movie
     private List<Language> languages;
     private Date releasedate;
 
-    public Movie(int id, String name, int duration, List<Genre> genres, List<Language> languages, Date releasedate) {
+    public Film(int id, String name, int duration, List<Genre> genres, List<Language> languages, Date releasedate) {
         this.id = id;
         this.name = name;
         this.duration = duration;
@@ -21,7 +21,7 @@ public class Movie
         this.releasedate = releasedate;
     }
 
-    public Movie() {
+    public Film() {
     }
 
     public int getId() {
