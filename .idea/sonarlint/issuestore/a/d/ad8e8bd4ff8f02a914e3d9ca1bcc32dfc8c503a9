@@ -1,9 +1,6 @@
 
-F
-java:S1481")Remove this unused "conn" local variable.(­æıò8®á»±/
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(­æıò8’¨¼±/
-U
-java:S1854"8Remove this useless assignment to local variable "conn".(­æıò8®á»±/
-F
-java:S2115")Add password protection to this database.(­æıò8ò½ö±/
+P
+java:S1128
+"3Remove this unused import 'java.sql.DriverManager'.(“£°8˜ãÛ®±/
+M
+java:S1128	"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8˜ãÛ®±/

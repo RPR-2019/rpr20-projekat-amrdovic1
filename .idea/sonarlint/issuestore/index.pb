@@ -11,8 +11,6 @@ K
 src/sample/models/Hall.java,f\0\f008c0bcb62c4ff94c5c4868a6b78d2816b5096d
 J
 .idea/libraries/javafx.xml,f\0\f01fa3cc38467805c9ad58fa176b2fe7146a6a5c
-L
-src/sample/models/Movie.java,3\f\3f7be96233af9ce2684e2f01f303cb9972d3ecc9
 K
 src/sample/models/Seat.java,8\9\89a706c8cdd9e41c230042b55036971e3144db95
 M
@@ -37,3 +35,15 @@ D
 src/sample/Main.java,a\d\ad8e8bd4ff8f02a914e3d9ca1bcc32dfc8c503a9
 B
 RPRMovieApp.sqbpro,8\c\8cd4666c24fdeeb7c5249cef804ee64a69e87138
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+O
+src/sample/DAO/DirectorDAO.java,1\5\15d648052e5d2006cc226161879777519a5e35b3
+L
+src/sample/DAO/ActorDAO.java,7\8\7808361b5ffd6b23d068862c427e3cc34614b66b
+K
+src/sample/models/Film.java,9\f\9f158accc13b4b9b4b0e791f24793ee7296f3f49
+?
+RPRMovieApp.sql,0\b\0be2b365832bfafe8446a584e962da0902fee39b
+K
+src/sample/DAO/FilmDAO.java,b\3\b34fa80d44188378252bd588579287c65e8343e7
