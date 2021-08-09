@@ -47,3 +47,11 @@ K
 RPRMovieApp.sql,0\b\0be2b365832bfafe8446a584e962da0902fee39b
 K
 src/sample/DAO/FilmDAO.java,b\3\b34fa80d44188378252bd588579287c65e8343e7
+^
+.src/sample/controllers/RegisterController.java,0\2\024e779509fb0f7cda1f7953d66916278cb6a93b
+H
+src/sample/register.fxml,b\0\b0c59e6a25a6457adf188978e66d770283402d3a
+[
++src/sample/controllers/LoginController.java,e\9\e9fce980803bdbf459d6427cda2c39a376925f63
+E
+src/sample/login.fxml,e\4\e4d59ec92adc80ab42b6dd83c93e27dc1dd903ce
