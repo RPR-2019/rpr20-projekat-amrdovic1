@@ -1,6 +1,4 @@
 
-J
-src/sample/Controller.java,a\9\a952ee24ccaf329067caf45d8e61416ce808b0ea
 O
 src/sample/models/Beverage.java,0\f\0fe7148876665df0fb6b38b45296162f7e6b7cfb
 O
@@ -17,8 +15,6 @@ M
 src/sample/models/Ticket.java,a\d\ade7ef63c070056dacdad1da25ac9ac28cd54a24
 O
 src/sample/models/Language.java,8\7\87533fea88979087279dec7c3ddbe26d33b70348
-F
-src/sample/sample.fxml,2\f\2f769fc3b0dd177c3365dff558843905f8609d7b
 M
 src/sample/models/Gender.java,1\8\1883f28a654869ab081b6602b197ecbba3ea1536
 L
@@ -55,3 +51,13 @@ H
 +src/sample/controllers/LoginController.java,e\9\e9fce980803bdbf459d6427cda2c39a376925f63
 E
 src/sample/login.fxml,e\4\e4d59ec92adc80ab42b6dd83c93e27dc1dd903ce
+D
+src/sample/login.css,4\0\40c76c9d3a914734fe63e6c8a156ff00ca2019a3
+G
+src/sample/register.css,9\0\90df84871d214fc43ec7e1dc577a96c7fba345d4
+T
+$out/production/RPRprojekat/file.fxml,4\6\469eaddeec033f43aadd9b34af3fb089247e4a25
+\
+,out/production/RPRprojekat/sample/login.fxml,0\7\07f70bfbeec2bea6234c3da8516d462e7b23daf5
+_
+/out/production/RPRprojekat/sample/register.fxml,0\6\067979d9f2443a727483b0e17ba9cdcf570b279f
