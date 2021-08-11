@@ -34,6 +34,7 @@ public class RegisterController
     private PreparedStatement sameUsernameCheck;
     private PreparedStatement sameEMail;
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private String mandatory = "This is a mandatory field!";
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
@@ -60,22 +61,43 @@ public class RegisterController
 
     public void proceedClick(ActionEvent actionEvent) throws IOException
     {
+        if (email.getText().isBlank())
+        {
+            emailError.setText(mandatory);
+        }
+        if (username.getText().isBlank())
+        {
+            usernameError.setText(mandatory);
+        }
         if (!(male.isSelected() || female.isSelected()))
         {
-            gendersError.setText("You must select a gender!");
+            gendersError.setText(mandatory);
+        }
+        if (selectDay.getValue() == null || selectMonth.getValue() == null || selectYear.getValue() == null)
+        {
+            dateError.setText(mandatory);
+        }
+        if (password.getText().trim().length() < 6)
+        {
+            passwordError.setText("Password must contain at least 6 non-blank characters!");
         }
         if (!(password.getText().equals(repeatPassword.getText())))
         {
             repeatPasswordError.setText("Passwords do not match!");
         }
-        //If everything is ok, do this:
-        //Close register.fxml
-//        Stage hpstage = new Stage();
-//        FXMLLoader hploader = new FXMLLoader(getClass().getResource("homepage.fxml"));
-//        Parent hproot = hploader.load();
-//        HomepageController hpc = hploader.getController();
-//        hpstage.setScene(new Scene(hproot, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-//        hpstage.show();
-        //To be continued...
+
     }
+
+    public void selectMale(ActionEvent actionEvent)
+    {
+        male.setSelected(true);
+        female.setSelected(false);
+    }
+
+    public void selectFemale(ActionEvent actionEvent)
+    {
+        male.setSelected(false);
+        female.setSelected(true);
+    }
+
 }

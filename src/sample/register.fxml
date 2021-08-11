@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegisterController">
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegisterController">
   <stylesheets>
       <URL value="@register.css" />
   </stylesheets>
@@ -45,17 +45,17 @@
       <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <ButtonBar fx:id="genders" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <buttons>
-            <RadioButton fx:id="male" mnemonicParsing="false" text="Male" />
-            <RadioButton fx:id="female" mnemonicParsing="false" text="Female" />
+            <RadioButton fx:id="male" mnemonicParsing="false" onAction="#selectMale" text="Male" />
+            <RadioButton fx:id="female" mnemonicParsing="false" onAction="#selectFemale" text="Female" />
          </buttons>
       </ButtonBar>
       <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="8" />
       <PasswordField fx:id="repeatPassword" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-      <Label prefHeight="17.0" prefWidth="45.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label prefHeight="17.0" prefWidth="66.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="emailError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+      <Label fx:id="usernameError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Label fx:id="gendersError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
-      <Label prefHeight="17.0" prefWidth="90.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-      <Label prefHeight="17.0" prefWidth="71.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label fx:id="dateError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label fx:id="passwordError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="9" />
       <Label fx:id="repeatPasswordError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11" />
       <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
          <children>
