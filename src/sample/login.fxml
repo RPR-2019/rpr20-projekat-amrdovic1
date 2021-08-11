@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import java.net.URL?>
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.controllers.LoginController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoginController">
     <stylesheets>
         <URL value="@login.css" />
     </stylesheets>
@@ -22,11 +22,11 @@
       <Label text="Password:" GridPane.rowIndex="1" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <buttons>
-          <Button cancelButton="true" mnemonicParsing="false" text="Go Back" />
-            <Button defaultButton="true" mnemonicParsing="false" text="Login" />
+          <Button fx:id="goBack" cancelButton="true" mnemonicParsing="false" text="Go Back" />
+            <Button fx:id="login" defaultButton="true" mnemonicParsing="false" text="Login" />
         </buttons>
       </ButtonBar>
-      <TextField GridPane.columnIndex="1" />
-      <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="usernameOrEMail" GridPane.columnIndex="1" />
+      <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

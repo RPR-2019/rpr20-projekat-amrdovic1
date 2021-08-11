@@ -5,10 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.Collections;
-import java.util.List;
+import java.sql.*;
 
 public class RegisterController
 {
@@ -32,7 +29,7 @@ public class RegisterController
     public Label passwordError; //Text: Password is too short; Password doesn't contain all types of characters required
     public Label repeatPasswordError; //Text: Passwords do not match
     private PreparedStatement sameUsernameCheck;
-    private PreparedStatement sameEMail;
+    private PreparedStatement sameEMailCheck;
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private String mandatory = "This is a mandatory field!";
 
@@ -40,10 +37,10 @@ public class RegisterController
     public void initialize() throws ClassNotFoundException, SQLException
     {
         Class.forName("org.sqlite.JDBC");
-        String url = ""; //Put path here
-//        Connection conn = DriverManager.getConnection(url, "username", "password");
-//        sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
-//        sameEMail = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
+        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
+        Connection conn = DriverManager.getConnection(url, "username", "password");
+        sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
+        sameEMailCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
         for (int i = 1; i <= 12; i++)
         {
             selectMonth.getItems().add(i);
@@ -59,8 +56,7 @@ public class RegisterController
 
     }
 
-    public void proceedClick(ActionEvent actionEvent) throws IOException
-    {
+    public void proceedClick(ActionEvent actionEvent) throws IOException, SQLException {
         if (email.getText().isBlank())
         {
             emailError.setText(mandatory);
@@ -86,6 +82,18 @@ public class RegisterController
             repeatPasswordError.setText("Passwords do not match!");
         }
 
+        sameUsernameCheck.setString(1, username.getText());
+        sameEMailCheck.setString(1, email.getText());
+        ResultSet surs = sameUsernameCheck.executeQuery();
+        ResultSet semrs = sameEMailCheck.executeQuery();
+        if (surs.getInt(1) != 0)
+        {
+            usernameError.setText("User with username " + username.getText() + "already exists!");
+        }
+        if (semrs.getInt(1) != 0)
+        {
+            emailError.setText("User with email " + email.getText() + " already exists!");
+        }
     }
 
     public void selectMale(ActionEvent actionEvent)
