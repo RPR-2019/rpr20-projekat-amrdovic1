@@ -1,23 +1,48 @@
 
-O
-java:S1172#"2Remove this unused method parameter "actionEvent".(•˜ó•8ÀàÏİ²/
-t
-java:S1104"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ8¹±ßÜ²/
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¡æÿ8õÌ§Ü²/
-p
-java:S1104"TMake username a static final constant or non-public and provide accessors if needed.(¼·á>8Îû´Ü²/
-y
-java:S1104"WMake dateofbirth a static final constant or non-public and provide accessors if needed.(óı„üÿÿÿÿ8ÿ¦µÜ²/
-u
-java:S1104"SMake proceed a static final constant or non-public and provide accessors if needed.(Üÿ¼§şÿÿÿÿ8¹±ßÜ²/
-v
-java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8İşµÜ²/
+e
+java:S2095+"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8ù”‚„³/
 s
-java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ÌÅ‘Çıÿÿÿÿ8²å´Ü²/
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ÌÅ‘Çıÿÿÿÿ8²å´Ü²/
 p
-java:S1104"SMake genders a static final constant or non-public and provide accessors if needed.(¿”ã‡8ÿ¦µÜ²/
+java:S1104"TMake username a static final constant or non-public and provide accessors if needed.(¼·á>8Îû´Ü²/
+{
+java:S1104"YMake usernameError a static final constant or non-public and provide accessors if needed.(—•í·ûÿÿÿÿ8¤ÒÀ„³/
+p
+java:S1104"SMake genders a static final constant or non-public and provide accessors if needed.(¿”ã‡8ÿ¦µÜ²/
 w
-java:S1104"ZMake repeatpassword a static final constant or non-public and provide accessors if needed.(…×†Í8¹±ßÜ²/
+java:S1104"ZMake repeatpassword a static final constant or non-public and provide accessors if needed.(…×†Í8¹±ßÜ²/
+S
+java:S1854D"7Remove this useless assignment to local variable "hpc".(«†ù18ß¦¿„³/
+v
+java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8İşµÜ²/
+y
+java:S1104 "WMake genderError a static final constant or non-public and provide accessors if needed.(ä€ŸÅûÿÿÿÿ8ÇÙÃ„³/
+
+java:S11864"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¡æÿ8øäŠ„³/
+D
+java:S1481D"(Remove this unused "hpc" local variable.(«†ù18ß¦¿„³/
+t
+java:S1104"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ8¹±ßÜ²/
+w
+java:S1104!"UMake dateError a static final constant or non-public and provide accessors if needed.(óáşâüÿÿÿÿ8ÇÙÃ„³/
+{
+java:S1104""YMake passwordError a static final constant or non-public and provide accessors if needed.(«¥°öùÿÿÿÿ8ÇÙÃ„³/
+u
+java:S1104"SMake proceed a static final constant or non-public and provide accessors if needed.(Üÿ¼§şÿÿÿÿ8¹±ßÜ²/
+T
+java:S11729"2Remove this unused method parameter "actionEvent".(ÍÜ˜òúÿÿÿÿ8øäŠ„³/
+s
+java:S1104"VMake emailError a static final constant or non-public and provide accessors if needed.(¾ºî8ÇÙÃ„³/
+O
+java:S1068%"-Remove this unused "sameEMail" private field.(í¢¥Ùúÿÿÿÿ8Æã‹„³/
+y
+java:S1104"WMake dateofbirth a static final constant or non-public and provide accessors if needed.(óı„üÿÿÿÿ8ÿ¦µÜ²/
+
+java:S1104#"_Make repeatPasswordError a static final constant or non-public and provide accessors if needed.(şñ–Ûÿÿÿÿÿ8ÇÙÃ„³/
+z
+java:S1450%"XRemove the "sameEMail" field and declare it as a local variable in the relevant methods.(í¢¥Ùúÿÿÿÿ8öß„³/
+‚
+java:S1450$"`Remove the "sameUsernameCheck" field and declare it as a local variable in the relevant methods.(ß©Ñšûÿÿÿÿ8ÇÙÃ„³/
+J	java:S108;")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8õ™—„³/
 W
-java:S1068"5Remove this unused "sameUsernameCheck" private field.(ß©Ñšûÿÿÿÿ8…© İ²/
+java:S1068$"5Remove this unused "sameUsernameCheck" private field.(ß©Ñšûÿÿÿÿ8ÇÙÃ„³/
