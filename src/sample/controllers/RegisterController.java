@@ -30,6 +30,8 @@ public class RegisterController
     public Label repeatPasswordError; //Text: Passwords do not match
     private PreparedStatement sameUsernameCheck;
     private PreparedStatement sameEMailCheck;
+    private PreparedStatement registerNewUser;
+    private PreparedStatement getMaxID;
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private String mandatory = "This is a mandatory field!";
 
@@ -41,6 +43,12 @@ public class RegisterController
         Connection conn = DriverManager.getConnection(url, "username", "password");
         sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
         sameEMailCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
+        registerNewUser = conn.prepareStatement("INSERT INTO user VALUES(?,?,?,?)");
+        getMaxID = conn.prepareStatement("SELECT MAX(id) FROM user");
+        for (int i = 1; i <= 31; i++) //This is not correct - implement a listener! (FIX)
+        {
+            selectDay.getItems().add(i);
+        }
         for (int i = 1; i <= 12; i++)
         {
             selectMonth.getItems().add(i);
@@ -57,31 +65,61 @@ public class RegisterController
     }
 
     public void proceedClick(ActionEvent actionEvent) throws IOException, SQLException {
+        boolean error = false;
         if (email.getText().isBlank())
         {
             emailError.setText(mandatory);
+            error = true;
+        }
+        else
+        {
+            emailError.setText("");
         }
         if (username.getText().isBlank())
         {
             usernameError.setText(mandatory);
+            error = true;
+        }
+        else
+        {
+            usernameError.setText("");
         }
         if (!(male.isSelected() || female.isSelected()))
         {
             gendersError.setText(mandatory);
+            error = true;
+        }
+        else
+        {
+            gendersError.setText("");
         }
         if (selectDay.getValue() == null || selectMonth.getValue() == null || selectYear.getValue() == null)
         {
             dateError.setText(mandatory);
+            error = true;
+        }
+        else
+        {
+            dateError.setText("");
         }
         if (password.getText().trim().length() < 6)
         {
             passwordError.setText("Password must contain at least 6 non-blank characters!");
+            error = true;
+        }
+        else
+        {
+            passwordError.setText("");
         }
         if (!(password.getText().equals(repeatPassword.getText())))
         {
             repeatPasswordError.setText("Passwords do not match!");
+            error = true;
         }
-
+        else
+        {
+            repeatPasswordError.setText("");
+        }
         sameUsernameCheck.setString(1, username.getText());
         sameEMailCheck.setString(1, email.getText());
         ResultSet surs = sameUsernameCheck.executeQuery();
@@ -89,10 +127,22 @@ public class RegisterController
         if (surs.getInt(1) != 0)
         {
             usernameError.setText("User with username " + username.getText() + "already exists!");
+            error = true;
         }
         if (semrs.getInt(1) != 0)
         {
             emailError.setText("User with email " + email.getText() + " already exists!");
+            error = true;
+        }
+        if (!error)
+        {
+            ResultSet getmaxidrs = getMaxID.executeQuery();
+            int new_id = getmaxidrs.getInt(1) + 1;
+            registerNewUser.setInt(1, new_id);
+            registerNewUser.setString(2, username.getText());
+            registerNewUser.setString(3, email.getText());
+            registerNewUser.setString(4, password.getText());
+            registerNewUser.execute();
         }
     }
 
