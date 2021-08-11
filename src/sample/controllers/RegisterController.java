@@ -7,6 +7,8 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Collections;
+import java.util.List;
 
 public class RegisterController
 {
@@ -15,7 +17,9 @@ public class RegisterController
     public ButtonBar genders;
     public RadioButton male;
     public RadioButton female;
-    public DatePicker dateOfBirth;
+    public ChoiceBox selectDay;
+    public ChoiceBox selectMonth;
+    public ChoiceBox selectYear;
     public PasswordField password;
     public PasswordField repeatPassword;
     public Button cancel;
@@ -29,17 +33,24 @@ public class RegisterController
     public Label repeatPasswordError; //Text: Passwords do not match
     private PreparedStatement sameUsernameCheck;
     private PreparedStatement sameEMail;
+    private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     @FXML
-    public void initialize() throws ClassNotFoundException, SQLException {
+    public void initialize() throws ClassNotFoundException, SQLException
+    {
         Class.forName("org.sqlite.JDBC");
         String url = ""; //Put path here
 //        Connection conn = DriverManager.getConnection(url, "username", "password");
 //        sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
 //        sameEMail = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
-        email.textProperty().addListener((observableValue, o, n) -> {
-
-        });
+        for (int i = 1; i <= 12; i++)
+        {
+            selectMonth.getItems().add(i);
+        }
+        for (int i = 2021; i >= 1900; i--)
+        {
+            selectYear.getItems().add(i);
+        }
     }
 
     public void cancelClick(ActionEvent actionEvent)
