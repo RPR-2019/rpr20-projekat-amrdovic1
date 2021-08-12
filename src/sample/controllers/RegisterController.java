@@ -2,7 +2,9 @@ package sample.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
@@ -61,7 +63,9 @@ public class RegisterController
 
     public void cancelClick(ActionEvent actionEvent)
     {
-
+        Node n = (Node) actionEvent.getSource();
+        Stage registerStage = (Stage) n.getScene().getWindow();
+        registerStage.close();
     }
 
     public void proceedClick(ActionEvent actionEvent) throws IOException, SQLException {

@@ -2,9 +2,11 @@ package sample.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.sql.*;
 
@@ -22,6 +24,13 @@ public class LoginController
         Connection conn = DriverManager.getConnection(url, "username", "password");
         checkExistsUsername = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
         checkPassword = conn.prepareStatement("SELECT password FROM user WHERE username=?");
+    }
+
+    public void goBackClick (ActionEvent actionEvent)
+    {
+        Node n = (Node) actionEvent.getSource();
+        Stage loginStage = (Stage) n.getScene().getWindow();
+        loginStage.close();
     }
 
     public void loginClick(ActionEvent actionEvent) throws SQLException {

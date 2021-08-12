@@ -23,7 +23,7 @@
       <Label text="Password:" GridPane.rowIndex="1" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <buttons>
-          <Button fx:id="goBack" cancelButton="true" mnemonicParsing="false" text="Go Back" />
+          <Button fx:id="goBack" cancelButton="true" mnemonicParsing="false" onAction="#goBackClick" text="Go Back" />
             <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#loginClick" text="Login" />
         </buttons>
       </ButtonBar>
