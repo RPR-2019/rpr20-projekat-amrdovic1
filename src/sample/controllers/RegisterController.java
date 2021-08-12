@@ -2,12 +2,17 @@ package sample.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+
+import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class RegisterController
 {
@@ -147,6 +152,18 @@ public class RegisterController
             registerNewUser.setString(3, email.getText());
             registerNewUser.setString(4, password.getText());
             registerNewUser.execute();
+            Node n = (Node) actionEvent.getSource();
+            Stage registerStage = (Stage) n.getScene().getWindow();
+            registerStage.close();
+
+            Stage regSuccessStage = new Stage();
+            FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("../registerSuccess.fxml")); //This path is temporary
+            Parent root = signUpLoader.load();
+            RegisterController rc = signUpLoader.getController();
+            regSuccessStage.setTitle("Registration successful!");
+            regSuccessStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+            regSuccessStage.setResizable(false);
+            regSuccessStage.show();
         }
     }
 

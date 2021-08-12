@@ -15,12 +15,29 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label text="Welcome!" GridPane.columnSpan="2" GridPane.rowIndex="1">
+      <Label fx:id="welcomeMessage" text="Welcome, " GridPane.rowIndex="1">
          <font>
-            <Font size="46.0" />
+            <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="login" mnemonicParsing="false" onAction="#loginClick" text="Log In" />
-      <Button fx:id="signup" mnemonicParsing="false" onAction="#signupClick" text="Sign Up" GridPane.columnIndex="1" />
+      <MenuBar GridPane.columnSpan="2">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
    </children>
 </GridPane>
