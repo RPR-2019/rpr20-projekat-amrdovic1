@@ -77,3 +77,7 @@ _
 /out/production/RPRprojekat/sample/homepage.fxml,b\2\b2178e7fa641a056098f97e1574011ccb30048da
 b
 2out/production/RPRprojekat/sample/reservation.fxml,5\6\564723d70d1cf926bb995bcb920137be128b5c6e
+e
+5src/sample/controllers/RegisterSuccessController.java,e\9\e98c281b8b1fe71b017c86cc378db93e5522928e
+O
+src/sample/registerSuccess.fxml,4\e\4e47dbf5f8f2475044bfde846d4e2646a0942293

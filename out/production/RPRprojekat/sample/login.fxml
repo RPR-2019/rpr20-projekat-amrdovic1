@@ -15,18 +15,20 @@
   <rowConstraints>
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <Label text="Username or email:" />
       <Label text="Password:" GridPane.rowIndex="1" />
-      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <buttons>
           <Button fx:id="goBack" cancelButton="true" mnemonicParsing="false" text="Go Back" />
-            <Button fx:id="login" defaultButton="true" mnemonicParsing="false" text="Login" />
+            <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#loginClick" text="Login" />
         </buttons>
       </ButtonBar>
       <TextField fx:id="usernameOrEMail" GridPane.columnIndex="1" />
       <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="passwordError" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>
