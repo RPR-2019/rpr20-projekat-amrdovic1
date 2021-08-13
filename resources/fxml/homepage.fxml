@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.HomepageController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
          <menus>
-            <Menu mnemonicParsing="false" text="About">
+            <Menu text="_About">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help">
               <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
               </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Help">
+            <Menu mnemonicParsing="false" text="Edit _Profile">
               <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
               </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Edit Profile">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
-            <Menu fx:id="signOut" mnemonicParsing="false" onAction="#signOutClick" text="Sign Out">
+            <Menu fx:id="signOut" mnemonicParsing="false" onAction="#signOutClick" text="_Sign Out">
               <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
               </items>
@@ -31,18 +37,44 @@
       </MenuBar>
    </top>
    <center>
-      <Label fx:id="welcomeMessage" text="Welcome, " BorderPane.alignment="CENTER" />
+      <Label fx:id="welcomeMessage" text="Welcome, " BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="16.0" />
+         </font></Label>
    </center>
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Now in cinema" />
-            <Button mnemonicParsing="false" text="Upcoming movies" />
-            <Button mnemonicParsing="false" text="Reserve a ticket" />
-            <Button mnemonicParsing="false" text="Check reservations" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Cinema Card" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Halls" />
+            <Button fx:id="latest" mnemonicParsing="false" onAction="#latestClick" prefHeight="25.0" prefWidth="105.0" text="Now in cinemas">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            <Button fx:id="upcoming" mnemonicParsing="false" onAction="#upcomingClick" text="Upcoming movies">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            <Button fx:id="reserve" mnemonicParsing="false" onAction="#reserveClick" prefHeight="25.0" prefWidth="110.0" text="Reserve tickets">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            <Button fx:id="checkRes" mnemonicParsing="false" onAction="#checkResClick" text="Check reservations">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
+            <Button fx:id="cinemaCard" mnemonicParsing="false" onAction="#cinemaCardClick" prefHeight="25.0" prefWidth="102.0" text="My CinemaCard">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin></Button>
          </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
       </VBox>
    </left>
 </BorderPane>
