@@ -1,15 +1,16 @@
 
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(·ã»‰8šÉÑĞ³/
-t
-java:S1104"RMake signup a static final constant or non-public and provide accessors if needed.(¸à°×ûÿÿÿÿ8®÷µĞ³/
 S
 java:S1854'"6Remove this useless assignment to local variable "rc".(Üá¤­8ûèëĞ³/
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8Ê·Ğ³/
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(·ã»‰8šÉÑĞ³/
 n
 java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(ß‘û¸8®÷µĞ³/
+t
+java:S1104"RMake signup a static final constant or non-public and provide accessors if needed.(¸à°×ûÿÿÿÿ8®÷µĞ³/
 T
 java:S1172#"2Remove this unused method parameter "actionEvent".(³©ÈÌıÿÿÿÿ8·•ÚĞ³/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8Ê·Ğ³/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ8ƒ˜—€´/
 D
 java:S1481'"'Remove this unused "rc" local variable.(Üá¤­8ûèëĞ³/

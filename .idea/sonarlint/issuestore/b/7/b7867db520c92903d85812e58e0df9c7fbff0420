@@ -1,60 +1,61 @@
 
-{
-java:S1104$"YMake passwordError a static final constant or non-public and provide accessors if needed.(«¥°öùÿÿÿÿ8ÇÙÃ„³/
-P
-java:S1172ª"2Remove this unused method parameter "actionEvent".(–ä™8õ“İ®³/
+L
+java:S3740"/Provide the parametrized type for this generic.(Àªü‚8çë««³/
+n
+java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(şñ8•ÿá®³/
+r
+java:S1104"PMake male a static final constant or non-public and provide accessors if needed.(éöÚÍüÿÿÿÿ8¾°Üª³/
+n	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šŒ‰•8âüó®³/
+v
+java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8İşµÜ²/
+T
+java:S1854¢"6Remove this useless assignment to local variable "rc".(Üá¤­8ÄÀÁÒ³/
+|
+java:S1104"ZMake repeatPassword a static final constant or non-public and provide accessors if needed.(ìïòıÿÿÿÿ8“ØÊª³/
 z
 java:S1104""XMake gendersError a static final constant or non-public and provide accessors if needed.(Íƒ…üıÿÿÿÿ8”‹æª³/
-r
-java:S1104"UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚8çë««³/
 U
 java:S1197*"8Move the array designator from the variable to the type.(Õ’¨8ƒëï­³/
 s
-java:S1104"WMake selectMonth a static final constant or non-public and provide accessors if needed.(Îÿœ[8çë««³/
-v
-java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8İşµÜ²/
-|
-java:S1104"ZMake repeatPassword a static final constant or non-public and provide accessors if needed.(ìïòıÿÿÿÿ8“ØÊª³/
-
-java:S1104%"_Make repeatPasswordError a static final constant or non-public and provide accessors if needed.(şñ–Ûÿÿÿÿÿ8ƒëï­³/
-s
 java:S1104"VMake selectYear a static final constant or non-public and provide accessors if needed.(Ùò¨Ò8çë««³/
-u
-java:S1104"SMake proceed a static final constant or non-public and provide accessors if needed.(Üÿ¼§şÿÿÿÿ8ƒëï­³/
+t
+java:S1104"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ8¹±ßÜ²/
+{
+java:S1104!"YMake usernameError a static final constant or non-public and provide accessors if needed.(—•í·ûÿÿÿÿ8¤ÒÀ„³/
 K
 java:S3740"/Provide the parametrized type for this generic.(Îÿœ[8çë««³/
-T
-java:S1854¢"6Remove this useless assignment to local variable "rc".(Üá¤­8ÄÀÁÒ³/
+s
+java:S1104"WMake selectMonth a static final constant or non-public and provide accessors if needed.(Îÿœ[8çë««³/
+s
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ÌÅ‘Çıÿÿÿÿ8²å´Ü²/
+p
+java:S1104"TMake username a static final constant or non-public and provide accessors if needed.(¼·á>8Îû´Ü²/
+w
+java:S1104#"UMake dateError a static final constant or non-public and provide accessors if needed.(óáşâüÿÿÿÿ8ÇÙÃ„³/
+p
+java:S1104"SMake genders a static final constant or non-public and provide accessors if needed.(¿”ã‡8ÿ¦µÜ²/
+P
+java:S1172ª"2Remove this unused method parameter "actionEvent".(–ä™8õ“İ®³/
+r
+java:S1104"UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚8çë««³/
+
+java:S1104%"_Make repeatPasswordError a static final constant or non-public and provide accessors if needed.(şñ–Ûÿÿÿÿÿ8ƒëï­³/
+e
+java:S20952"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8ƒëï­³/
 E
 java:S1068*"(Remove this unused "days" private field.(Õ’¨8ƒëï­³/
-s
-java:S1104 "VMake emailError a static final constant or non-public and provide accessors if needed.(¾ºî8ÇÙÃ„³/
+L
+java:S3740"/Provide the parametrized type for this generic.(Ùò¨Ò8ƒëï­³/
+{
+java:S1104$"YMake passwordError a static final constant or non-public and provide accessors if needed.(«¥°öùÿÿÿÿ8ÇÙÃ„³/
+P
+java:S1172°"2Remove this unused method parameter "actionEvent".(¾¹ß÷8õ“İ®³/
 n
 java:S1104"RMake female a static final constant or non-public and provide accessors if needed.(µÅœA8¾°Üª³/
 E
 java:S1481¢"'Remove this unused "rc" local variable.(Üá¤­8ÄÀÁÒ³/
-e
-java:S20952"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8ƒëï­³/
-n	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šŒ‰•8âüó®³/
-n
-java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(şñ8•ÿá®³/
-P
-java:S1172°"2Remove this unused method parameter "actionEvent".(¾¹ß÷8õ“İ®³/
-w
-java:S1104#"UMake dateError a static final constant or non-public and provide accessors if needed.(óáşâüÿÿÿÿ8ÇÙÃ„³/
-{
-java:S1104!"YMake usernameError a static final constant or non-public and provide accessors if needed.(—•í·ûÿÿÿÿ8¤ÒÀ„³/
-t
-java:S1104"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ8¹±ßÜ²/
-L
-java:S3740"/Provide the parametrized type for this generic.(Àªü‚8çë««³/
+u
+java:S1104"SMake proceed a static final constant or non-public and provide accessors if needed.(Üÿ¼§şÿÿÿÿ8ƒëï­³/
 s
-java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ÌÅ‘Çıÿÿÿÿ8²å´Ü²/
-p
-java:S1104"SMake genders a static final constant or non-public and provide accessors if needed.(¿”ã‡8ÿ¦µÜ²/
-L
-java:S3740"/Provide the parametrized type for this generic.(Ùò¨Ò8ƒëï­³/
-r
-java:S1104"PMake male a static final constant or non-public and provide accessors if needed.(éöÚÍüÿÿÿÿ8¾°Üª³/
-p
-java:S1104"TMake username a static final constant or non-public and provide accessors if needed.(¼·á>8Îû´Ü²/
+java:S1104 "VMake emailError a static final constant or non-public and provide accessors if needed.(¾ºî8ÇÙÃ„³/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ8Š˜—€´/
