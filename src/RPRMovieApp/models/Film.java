@@ -12,6 +12,8 @@ public class Film
     private int duration; //Minutes
     private int genres; //Conversion logic follows in the code below
     private int languages; //Conversion logic follows in the code below
+    private int directorid; //Every film is assumed to have a single director
+    //Actors should somehow be stored here (ActorFilm table should probably be used)
     private Date releasedate;
 
     private ArrayList<Boolean> convertGenres()
@@ -41,7 +43,7 @@ public class Film
                 break;
             }
         }
-        for (int j = i; j >= 0; j++)
+        for (int j = i; j >= 0; j--)
         {
             genreList.set(j, false);
         }
@@ -52,7 +54,6 @@ public class Film
     {
         ArrayList<Boolean> whichGenres = convertGenres();
         ArrayList<Genre> g = new ArrayList();
-        int n = whichGenres.size();
         for (Genre gen : Genre.values())
         {
             if (whichGenres.get(gen.ordinal()))
@@ -67,7 +68,6 @@ public class Film
     {
         ArrayList<Boolean> whichLanguages = convertGenres();
         ArrayList<Language> l = new ArrayList();
-        int n = whichLanguages.size();
         for (Language lang : Language.values())
         {
             if (whichLanguages.get(lang.ordinal()))
@@ -120,5 +120,13 @@ public class Film
 
     public void setReleasedate(Date releasedate) {
         this.releasedate = releasedate;
+    }
+
+    public int getDirectorid() {
+        return directorid;
+    }
+
+    public void setDirectorid(int directorid) {
+        this.directorid = directorid;
     }
 }
