@@ -1,27 +1,85 @@
 package RPRMovieApp.models;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Film
 {
+    //Change attributes to properties
     private int id;
     private String name;
     private int duration; //Minutes
-    private List<Genre> genres;
-    private List<Language> languages;
+    private int genres; //Conversion logic follows in the code below
+    private int languages; //Conversion logic follows in the code below
     private Date releasedate;
 
-    public Film(int id, String name, int duration, List<Genre> genres, List<Language> languages, Date releasedate) {
-        this.id = id;
-        this.name = name;
-        this.duration = duration;
-        this.genres = genres;
-        this.languages = languages;
-        this.releasedate = releasedate;
+    private ArrayList<Boolean> convertGenres()
+    {
+        ArrayList<Boolean> genreList = new ArrayList<>(Genre.values().length);
+        //Code below should be a function (same code appears in convertLanguage)
+        int gtemp = genres;
+        for (int i = 22; i >= 0 && gtemp > 0; i++)
+        {
+            genreList.set(i, gtemp%2 != 0);
+            gtemp /= 2;
+        }
+        return genreList;
     }
 
-    public Film() {
+    private ArrayList<Boolean> convertLanguage ()
+    {
+        ArrayList<Boolean> genreList = new ArrayList<>(Language.values().length);
+        int gtemp = genres;
+        int i;
+        for (i = Language.values().length - 1; i >= 0; i--)
+        {
+            genreList.set(i, gtemp%2 != 0);
+            gtemp /= 2;
+            if (gtemp == 0)
+            {
+                break;
+            }
+        }
+        for (int j = i; j >= 0; j++)
+        {
+            genreList.set(j, false);
+        }
+        return genreList;
+    }
+
+    private ArrayList<Genre> getGenres ()
+    {
+        ArrayList<Boolean> whichGenres = convertGenres();
+        ArrayList<Genre> g = new ArrayList();
+        int n = whichGenres.size();
+        for (Genre gen : Genre.values())
+        {
+            if (whichGenres.get(gen.ordinal()))
+            {
+                g.add(gen);
+            }
+        }
+        return g;
+    }
+
+    private ArrayList<Language> getLanguages()
+    {
+        ArrayList<Boolean> whichLanguages = convertGenres();
+        ArrayList<Language> l = new ArrayList();
+        int n = whichLanguages.size();
+        for (Language lang : Language.values())
+        {
+            if (whichLanguages.get(lang.ordinal()))
+            {
+                l.add(lang);
+            }
+        }
+        return l;
+    }
+
+    public Film()
+    {
     }
 
     public int getId() {
@@ -48,19 +106,11 @@ public class Film
         this.duration = duration;
     }
 
-    public List<Genre> getGenres() {
-        return genres;
-    }
-
-    public void setGenres(List<Genre> genres) {
+    public void setGenres(int genres) {
         this.genres = genres;
     }
 
-    public List<Language> getLanguages() {
-        return languages;
-    }
-
-    public void setLanguages(List<Language> languages) {
+    public void setLanguages(int languages) {
         this.languages = languages;
     }
 
@@ -71,5 +121,4 @@ public class Film
     public void setReleasedate(Date releasedate) {
         this.releasedate = releasedate;
     }
-
 }

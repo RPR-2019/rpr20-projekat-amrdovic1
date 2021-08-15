@@ -51,3 +51,13 @@ R
 "resources/fxml/upcomingMovies.fxml,e\b\eb95eb07c6b9e05c678bf84564fb743437ccb726
 i
 9src/RPRMovieApp/controllers/UpcomingMoviesController.java,7\e\7e5ad3f3f92d2f933c1e0c343031a7b3c3ee08ed
+f
+6out/production/RPRprojekat/fxml/checkReservations.fxml,c\d\cd104e32205c7c2170df5c8f061a436a3b6ce0b1
+_
+/out/production/RPRprojekat/fxml/cinemaCard.fxml,4\4\449377daa8a2f67c9e763fc354f0adccf30ef122
+c
+3out/production/RPRprojekat/fxml/newReservation.fxml,f\f\ff8e950e91e31115cc98f5ee367008218d5f041b
+c
+3out/production/RPRprojekat/fxml/upcomingMovies.fxml,6\3\63de2053ddf4274cd77dd42ac607bd6de4464741
+P
+ src/RPRMovieApp/models/Film.java,8\e\8e9b07b1e9fb346e84395bcbd811cfd7cf6319ea

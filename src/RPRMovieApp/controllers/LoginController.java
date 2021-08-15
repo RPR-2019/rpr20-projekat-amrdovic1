@@ -55,7 +55,15 @@ public class LoginController
             loginStage.close();
 
             Stage homeStage = new Stage();
-            FXMLLoader homePageLoader = new FXMLLoader(getClass().getResource("/fxml/homepage.fxml"));
+            FXMLLoader homePageLoader;
+            if (usernameOrEMail.getText().equals("admin"))
+            {
+                homePageLoader = new FXMLLoader(getClass().getResource("/fxml/adminHomepage.fxml"));
+            }
+            else
+            {
+                homePageLoader = new FXMLLoader(getClass().getResource("/fxml/homepage.fxml"));
+            }
             Parent root = homePageLoader.load();
             HomepageController rc = homePageLoader.getController();
             homeStage.setTitle("Homepage");

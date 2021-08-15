@@ -30,5 +30,7 @@ public class LatestMoviesController
             Film f = new Film();
             movies.add(f);
         }
+        //Bind movies to ListView
+
     }
 }
