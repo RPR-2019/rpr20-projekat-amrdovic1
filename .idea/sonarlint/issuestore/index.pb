@@ -83,3 +83,5 @@ c
 3out/production/RPRprojekat/fxml/adminViewUsers.fxml,d\b\db1bd164cd2322400b364ed0e03efde40efc4ea7
 i
 9src/RPRMovieApp/controllers/AdminViewUsersController.java,f\f\ff40cb699f9e5bfbc761726ac13bb080f813caee
+T
+$src/RPRMovieApp/models/Language.java,c\0\c0d5fd5be025a95dc797a2751874a5b301312002

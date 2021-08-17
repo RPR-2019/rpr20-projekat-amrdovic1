@@ -27,7 +27,7 @@ public class LatestMoviesController
         while (pmrs.next())
         {
             //Fetch films and add them to list
-            Film f = new Film(pmrs.getString(2), pmrs.getInt(3));
+            Film f = new Film(pmrs.getString(2), pmrs.getInt(3), pmrs.getInt(5), pmrs.getInt(6));
             movies.add(f);
         }
         moviesList.setItems(movies);

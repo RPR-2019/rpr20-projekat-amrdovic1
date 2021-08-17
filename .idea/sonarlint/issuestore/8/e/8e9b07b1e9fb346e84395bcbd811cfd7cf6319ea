@@ -1,24 +1,14 @@
 
 G
-java:S5411;"*Use the primitive boolean expression here.(ßÄï÷8øı»Ö´/
-Q
-java:S1144 "4Remove this unused private "convertLanguage" method.(±ôÊÅ8œ´Ö´/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡¹¹Ö´/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò ¹í
+java:S5411U"*Use the primitive boolean expression here.(àö¡Ó8á¹ÀÖ´/
 L
-java:S3740F"/Provide the parametrized type for this generic.(çëşŠ8¸Æ½Ö´/
+java:S3740D"/Provide the parametrized type for this generic.(†›Ğş8Œß¼¦µ/
 L
-java:S37408"/Provide the parametrized type for this generic.(†›Ğş8öö¼Ö´/
-t
-java:S1450"XRemove the "languages" field and declare it as a local variable in the relevant methods.(Õ½Ë8ÀóáÖ´/
-I
-java:S1068"-Remove this unused "languages" private field.(Õ½Ë8ñ¬âÕ´/
-£
-java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(öÆ¬ÿÿÿÿÿ8²ÒáÕ´/
-P
-java:S11445".Remove this unused private "getGenres" method.(Ø˜àÚùÿÿÿÿ8î¤–Ö´/
+java:S3740R"/Provide the parametrized type for this generic.(çëşŠ8¸Æ½Ö´/
 G
-java:S5411I"*Use the primitive boolean expression here.(àö¡Ó8á¹ÀÖ´/
-N
-java:S1144C"1Remove this unused private "getLanguages" method.(œ»ŸØ8‡¹¹Ö´/
+java:S5411G"*Use the primitive boolean expression here.(ßÄï÷8øı»Ö´/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò ¹í
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡¹¹Ö´/
+L
+java:S3740"/Provide the parametrized type for this generic.(Ï‡±Ö8ü³–§µ/

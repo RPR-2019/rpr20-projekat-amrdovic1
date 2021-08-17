@@ -1,8 +1,10 @@
 package RPRMovieApp.models;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Film
 {
@@ -16,38 +18,51 @@ public class Film
     //Actors should somehow be stored here (ActorFilm table should probably be used)
     private Date releasedate;
 
+    public Film(String name, int duration, int genres, int languages) {
+        this.name = name;
+        this.duration = duration;
+        this.genres = genres;
+        this.languages = languages;
+    }
+
     private ArrayList<Boolean> convertGenres()
     {
-        ArrayList<Boolean> genreList = new ArrayList<>(Genre.values().length);
+        int n = Genre.values().length;
+        ArrayList<Boolean> genreList = new ArrayList();
         //Code below should be a function (same code appears in convertLanguage)
         int gtemp = genres;
-        for (int i = 22; i >= 0 && gtemp > 0; i++)
+        int i;
+        for (i = 0; i < n && gtemp > 0; i++)
         {
-            genreList.set(i, gtemp%2 != 0);
+            genreList.add(gtemp%2 != 0);
             gtemp /= 2;
         }
+        for (int j = i; j < n; j++)
+        {
+            genreList.add(false);
+        }
+        Collections.reverse(genreList);
         return genreList;
     }
 
-    private ArrayList<Boolean> convertLanguage ()
+    private ArrayList<Boolean> convertLanguages()
     {
-        ArrayList<Boolean> genreList = new ArrayList<>(Language.values().length);
-        int gtemp = genres;
+        int n = Language.values().length;
+        ArrayList<Boolean> languageList = new ArrayList();
+        //Code below should be a function (same code appears in convertLanguage)
+        int ltemp = languages;
         int i;
-        for (i = Language.values().length - 1; i >= 0; i--)
+        for (i = 0; i < n && ltemp > 0; i++)
         {
-            genreList.set(i, gtemp%2 != 0);
-            gtemp /= 2;
-            if (gtemp == 0)
-            {
-                break;
-            }
+            languageList.add(ltemp%2 != 0);
+            ltemp /= 2;
         }
-        for (int j = i; j >= 0; j--)
+        for (int j = i; j < n; j++)
         {
-            genreList.set(j, false);
+            languageList.add(false);
         }
-        return genreList;
+        Collections.reverse(languageList);
+        return languageList;
     }
 
     private ArrayList<Genre> getGenres ()
@@ -66,7 +81,7 @@ public class Film
 
     private ArrayList<Language> getLanguages()
     {
-        ArrayList<Boolean> whichLanguages = convertGenres();
+        ArrayList<Boolean> whichLanguages = convertLanguages();
         ArrayList<Language> l = new ArrayList();
         for (Language lang : Language.values())
         {
@@ -140,7 +155,9 @@ public class Film
     public String toString()
     {
         return name.toUpperCase() + "\n" + "Director: Tito Titic\n" +
-                "Duration: " + duration + "min";
+                "Duration: " + duration + "min\n" +
+                "Genres: " + getGenres().stream().map(Genre::toString).collect(Collectors.joining(", ")) + "\n" +
+                "Languages: " + getLanguages().stream().map(Language::toString).collect(Collectors.joining(", "));
 
     }
 }
