@@ -19,10 +19,8 @@ public class AdminViewFilmsController
         Stage addFilmStage = new Stage();
         FXMLLoader addFilmLoader = new FXMLLoader(getClass().getResource("/fxml/addFilm.fxml")); //This path is temporary
         Parent root = addFilmLoader.load();
-        AddFilmController afc = addFilmLoader.getController();
         addFilmStage.setTitle("Add new film");
         addFilmStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        addFilmStage.setResizable(false);
         addFilmStage.show();
     }
 }

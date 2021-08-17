@@ -83,3 +83,9 @@ T
 $src/RPRMovieApp/models/Language.java,c\0\c0d5fd5be025a95dc797a2751874a5b301312002
 T
 $src/RPRMovieApp/models/Director.java,7\b\7b9bbe5f6792876d37f8b50ddd3ff47270638963
+Q
+!resources/fxml/adminHomepage.fxml,7\b\7b24dc128784c3fc8eb055a9606766a052327c6b
+R
+"resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
+R
+"resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab

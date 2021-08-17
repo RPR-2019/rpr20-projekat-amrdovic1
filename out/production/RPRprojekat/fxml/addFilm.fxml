@@ -50,6 +50,7 @@
          <children>
             <ChoiceBox fx:id="selectGenre" prefWidth="150.0" />
             <Button fx:id="addGenre" mnemonicParsing="false" onAction="#addGenreClick" text="Add" GridPane.columnIndex="1" />
+            <Label fx:id="selectedGenres" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <Spinner fx:id="durationSpinner" editable="true" prefHeight="25.0" prefWidth="293.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
@@ -92,6 +93,7 @@
          <children>
             <ChoiceBox fx:id="selectLanguage" prefWidth="150.0" />
             <Button fx:id="addLanguage" mnemonicParsing="false" onAction="#addLanguageClick" text="Add" GridPane.columnIndex="1" />
+            <Label fx:id="selectedLanguages" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </children>
