@@ -59,18 +59,26 @@ public class LoginController
             if (usernameOrEMail.getText().equals("admin"))
             {
                 homePageLoader = new FXMLLoader(getClass().getResource("/fxml/adminHomepage.fxml"));
+                Parent root = homePageLoader.load();
+                AdminHomepageController rc = homePageLoader.getController();
+                homeStage.setTitle("Homepage");
+                homeStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+                homeStage.setResizable(false);
+                homeStage.show();
+                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + usernameOrEMail.getText()); //This is not how it will be done in the final project
             }
             else
             {
                 homePageLoader = new FXMLLoader(getClass().getResource("/fxml/homepage.fxml"));
+                Parent root = homePageLoader.load();
+                HomepageController rc = homePageLoader.getController();
+                homeStage.setTitle("Homepage");
+                homeStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+                homeStage.setResizable(false);
+                homeStage.show();
+                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + usernameOrEMail.getText()); //This is not how it will be done in the final project
             }
-            Parent root = homePageLoader.load();
-            HomepageController rc = homePageLoader.getController();
-            homeStage.setTitle("Homepage");
-            homeStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-            homeStage.setResizable(false);
-            homeStage.show();
-            rc.welcomeMessage.setText(rc.welcomeMessage.getText() + usernameOrEMail.getText()); //This is not how it will be done in the final project
+
         }
     }
 }

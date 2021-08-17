@@ -1,16 +1,20 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò ¹í
-G
-java:S5411J"*Use the primitive boolean expression here.(ßÄï÷8ÿª§µ/
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡¹¹Ö´/
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‡¹¹Ö´/
+e
+java:S2095)"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8’Ï”­µ/
+q
+java:S2095*"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ëÒ¶ñüÿÿÿÿ8Ïš­µ/
+L
+java:S37405"/Provide the parametrized type for this generic.(×³‰¯8à°­µ/
 G
-java:S5411X"*Use the primitive boolean expression here.(àö¡Ó8ÿª§µ/
+java:S5411n"*Use the primitive boolean expression here.(àö¡Ó8à°­µ/
 Q
-java:S37403"/Provide the parametrized type for this generic.(í®×«ûÿÿÿÿ8ÿª§µ/
+java:S3740I"/Provide the parametrized type for this generic.(í®×«ûÿÿÿÿ8à°­µ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò ¹í
 L
-java:S3740U"/Provide the parametrized type for this generic.(çëşŠ8ÿª§µ/
+java:S3740]"/Provide the parametrized type for this generic.(†›Ğş8à°­µ/
 L
-java:S3740"/Provide the parametrized type for this generic.(×³‰¯8ü³–§µ/
-L
-java:S3740G"/Provide the parametrized type for this generic.(†›Ğş8ÿª§µ/
+java:S3740k"/Provide the parametrized type for this generic.(çëşŠ8à°­µ/
+G
+java:S5411`"*Use the primitive boolean expression here.(ßÄï÷8à°­µ/

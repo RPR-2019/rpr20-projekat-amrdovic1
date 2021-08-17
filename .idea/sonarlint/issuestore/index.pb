@@ -13,8 +13,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ?
 RPRMovieApp.sql,0\b\0be2b365832bfafe8446a584e962da0902fee39b
-T
-$out/production/RPRprojekat/file.fxml,4\6\469eaddeec033f43aadd9b34af3fb089247e4a25
 a
 1src/RPRMovieApp/controllers/WelcomeControler.java,3\7\377f3e6251ae41c29229a2816e2297b27a54e18b
 j
@@ -67,8 +65,6 @@ P
  src/RPRMovieApp/DAO/FilmDAO.java,1\4\1481309f91ee4bea21d10b098cbdae4d161b9683
 \
 ,out/production/RPRprojekat/fxml/addFilm.fxml,7\8\78bb13e0f04fd1fc817d337dbf3ef821812a8423
-K
-resources/fxml/addFilm.fxml,d\e\de93854149c4f22cf15df447af3bc80da9b5df58
 b
 2src/RPRMovieApp/controllers/AddFilmController.java,e\0\e0bb3487daf3f7f3481fe8f74646a34e71839f44
 b
@@ -85,3 +81,5 @@ i
 9src/RPRMovieApp/controllers/AdminViewUsersController.java,f\f\ff40cb699f9e5bfbc761726ac13bb080f813caee
 T
 $src/RPRMovieApp/models/Language.java,c\0\c0d5fd5be025a95dc797a2751874a5b301312002
+T
+$src/RPRMovieApp/models/Director.java,7\b\7b9bbe5f6792876d37f8b50ddd3ff47270638963

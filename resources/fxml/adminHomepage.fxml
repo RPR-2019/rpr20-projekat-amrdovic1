@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.HomepageController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.AdminHomepageController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
@@ -55,7 +55,7 @@
             </BorderPane.margin>
          <children>
             <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="View users" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="View films" />
+            <Button fx:id="viewFilms" mnemonicParsing="false" onAction="#viewFilmsClick" prefHeight="25.0" prefWidth="119.0" text="View films" />
          </children>
         </VBox>
     </left>
