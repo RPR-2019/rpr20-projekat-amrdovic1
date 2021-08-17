@@ -1,5 +1,6 @@
 package RPRMovieApp.models;
 
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -23,6 +24,27 @@ public class Film
         this.duration = duration;
         this.genres = genres;
         this.languages = languages;
+    }
+
+    public Film(int id, String name, int duration, int genres, int languages, int directorid) {
+        this.id = id;
+        this.name = name;
+        this.duration = duration;
+        this.genres = genres;
+        this.languages = languages;
+        this.directorid = directorid;
+    }
+
+    private String getDirectorName () throws ClassNotFoundException, SQLException {
+        Class.forName("org.sqlite.JDBC");
+        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
+        Connection conn = DriverManager.getConnection(url, "username", "password");
+        PreparedStatement psfd = conn.prepareStatement("SELECT d.name, d.lastname FROM film f, director d WHERE f.id=? AND d.id = f.directorid");
+        psfd.setInt(1, id);
+        ResultSet rsfd = psfd.executeQuery();
+        String res = rsfd.getString(1) + " " + rsfd.getString(2);
+        conn.close();
+        return res;
     }
 
     private ArrayList<Boolean> convertGenres()
@@ -154,10 +176,17 @@ public class Film
     @Override
     public String toString()
     {
-        return name.toUpperCase() + "\n" + "Director: Tito Titic\n" +
-                "Duration: " + duration + "min\n" +
-                "Genres: " + getGenres().stream().map(Genre::toString).collect(Collectors.joining(", ")) + "\n" +
-                "Languages: " + getLanguages().stream().map(Language::toString).collect(Collectors.joining(", "));
-
+        String result = "";
+        try {
+            result = name.toUpperCase() + "\n" + "Director: " + getDirectorName() + "\n" +
+                        "Duration: " + duration + "min\n" +
+                        "Genres: " + getGenres().stream().map(Genre::toString).collect(Collectors.joining(", ")) + "\n" +
+                        "Languages: " + getLanguages().stream().map(Language::toString).collect(Collectors.joining(", "));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return result;
     }
 }
