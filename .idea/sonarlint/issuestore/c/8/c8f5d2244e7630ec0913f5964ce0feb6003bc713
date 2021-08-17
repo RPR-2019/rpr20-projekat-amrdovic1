@@ -1,12 +1,12 @@
 
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8·×Û«´/
-s
-java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(‰ê”Ì8”ÎÈ«´/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
 L
 java:S3740"/Provide the parametrized type for this generic.(‰ê”Ì8”ÎÈ«´/
-K
-java:S1068")Remove this unused "movie" private field.(ÔüÆ¨úÿÿÿÿ8ô„¬´/
 y
 java:S1450"\Remove the "prepareMovies" field and declare it as a local variable in the relevant methods.(éâ”Ä8·×Û«´/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+s
+java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(‰ê”Ì8”ÎÈ«´/
+K
+java:S1068")Remove this unused "movie" private field.(ÔüÆ¨úÿÿÿÿ8ô„¬´/
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8·×Û«´/

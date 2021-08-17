@@ -82,6 +82,12 @@ public class Film
     {
     }
 
+    public Film(String name, int duration) //For now
+    {
+        this.name = name;
+        this.duration = duration;
+    }
+
     public int getId() {
         return id;
     }
@@ -128,5 +134,13 @@ public class Film
 
     public void setDirectorid(int directorid) {
         this.directorid = directorid;
+    }
+
+    @Override
+    public String toString()
+    {
+        return name.toUpperCase() + "\n" + "Director: Tito Titic\n" +
+                "Duration: " + duration + "min";
+
     }
 }

@@ -61,3 +61,25 @@ c
 3out/production/RPRprojekat/fxml/upcomingMovies.fxml,6\3\63de2053ddf4274cd77dd42ac607bd6de4464741
 P
  src/RPRMovieApp/models/Film.java,8\e\8e9b07b1e9fb346e84395bcbd811cfd7cf6319ea
+Q
+!src/RPRMovieApp/models/Genre.java,d\5\d559b69601cfdab19c5b0272e2e49e7cdbf2bfac
+P
+ src/RPRMovieApp/DAO/FilmDAO.java,1\4\1481309f91ee4bea21d10b098cbdae4d161b9683
+\
+,out/production/RPRprojekat/fxml/addFilm.fxml,7\8\78bb13e0f04fd1fc817d337dbf3ef821812a8423
+K
+resources/fxml/addFilm.fxml,d\e\de93854149c4f22cf15df447af3bc80da9b5df58
+b
+2src/RPRMovieApp/controllers/AddFilmController.java,e\0\e0bb3487daf3f7f3481fe8f74646a34e71839f44
+b
+2out/production/RPRprojekat/fxml/adminHomepage.fxml,e\6\e667142375a5b63f6ecb2d04f7e753e7a2a02bb2
+h
+8src/RPRMovieApp/controllers/AdminHomepageController.java,9\1\91d9e985ff90290b26725e590c2af3c85c0dd68c
+c
+3out/production/RPRprojekat/fxml/adminViewFilms.fxml,2\8\287b65a5603d6a8ba27d75d119a10766fdba106d
+i
+9src/RPRMovieApp/controllers/AdminViewFilmsController.java,3\b\3bc388c1183f8fc31deaff29a0573f006f226058
+c
+3out/production/RPRprojekat/fxml/adminViewUsers.fxml,d\b\db1bd164cd2322400b364ed0e03efde40efc4ea7
+i
+9src/RPRMovieApp/controllers/AdminViewUsersController.java,f\f\ff40cb699f9e5bfbc761726ac13bb080f813caee

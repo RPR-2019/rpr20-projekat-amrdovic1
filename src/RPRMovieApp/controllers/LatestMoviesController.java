@@ -2,6 +2,8 @@ package RPRMovieApp.controllers;
 
 import RPRMovieApp.models.Film;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
@@ -10,11 +12,9 @@ import java.util.List;
 
 public class LatestMoviesController
 {
-    public ListView moviesList;
-
     private PreparedStatement prepareMovies;
-    private List<Film> movies;
-    private SimpleObjectProperty<Film> movie;
+    private ObservableList<Film> movies = FXCollections.observableArrayList();
+    public ListView<Film> moviesList;
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
@@ -27,10 +27,9 @@ public class LatestMoviesController
         while (pmrs.next())
         {
             //Fetch films and add them to list
-            Film f = new Film();
+            Film f = new Film(pmrs.getString(2), pmrs.getInt(3));
             movies.add(f);
         }
-        //Bind movies to ListView
-
+        moviesList.setItems(movies);
     }
 }
