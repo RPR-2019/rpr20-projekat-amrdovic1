@@ -16,6 +16,7 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class RegisterController
 {
+    private Connection conn;
     public TextField email;
     public TextField username;
     public ButtonBar genders;
@@ -47,7 +48,7 @@ public class RegisterController
     {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        Connection conn = DriverManager.getConnection(url, "username", "password");
+        conn = DriverManager.getConnection(url, "username", "password");
         sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
         sameEMailCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
         registerNewUser = conn.prepareStatement("INSERT INTO user VALUES(?,?,?,?)");
@@ -155,6 +156,7 @@ public class RegisterController
             Node n = (Node) actionEvent.getSource();
             Stage registerStage = (Stage) n.getScene().getWindow();
             registerStage.close();
+            conn.close();
 
             Stage regSuccessStage = new Stage();
             FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/registerSuccess.fxml")); //This path is temporary

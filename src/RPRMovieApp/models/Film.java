@@ -39,10 +39,10 @@ public class Film
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
         Connection conn = DriverManager.getConnection(url, "username", "password");
-        PreparedStatement psfd = conn.prepareStatement("SELECT d.name, d.lastname FROM film f, director d WHERE f.id=? AND d.id = f.directorid");
+        PreparedStatement psfd = conn.prepareStatement("SELECT d.name FROM film f, director d WHERE f.id=? AND d.id = f.directorid");
         psfd.setInt(1, id);
         ResultSet rsfd = psfd.executeQuery();
-        String res = rsfd.getString(1) + " " + rsfd.getString(2);
+        String res = rsfd.getString(1);
         conn.close();
         return res;
     }

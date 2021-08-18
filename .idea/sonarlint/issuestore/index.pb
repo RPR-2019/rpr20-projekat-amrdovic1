@@ -89,3 +89,5 @@ R
 "resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
 R
 "resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab
+i
+9src/RPRMovieApp/controllers/AddFilmSuccessController.java,a\5\a51fa41eb5a7423a111735dd14cdcce82bbecf89

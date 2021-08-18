@@ -75,7 +75,7 @@
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
         <buttons>
           <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" onAction="#cancelClick" text="Cancel" />
-            <Button fx:id="addFilm" defaultButton="true" mnemonicParsing="false" onAction="#addFilmClick" text="Add film" />
+            <Button fx:id="addFilm" mnemonicParsing="false" onAction="#addFilmClick" text="Add film" />
         </buttons>
       </ButtonBar>
       <Label text="Poster:" GridPane.rowIndex="1" />

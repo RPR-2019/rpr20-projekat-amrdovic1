@@ -31,5 +31,6 @@ public class LatestMoviesController
             movies.add(f);
         }
         moviesList.setItems(movies);
+        conn.close();
     }
 }

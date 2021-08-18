@@ -23,11 +23,12 @@ public class LoginController
     public Label passwordError;
     private PreparedStatement checkExistsUsername;
     private PreparedStatement checkPassword;
+    private Connection conn;
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        Connection conn = DriverManager.getConnection(url, "username", "password");
+        conn = DriverManager.getConnection(url, "username", "password");
         checkExistsUsername = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
         checkPassword = conn.prepareStatement("SELECT password FROM user WHERE username=?");
     }
@@ -53,6 +54,7 @@ public class LoginController
             Node n = (Node) actionEvent.getSource();
             Stage loginStage = (Stage) n.getScene().getWindow();
             loginStage.close();
+            conn.close();
 
             Stage homeStage = new Stage();
             FXMLLoader homePageLoader;
