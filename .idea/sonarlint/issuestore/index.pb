@@ -27,8 +27,6 @@ I
 src/RPRMovieApp/Main.java,4\2\42aa26724a0efe7bc79726bb57db04f81255e959
 f
 6src/RPRMovieApp/controllers/ReservationController.java,f\0\f051bb1acd44e322d839d864ef0ad09f394112f5
-G
-resources/css/login.css,7\d\7db9f08b450f522c2c42e78ac437d0bc6c3c0a3e
 J
 resources/css/register.css,d\b\dbfdfe94c178841f5217cfddef28a8894cdb8fd9
 S
@@ -91,3 +89,9 @@ R
 "resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab
 i
 9src/RPRMovieApp/controllers/AddFilmSuccessController.java,a\5\a51fa41eb5a7423a111735dd14cdcce82bbecf89
+c
+3out/production/RPRprojekat/fxml/addFilmSuccess.fxml,3\7\378604630d4498b9e398e396ab7cff2459cedea0
+R
+"resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f
+f
+6src/RPRMovieApp/controllers/ChooseSeatsController.java,9\c\9c2f3f3a5bd407f0335f23ddad980d89ee42d0e5

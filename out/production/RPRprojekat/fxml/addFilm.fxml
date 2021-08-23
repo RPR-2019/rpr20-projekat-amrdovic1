@@ -19,6 +19,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <Label text="Movie name:" />
@@ -72,7 +73,7 @@
             <ChoiceBox fx:id="selectMonth" prefWidth="150.0" GridPane.columnIndex="1" />
          </children>
       </GridPane>
-      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
         <buttons>
           <Button fx:id="cancel" cancelButton="true" mnemonicParsing="false" onAction="#cancelClick" text="Cancel" />
             <Button fx:id="addFilm" mnemonicParsing="false" onAction="#addFilmClick" text="Add film" />
@@ -96,5 +97,7 @@
             <Label fx:id="selectedLanguages" GridPane.rowIndex="1" />
          </children>
       </GridPane>
+      <Label text="Synopsis:" GridPane.rowIndex="8" />
+      <TextArea fx:id="synopsisText" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
    </children>
 </GridPane>

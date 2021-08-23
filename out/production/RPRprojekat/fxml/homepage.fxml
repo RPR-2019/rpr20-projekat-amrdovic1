@@ -56,10 +56,6 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Button fx:id="reserve" mnemonicParsing="false" onAction="#reserveClick" prefHeight="25.0" prefWidth="110.0" text="Reserve tickets">
-               <VBox.margin>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
-               </VBox.margin></Button>
             <Button fx:id="checkRes" mnemonicParsing="false" onAction="#checkResClick" text="Check reservations">
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />

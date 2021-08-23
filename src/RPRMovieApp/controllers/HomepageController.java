@@ -18,7 +18,6 @@ public class HomepageController
     public Label welcomeMessage;
     public Button latest;
     public Button upcoming;
-    public Button reserve;
     public Button checkRes;
     public Button cinemaCard;
 
@@ -51,16 +50,6 @@ public class HomepageController
         upcomingStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         upcomingStage.setResizable(false);
         upcomingStage.show();
-    }
-
-    public void reserveClick(ActionEvent actionEvent) throws IOException
-    {
-        Stage newResStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
-        newResStage.setTitle("New reservation");
-        newResStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        newResStage.setResizable(false);
-        newResStage.show();
     }
 
     public void checkResClick(ActionEvent actionEvent) throws IOException

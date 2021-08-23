@@ -41,6 +41,7 @@ public class AddFilmController
     public Button addLanguage;
     public Label selectedGenres;
     public Label selectedLanguages;
+    public TextArea synopsisText;
 
     private ObservableList<Genre> remainingGenres;
     private ObservableList<Language> remainingLanguages;
@@ -87,7 +88,7 @@ public class AddFilmController
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
         conn = DriverManager.getConnection(url, "username", "password");
         getDirectors = conn.prepareStatement("SELECT name FROM director");
-        addNewFilm = conn.prepareStatement("INSERT INTO film VALUES(?,?,?,?,?,?)");
+        addNewFilm = conn.prepareStatement("INSERT INTO film VALUES(?,?,?,?,?,?,?)");
         addDirector = conn.prepareStatement("INSERT INTO director VALUES(?,?)");
         getMaxDirectorID = conn.prepareStatement("SELECT MAX(id) FROM director");
         getExistingDirectorID = conn.prepareStatement("SELECT id FROM director WHERE name=?");
@@ -162,6 +163,7 @@ public class AddFilmController
         addNewFilm.setInt(4, directorid);
         addNewFilm.setInt(5, calculateGenres);
         addNewFilm.setInt(6, calculateLanguages);
+        addNewFilm.setString(7, synopsisText.getText());
         addNewFilm.execute();
         conn.close();
         Node n = (Node) actionEvent.getSource();

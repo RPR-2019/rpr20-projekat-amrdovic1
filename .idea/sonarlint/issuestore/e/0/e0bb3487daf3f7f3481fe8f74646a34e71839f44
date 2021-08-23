@@ -1,60 +1,62 @@
 
-v
-java:S1104 "TMake addGenre a static final constant or non-public and provide accessors if needed.(àüÿµúÿÿÿÿ8Éú®µ/
-|
-java:S1104"ZMake selectDirector a static final constant or non-public and provide accessors if needed.(Ş¿Êºûÿÿÿÿ8ûáö®µ/
-Y
-java:S1128"7Remove this unused import 'javax.xml.transform.Result'.(âÓ¸ûÿÿÿÿ8ì…ÙÎµ/
+U
+java:S1128"8Remove this unused import 'javafx.util.StringConverter'.(ûóŠ×8ê÷ÀÏµ/
+Ÿ
+java:S1186Š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¡æÿ8æ¬”Ïµ/
+r
+java:S1104"UMake moviename a static final constant or non-public and provide accessors if needed.(‡âæÓ8×Áù®µ/
+w
+java:S1104("ZMake selectLanguage a static final constant or non-public and provide accessors if needed.(ú•‚Ñ8²ª—¯µ/
+R
+java:S1854M"5Remove this useless assignment to local variable "i".(Ì‚ˆÌ8øÂÌÏµ/
+L
+java:S3740#"/Provide the parametrized type for this generic.(Ùò¨Ò8½ºû®µ/
+r
+java:S1104""UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚8­œû®µ/
+z
+java:S1104,"XMake synopsisText a static final constant or non-public and provide accessors if needed.(÷š¡äüÿÿÿÿ8¿ä•·/
 T
-java:S1172v"2Remove this unused method parameter "actionEvent".(˜‘‚¿ıÿÿÿÿ8æ¬”Ïµ/
-y
-java:S1104)"WMake addLanguage a static final constant or non-public and provide accessors if needed.(’É¶¾øÿÿÿÿ8û†š¯µ/
+java:S1172w"2Remove this unused method parameter "actionEvent".(˜‘‚¿ıÿÿÿÿ8æ¬”Ïµ/
+w
+java:S1104*"ZMake selectedGenres a static final constant or non-public and provide accessors if needed.(¡¡Œû8¶ü¶°µ/
 t
 java:S1104%"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ8Ù›ü®µ/
 O
 java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8æ¬”Ïµ/
-K
-java:S3740$"/Provide the parametrized type for this generic.(Îÿœ[8æ¬”Ïµ/
-U
-java:S1172´"2Remove this unused method parameter "actionEvent".(‹íÚŠúÿÿÿÿ8ó÷ÄÎµ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-L
-java:S3740#"/Provide the parametrized type for this generic.(Ùò¨Ò8½ºû®µ/
-Ÿ
-java:S1186‰"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¡æÿ8æ¬”Ïµ/
-w
-java:S1104("ZMake selectLanguage a static final constant or non-public and provide accessors if needed.(ú•‚Ñ8²ª—¯µ/
-y
-java:S1104'"WMake selectGenre a static final constant or non-public and provide accessors if needed.(«´“£üÿÿÿÿ8“Ú–¯µ/
-R
-java:S1854L"5Remove this useless assignment to local variable "i".(Ì‚ˆÌ8øÂÌÏµ/
 L
 java:S3740""/Provide the parametrized type for this generic.(Àªü‚8­œû®µ/
-u
-java:S1104&"SMake addFilm a static final constant or non-public and provide accessors if needed.(ˆÇ‹¿üÿÿÿÿ8ƒ …¯µ/
 w
 java:S1104"ZMake addNewDirector a static final constant or non-public and provide accessors if needed.(Ìóÿ½8ú¨ø®µ/
-x
-java:S1450:"[Remove the "getDirectors" field and declare it as a local variable in the relevant methods.(–úâº8æ¬”Ïµ/
-r
-java:S1104"UMake moviename a static final constant or non-public and provide accessors if needed.(‡âæÓ8×Áù®µ/
-s
-java:S1104$"WMake selectMonth a static final constant or non-public and provide accessors if needed.(Îÿœ[8ÿÕû®µ/
-U
-java:S1128"8Remove this unused import 'javafx.util.StringConverter'.(ûóŠ×8ê÷ÀÏµ/
-Q
-java:S3740"/Provide the parametrized type for this generic.(Ş¿Êºûÿÿÿÿ8æ¬”Ïµ/
-r
-java:S1104""UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚8­œû®µ/
-V
-java:S1128"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ8û†š¯µ/
-}
-java:S1104!"[Make durationSpinner a static final constant or non-public and provide accessors if needed.(›ıÜ›ÿÿÿÿÿ8¬Ïú®µ/
 z
 java:S1104+"]Make selectedLanguages a static final constant or non-public and provide accessors if needed.(Â™ù¥8æ¬”Ïµ/
+}
+java:S1104!"[Make durationSpinner a static final constant or non-public and provide accessors if needed.(›ıÜ›ÿÿÿÿÿ8¬Ïú®µ/
+U
+java:S1172¶"2Remove this unused method parameter "actionEvent".(‹íÚŠúÿÿÿÿ8ó÷ÄÎµ/
 Q
-java:S1854G"5Remove this useless assignment to local variable "i".(¨…ÄK8øÂÌÏµ/
-w
-java:S1104*"ZMake selectedGenres a static final constant or non-public and provide accessors if needed.(¡¡Œû8¶ü¶°µ/
+java:S1854H"5Remove this useless assignment to local variable "i".(¨…ÄK8øÂÌÏµ/
+y
+java:S1104'"WMake selectGenre a static final constant or non-public and provide accessors if needed.(«´“£üÿÿÿÿ8“Ú–¯µ/
+K
+java:S3740$"/Provide the parametrized type for this generic.(Îÿœ[8æ¬”Ïµ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+v
+java:S1104 "TMake addGenre a static final constant or non-public and provide accessors if needed.(àüÿµúÿÿÿÿ8Éú®µ/
 s
 java:S1104#"VMake selectYear a static final constant or non-public and provide accessors if needed.(Ùò¨Ò8½ºû®µ/
+Y
+java:S1128"7Remove this unused import 'javax.xml.transform.Result'.(âÓ¸ûÿÿÿÿ8ì…ÙÎµ/
+y
+java:S1104)"WMake addLanguage a static final constant or non-public and provide accessors if needed.(’É¶¾øÿÿÿÿ8û†š¯µ/
+s
+java:S1104$"WMake selectMonth a static final constant or non-public and provide accessors if needed.(Îÿœ[8ÿÕû®µ/
+x
+java:S1450;"[Remove the "getDirectors" field and declare it as a local variable in the relevant methods.(–úâº8æ¬”Ïµ/
+V
+java:S1128"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ8û†š¯µ/
+|
+java:S1104"ZMake selectDirector a static final constant or non-public and provide accessors if needed.(Ş¿Êºûÿÿÿÿ8ûáö®µ/
+Q
+java:S3740"/Provide the parametrized type for this generic.(Ş¿Êºûÿÿÿÿ8æ¬”Ïµ/
+u
+java:S1104&"SMake addFilm a static final constant or non-public and provide accessors if needed.(ˆÇ‹¿üÿÿÿÿ8ƒ …¯µ/

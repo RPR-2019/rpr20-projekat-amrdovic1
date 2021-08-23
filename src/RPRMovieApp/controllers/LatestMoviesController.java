@@ -16,6 +16,7 @@ public class LatestMoviesController
     private ObservableList<Film> movies = FXCollections.observableArrayList();
     public ListView<Film> moviesList;
 
+
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
