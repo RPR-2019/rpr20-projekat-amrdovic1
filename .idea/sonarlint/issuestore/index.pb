@@ -79,12 +79,6 @@ T
 $src/RPRMovieApp/models/Language.java,c\0\c0d5fd5be025a95dc797a2751874a5b301312002
 T
 $src/RPRMovieApp/models/Director.java,7\b\7b9bbe5f6792876d37f8b50ddd3ff47270638963
-Q
-!resources/fxml/adminHomepage.fxml,7\b\7b24dc128784c3fc8eb055a9606766a052327c6b
-R
-"resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
-R
-"resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab
 i
 9src/RPRMovieApp/controllers/AddFilmSuccessController.java,a\5\a51fa41eb5a7423a111735dd14cdcce82bbecf89
 c
@@ -105,3 +99,29 @@ f
 6src/RPRMovieApp/controllers/FilmElementController.java,2\8\28713c10b3b435e36bb0f2930f4997e4827f80aa
 f
 6src/RPRMovieApp/controllers/FilmDetailsController.java,5\c\5c64a7848cb50f3144184bb4583babcff192ec52
+^
+.out/production/RPRprojekat/css/chooseSeats.css,c\f\cf6f50f152e34c967a28c32cfddb8630213096ba
+`
+0out/production/RPRprojekat/fxml/filmElement.fxml,a\f\afdf0ccfd442f24e80f62137e9da02cbb82afb3a
+O
+resources/fxml/filmElement.fxml,b\b\bb8b197c2f4880838f44df80314a3c227195dd17
+Q
+!resources/fxml/latestMovies2.fxml,d\4\d4f0a3ac71ec0da038906b0577c8e9e9b5cccbaa
+O
+resources/fxml/chooseSeats.fxml,5\8\586faf788e6d2a470b3e56e1b445787a79e3a136
+m
+=src/RPRMovieApp/controllers/ConfirmReservationController.java,8\5\853836731d2c4d14006fc9e64ed32457b3f03b6d
+m
+=src/RPRMovieApp/controllers/ReservationPaymentController.java,4\9\49c0408a273d7c9be9b1bd1dccb3dcae95861958
+l
+<src/RPRMovieApp/controllers/ReservationThanksController.java,3\6\364f0dceda7e3b939808c8fe5dce8a372b10e41b
+P
+ src/RPRMovieApp/models/User.java,d\0\d03b949f1c6cf0922f90a2ed1c01a66e47d9c5bf
+e
+5src/RPRMovieApp/controllers/UserDetailController.java,a\2\a27412d49f5d87693eaf4fa667a0eb30b4bf9bbf
+l
+<src/RPRMovieApp/controllers/UserDeleteWarningController.java,2\1\219b813db8bbcab096020c316b962d097f5a2f5c
+[
++src/RPRMovieApp/controllers/ChosenUser.java,6\8\68f7cd62f39f42c5050d53e76548bee7da0f1dde
+l
+<src/RPRMovieApp/controllers/UserDeleteSuccessController.java,b\a\ba1e2914853cd6b2e67e892aa7ea006f7a020261

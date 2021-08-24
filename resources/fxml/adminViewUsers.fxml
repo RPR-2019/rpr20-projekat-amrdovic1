@@ -3,14 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.AdminViewUsersController">
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Button" />
+            <Button fx:id="findUserBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" text="Find user" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Filter users" />
          </children>
       </VBox>
    </left>
+   <center>
+      <ListView fx:id="userList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
 </BorderPane>

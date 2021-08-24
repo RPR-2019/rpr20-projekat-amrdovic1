@@ -7,7 +7,7 @@
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Find film" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Find films" />
             <Button fx:id="addNewFilm" mnemonicParsing="false" onAction="#addNewFilmClick" prefHeight="25.0" prefWidth="201.0" text="Add new film" />
          </children>
       </VBox>
