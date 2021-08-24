@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.ReservationPaymentController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label text="Please choose the payment method:" />
+      <ButtonBar prefHeight="84.0" prefWidth="432.0" GridPane.rowIndex="1">
+         <buttons>
+            <RadioButton mnemonicParsing="false" text="CinemaCard" />
+            <RadioButton mnemonicParsing="false" text="Credit Card" />
+            <RadioButton mnemonicParsing="false" text="Cash (on the spot)" />
+         </buttons>
+      </ButtonBar>
+      <ButtonBar prefHeight="117.0" prefWidth="432.0" GridPane.rowIndex="2">
+        <buttons>
+          <Button mnemonicParsing="false" text="Cancel" />
+            <Button defaultButton="true" mnemonicParsing="false" text="Finish" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</GridPane>

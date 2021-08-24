@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.ConfirmReservationController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label alignment="CENTER" text="Here is Your reservation info:" />
+      <Label text="Do you wish to proceed Your reservation?" GridPane.rowIndex="3" />
+      <ButtonBar prefHeight="40.0" prefWidth="426.0" GridPane.rowIndex="4">
+         <buttons>
+            <Button mnemonicParsing="false" text="No" />
+            <Button mnemonicParsing="false" text="Check reservation" />
+            <Button defaultButton="true" mnemonicParsing="false" text="Yes" />
+         </buttons>
+      </ButtonBar>
+      <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
