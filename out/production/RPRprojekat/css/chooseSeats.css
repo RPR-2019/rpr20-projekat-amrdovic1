@@ -1,0 +1,9 @@
+.seatTaken
+{
+    -fx-background-color: lightpink
+}
+
+.seatAvailable
+{
+    -fx-background-color: yellowgreen
+}

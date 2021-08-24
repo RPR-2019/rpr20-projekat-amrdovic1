@@ -1,0 +1,10 @@
+
+~
+java:S1104"\Make chosenProjection a static final constant or non-public and provide accessors if needed.(úÍßòúÿÿÿÿ8Ñ”Ö—·/
+W
+java:S1118":Add a private constructor to hide the implicit public one.(’á‰ß8Œ‚˜—·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+A
+java:S1700"Rename field "chosenProjection"(úÍßòúÿÿÿÿ8Êû×—·/
+X
+java:S1444"6Make this "public static chosenProjection" field final(úÍßòúÿÿÿÿ8Ñ”Ö—·/
