@@ -151,3 +151,11 @@ N
 resources/fxml/userDetail.fxml,5\3\5399de872ff549722c8b2d5784e3e3bb1ca55e23
 l
 <src/RPRMovieApp/controllers/LatestMovieDetailController.java,5\c\5c5db9842f105d475e0e91039bec23c1d24cc618
+f
+6out/production/RPRprojekat/fxml/latestMovieDetail.fxml,1\5\15a77d924fa7d8564ac078d046ff8974172e2931
+P
+ resources/fxml/latestMovies.fxml,c\c\cc330095db957e00d249762fa08a10e1108750fb
+f
+6out/production/RPRprojekat/fxml/userDeleteSuccess.fxml,1\7\17aff89aa6ce74071dda373300d8a7ffde83d7ac
+[
++src/RPRMovieApp/controllers/ChosenFilm.java,8\c\8c7d3c9a6dec24be19272c4b0b113ecee1773bd3

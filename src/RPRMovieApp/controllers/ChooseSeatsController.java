@@ -20,7 +20,7 @@ public class ChooseSeatsController
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
-        int n = ChosenProjection.getChosenProjection();
+        int n = 0; //FIX THIS (SHOULD HOLD PROJECTION NUMBER OR SOME STUFF...
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
         conn = DriverManager.getConnection(url, "username", "password");

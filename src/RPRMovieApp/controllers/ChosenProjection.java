@@ -2,15 +2,17 @@ package RPRMovieApp.controllers;
 
 //This class serves as an auxiliary class so that the same controller can be used for different cinema halls
 
+import RPRMovieApp.models.Screening;
+
 public class ChosenProjection
 {
-    public static int chosenProjection;
+    private static Screening chosenProjection;
 
-    public static int getChosenProjection() {
+    public static Screening getChosenProjection() {
         return chosenProjection;
     }
 
-    public static void setChosenProjection(int chosenProjection) {
+    public static void setChosenProjection(Screening chosenProjection) {
         ChosenProjection.chosenProjection = chosenProjection;
     }
 }
