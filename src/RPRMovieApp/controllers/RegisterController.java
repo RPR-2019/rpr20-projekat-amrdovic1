@@ -1,6 +1,8 @@
 package RPRMovieApp.controllers;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -43,6 +45,23 @@ public class RegisterController
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private String mandatory = "This is a mandatory field!";
 
+    private int isLeap (int year)
+    {
+        if (year%400 == 0)
+        {
+            return 1;
+        }
+        if (year%100 == 0)
+        {
+            return 0;
+        }
+        if (year%4 == 0)
+        {
+            return 1;
+        }
+        return 0;
+    }
+
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
@@ -53,18 +72,53 @@ public class RegisterController
         sameEMailCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
         registerNewUser = conn.prepareStatement("INSERT INTO user VALUES(?,?,?,?)");
         getMaxID = conn.prepareStatement("SELECT MAX(id) FROM user");
-        for (int i = 1; i <= 31; i++) //This is not correct - implement a listener! (FIX)
+        for (int i = 1; i <= 31; i++)
         {
             selectDay.getItems().add(i);
         }
+        selectDay.setValue(1);
         for (int i = 1; i <= 12; i++)
         {
             selectMonth.getItems().add(i);
         }
+        selectMonth.setValue(1);
         for (int i = 2021; i >= 1900; i--)
         {
             selectYear.getItems().add(i);
         }
+        selectYear.setValue(1900);
+        selectMonth.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent)
+            {
+                int no_of_days = days[(Integer) selectMonth.getValue()] + isLeap((Integer) selectYear.getValue());
+                selectDay.setItems(FXCollections.observableArrayList());
+                for (int i = 1; i <= no_of_days; i++)
+                {
+                    selectDay.getItems().add(i);
+                }
+                selectDay.setValue(1);
+            }
+        });
+        selectYear.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                if (isLeap((Integer) selectYear.getValue()) == 1)
+                {
+                    if (!selectDay.getItems().contains(29))
+                    {
+                        selectDay.getItems().add(29);
+                    }
+                }
+                else if (isLeap((Integer) selectYear.getValue()) == 0)
+                {
+                    if (selectDay.getItems().contains(29))
+                    {
+                        selectDay.getItems().remove(28);
+                    }
+                }
+            }
+        });
     }
 
     public void cancelClick(ActionEvent actionEvent)

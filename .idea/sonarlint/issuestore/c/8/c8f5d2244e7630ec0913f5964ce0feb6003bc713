@@ -1,12 +1,16 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†¼¼¥µ/
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8·×Û«´/
+
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãô¾¶8µüåæ·/
+x
+java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(¦øÑßùÿÿÿÿ8ÖÓ¥µ/
+y
+java:S1450"\Remove the "prepareMovies" field and declare it as a local variable in the relevant methods.(éâ”Ä8·×Û«´/
+E
+java:S1604$"(Make this anonymous inner class a lambda(ÃŞÀ½8µüåæ·/
 d
 java:S1128"GRemove this unused import 'javafx.beans.property.SimpleObjectProperty'.(¶Ö­¤8ŞšÆ¥µ/
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8·×Û«´/
-x
-java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(¦øÑßùÿÿÿÿ8ÖÓ¥µ/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†¼¼¥µ/
-y
-java:S1450"\Remove the "prepareMovies" field and declare it as a local variable in the relevant methods.(éâ”Ä8·×Û«´/

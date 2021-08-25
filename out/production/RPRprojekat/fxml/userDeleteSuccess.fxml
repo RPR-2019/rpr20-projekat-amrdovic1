@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.UserDeleteSuccessController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label fx:id="userField" text="User" />
+      <Label text="is now permanently deleted!" GridPane.columnIndex="1" />
+      <Button defaultButton="true" mnemonicParsing="false" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
