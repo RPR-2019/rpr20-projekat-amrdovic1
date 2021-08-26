@@ -10,6 +10,7 @@ public class Screening
     private int dayid;
     private int hour;
     private int minute;
+    private int cinemaid;
 
     public Screening(int id, int filmid, int dayid, int hour, int minute) {
         this.id = id;
@@ -17,6 +18,15 @@ public class Screening
         this.dayid = dayid;
         this.hour = hour;
         this.minute = minute;
+    }
+
+    public Screening(int id, int filmid, int dayid, int hour, int minute, int cinemaid) {
+        this.id = id;
+        this.filmid = filmid;
+        this.dayid = dayid;
+        this.hour = hour;
+        this.minute = minute;
+        this.cinemaid = cinemaid;
     }
 
     public int getId() {
@@ -59,6 +69,14 @@ public class Screening
         this.minute = minute;
     }
 
+    public int getCinemaid() {
+        return cinemaid;
+    }
+
+    public void setCinemaid(int cinemaid) {
+        this.cinemaid = cinemaid;
+    }
+
     public String getDayName ()
     {
         return Day.values()[dayid - 1].toString();
@@ -80,4 +98,6 @@ public class Screening
         min += minute;
         return h + ":" + min;
     }
+
+
 }

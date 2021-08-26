@@ -159,3 +159,11 @@ f
 6out/production/RPRprojekat/fxml/userDeleteSuccess.fxml,1\7\17aff89aa6ce74071dda373300d8a7ffde83d7ac
 [
 +src/RPRMovieApp/controllers/ChosenFilm.java,8\c\8c7d3c9a6dec24be19272c4b0b113ecee1773bd3
+R
+"src/RPRMovieApp/models/Gender.java,6\8\682999dff9db9fa83dd026502a60842e941c5d28
+O
+src/RPRMovieApp/models/Day.java,9\6\9696247528e2502598b6eb6b543b703f1d7026f5
+U
+%src/RPRMovieApp/models/Screening.java,a\f\af96b54427b3371d5391dac921d414e02b78a71a
+X
+(src/RPRMovieApp/models/ScreeningRow.java,c\8\c8107c0aeb3fb62ed1924d3c46077a8d08db2eda

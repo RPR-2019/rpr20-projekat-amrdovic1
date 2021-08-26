@@ -20,7 +20,8 @@
         <columns>
           <TableColumn fx:id="screeningDay" prefWidth="124.33333587646484" text="Day" />
           <TableColumn fx:id="screeningHour" prefWidth="72.0" text="Time" />
-            <TableColumn fx:id="selectScreening" prefWidth="102.0" text="Select" />
+            <TableColumn fx:id="screeningCinema" prefWidth="50.99998474121094" text="Cinema" />
+            <TableColumn fx:id="selectScreening" prefWidth="75.0" text="Select" />
         </columns>
       </TableView>
       <TextArea fx:id="extendedInfo" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />

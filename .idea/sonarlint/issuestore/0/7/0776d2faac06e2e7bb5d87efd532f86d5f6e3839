@@ -1,6 +1,6 @@
 
-W
-java:S1118":Add a private constructor to hide the implicit public one.(’á‰ß8Œ‚˜—·/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-<
-java:S1700"Rename field "chosenProjection"(§Ç¹Ï8Êû×—·/
+W
+java:S1118":Add a private constructor to hide the implicit public one.(’á‰ß8Œ‚˜—·/
+A
+java:S1700	"Rename field "chosenProjection"(ÛÚ¥ôùÿÿÿÿ8Êû×—·/
