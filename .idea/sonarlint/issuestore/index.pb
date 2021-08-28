@@ -89,8 +89,6 @@ f
 6src/RPRMovieApp/controllers/ChooseSeatsController.java,9\c\9c2f3f3a5bd407f0335f23ddad980d89ee42d0e5
 P
  src/RPRMovieApp/models/Seat.java,6\5\65ec4f0b8301a714e8080a92eb74813ea7d7af98
-M
-resources/css/chooseSeats.css,d\e\de911b1b8ce1d722306b45a6f3179d92876e0354
 a
 1src/RPRMovieApp/controllers/ChosenProjection.java,0\7\0776d2faac06e2e7bb5d87efd532f86d5f6e3839
 Q
@@ -107,8 +105,6 @@ O
 resources/fxml/filmElement.fxml,b\b\bb8b197c2f4880838f44df80314a3c227195dd17
 Q
 !resources/fxml/latestMovies2.fxml,d\4\d4f0a3ac71ec0da038906b0577c8e9e9b5cccbaa
-O
-resources/fxml/chooseSeats.fxml,5\8\586faf788e6d2a470b3e56e1b445787a79e3a136
 m
 =src/RPRMovieApp/controllers/ConfirmReservationController.java,8\5\853836731d2c4d14006fc9e64ed32457b3f03b6d
 m
@@ -167,3 +163,5 @@ U
 %src/RPRMovieApp/models/Screening.java,a\f\af96b54427b3371d5391dac921d414e02b78a71a
 X
 (src/RPRMovieApp/models/ScreeningRow.java,c\8\c8107c0aeb3fb62ed1924d3c46077a8d08db2eda
+n
+>src/RPRMovieApp/controllers/ChooseFoodnBeverageController.java,9\3\932a420e0a545d8cffddbc67c80ed9200b782f86

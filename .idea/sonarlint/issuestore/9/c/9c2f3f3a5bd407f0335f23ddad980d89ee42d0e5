@@ -1,30 +1,30 @@
 
-E
-java:S1068")Remove this unused "seats" private field.(ıÄÙ78´¾˜·/
-s	java:S116"RRename this field "no_rows" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ•‹Ïÿÿÿÿÿ8ü¶Ë—·/
-O
-java:S1481"-Remove this unused "rs_seats" local variable.(‡Øî ûÿÿÿÿ8•³÷—·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-m	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂƒÃ·8ø­Ğ˜·/
-m	java:S116"RRename this field "no_cols" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ï­:8ü¶Ë—·/
-y
-java:S1450"WRemove the "no_seats" field and declare it as a local variable in the relevant methods.(¯ÿŠôşÿÿÿÿ8Ç­û—·/
 r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Øî ûÿÿÿÿ8•³÷—·/
+m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›»§á8ÍÏ¸˜·/
 ‚
 java:S1450	"eRemove the "getCinemaForProjection" field and declare it as a local variable in the relevant methods.(¿ÂôÀ8•³÷—·/
-u
-java:S1450"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8ˆş¯—·/
-t	java:S116"SRename this field "no_seats" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
-^
-java:S1854"<Remove this useless assignment to local variable "rs_seats".(‡Øî ûÿÿÿÿ8•³÷—·/
+s	java:S116"RRename this field "no_rows" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ•‹Ïÿÿÿÿÿ8ü¶Ë—·/
 N
 java:S1068",Remove this unused "no_seats" private field.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
-m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›»§á8ÍÏ¸˜·/
 r	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¯ˆËøÿÿÿÿ8•³÷—·/
+y
+java:S1450"WRemove the "no_seats" field and declare it as a local variable in the relevant methods.(¯ÿŠôşÿÿÿÿ8Ç­û—·/
+m	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂƒÃ·8ø­Ğ˜·/
 [
 java:S1144)"9Remove this unused private "getSeatNameForNumber" method.(ûŠ¿ıÿÿÿÿ8ó¿¨˜·/
+^
+java:S1854"<Remove this useless assignment to local variable "rs_seats".(‡Øî ûÿÿÿÿ8•³÷—·/
+m	java:S116"RRename this field "no_cols" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ï­:8ü¶Ë—·/
 €
 java:S1450
 "dRemove the "getSeatsForProjection" field and declare it as a local variable in the relevant methods.(åÆ8¬Ş—·/
+u
+java:S1450"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8ˆş¯—·/
+E
+java:S1068")Remove this unused "seats" private field.(ıÄÙ78´¾˜·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+t	java:S116"SRename this field "no_seats" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
 p
 java:S1450"TRemove the "seats" field and declare it as a local variable in the relevant methods.(ıÄÙ78·­‚˜·/
+O
+java:S1481"-Remove this unused "rs_seats" local variable.(‡Øî ûÿÿÿÿ8•³÷—·/

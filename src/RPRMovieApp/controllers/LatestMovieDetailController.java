@@ -1,15 +1,23 @@
 package RPRMovieApp.controllers;
 
+import RPRMovieApp.models.Day;
 import RPRMovieApp.models.Screening;
 import RPRMovieApp.models.ScreeningRow;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.*;
+
+import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class LatestMovieDetailController
 {
@@ -50,15 +58,41 @@ public class LatestMovieDetailController
             screeningTable.getItems().add(sr);
         }
         extendedInfo.setText(ChosenFilm.getChosen().toString());
-//        selectScreening.setCellFactory(tc ->
-//        {
-//            TableCell<ScreeningRow, String> select_cell = new TableCell<ScreeningRow, String>();
-//            select_cell.setOnMouseClicked(e ->
-//            {
-//                int row = select_cell.getIndex();
-//
-//            });
-//            return select_cell;
-//        });
+        screeningTable.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) ->
+        {
+            var selected = screeningTable.getSelectionModel().getSelectedItem();
+            Integer day = Day.valueOf(selected.getDay().toUpperCase()).ordinal() + 1;
+            var hour_min = selected.getHour().split(":");
+            Integer cinema = selected.getCinema();
+            Integer hour = Integer.parseInt(hour_min[0]);
+            Integer minute = Integer.parseInt(hour_min[1]);
+            //Find a way to get this info only by passing screening id
+            try {
+                getSelectedScreening = conn.prepareStatement("SELECT * FROM projection WHERE filmid=? AND dayid=? AND hour=? AND minute=? AND hallid=?");
+                getSelectedScreening.setInt(1, ChosenFilm.getChosen().getId());
+                getSelectedScreening.setInt(2, day);
+                getSelectedScreening.setInt(3, hour);
+                getSelectedScreening.setInt(4, minute);
+                getSelectedScreening.setInt(5, cinema);
+                ResultSet rsgss = getSelectedScreening.executeQuery(); //There should only be one!
+                int scr_id = rsgss.getInt(1);
+                ChosenProjection.setChosenProjection(new Screening(rsgss.getInt(1), rsgss.getInt(2), rsgss.getInt(3), rsgss.getInt(4), rsgss.getInt(5)));
+
+                Stage newReservationStage = new Stage();
+                FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
+                Parent root = newReservationLoader.load();
+                ReservationController nrc = newReservationLoader.getController();
+                newReservationStage.setTitle("Registration successful!");
+                newReservationStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+                newReservationStage.setResizable(false);
+                newReservationStage.show();
+                nrc.movieName.setText(nrc.movieName.getText() + " " + ChosenFilm.getChosen().getName());
+                nrc.screeningTime.setText(nrc.screeningTime.getText() + " " + ChosenProjection.getChosenProjection().getDayName() + " " + ChosenProjection.getChosenProjection().getHourInfo());
+                nrc.noOfTickets.setText(nrc.noOfTickets.getText() + " 0");
+            } catch (SQLException | IOException throwables) {
+                throwables.printStackTrace();
+            }
+
+        });
     }
 }

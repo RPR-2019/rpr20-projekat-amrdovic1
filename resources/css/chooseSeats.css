@@ -3,6 +3,11 @@
     -fx-background-color: lightpink
 }
 
+.seatSelected
+{
+    -fx-background-color: lightblue
+}
+
 .seatAvailable
 {
     -fx-background-color: yellowgreen

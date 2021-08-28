@@ -20,13 +20,17 @@
       <Label fx:id="screeningTime" text="Screening date and time:" GridPane.rowIndex="1" />
       <Label fx:id="noOfTickets" text="Number of tickets:" GridPane.rowIndex="2" />
       <Label fx:id="price" text="Price:" GridPane.rowIndex="3" />
-      <Button fx:id="seatsBtn" mnemonicParsing="false" text="Check seats" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
         <buttons>
             <Button fx:id="cancelBtn" mnemonicParsing="false" text="Cancel" />
           <Button fx:id="finishBtn" defaultButton="true" mnemonicParsing="false" text="Finish" />
         </buttons>
       </ButtonBar>
-      <Button fx:id="foodBtn" mnemonicParsing="false" text="Food and drinks?" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <buttons>
+          <Button fx:id="seatsBtn" mnemonicParsing="false" text="Check seats" />
+            <Button mnemonicParsing="false" onAction="#foodBtn" text="Food and drinks" />
+        </buttons>
+      </ButtonBar>
    </children>
 </GridPane>

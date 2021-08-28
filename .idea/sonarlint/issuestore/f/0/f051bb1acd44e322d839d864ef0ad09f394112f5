@@ -1,21 +1,21 @@
 
-m
-java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
-s
-java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
-p
-java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
+r
+java:S1104	"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
+v
+java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
 v
 java:S1104
 "YMake screeningTime a static final constant or non-public and provide accessors if needed.(õÛİ8§Áª¿·/
-v
-java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-r
-java:S1104	"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
-r
-java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
 w
 java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+p
+java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
+m
+java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
+r
+java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
+s
+java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
