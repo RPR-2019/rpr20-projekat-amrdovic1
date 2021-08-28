@@ -82,7 +82,7 @@ public class LatestMovieDetailController
                 FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
                 Parent root = newReservationLoader.load();
                 ReservationController nrc = newReservationLoader.getController();
-                newReservationStage.setTitle("Registration successful!");
+                newReservationStage.setTitle("Projection");
                 newReservationStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                 newReservationStage.setResizable(false);
                 newReservationStage.show();
