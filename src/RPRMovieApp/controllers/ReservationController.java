@@ -32,7 +32,10 @@ public class ReservationController
 
     public void seatsClick(ActionEvent actionEvent) throws IOException {
         Stage chooseSeatsStage = new Stage();
-        FXMLLoader chooseSeatsLoader = new FXMLLoader(getClass().getResource("/fxml/chooseSeats.fxml")); //This path is temporary
+        FXMLLoader chooseSeatsLoader = null;
+        int n = ChosenProjection.getChosenProjection().getCinemaid();
+        String path = "/fxml/chooseSeats" + n + ".fxml";
+        chooseSeatsLoader = new FXMLLoader(getClass().getResource(path)); //This path is temporary
         Parent root = chooseSeatsLoader.load();
         chooseSeatsStage.setTitle("Choose seats");
         chooseSeatsStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
