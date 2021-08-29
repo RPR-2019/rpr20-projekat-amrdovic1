@@ -442,7 +442,7 @@
        <Button mnemonicParsing="false" text="A2" GridPane.columnIndex="1" GridPane.rowIndex="15" />
        <Button mnemonicParsing="false" text="A1" GridPane.rowIndex="15" />
 
-      <Label text="Cinema screen is at the bottom right of this screen, and the entrance is on the bottom left" GridPane.columnSpan="2147483647">
+      <Label text="Cinema screen is on the bottom right of this screen, and the entrance is on the bottom left" GridPane.columnSpan="2147483647">
          <font>
             <Font size="18.0" />
          </font>
