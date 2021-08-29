@@ -175,3 +175,13 @@ g
 7src/RPRMovieApp/controllers/ChooseSeats4Controller.java,9\2\92c873f0e611a8893c91ee0da579d91f42bbf24e
 g
 7src/RPRMovieApp/controllers/ChooseSeats5Controller.java,5\d\5dee1e195c381e0ca8ac3d2ecbe6b033c8dabd93
+a
+1out/production/RPRprojekat/fxml/chooseSeats1.fxml,d\7\d7db389e14ff2c0e85c2fbbe07400e64d3bd6257
+a
+1out/production/RPRprojekat/fxml/chooseSeats2.fxml,b\7\b72eef70de5f48798189fb70b0ba9319bf9807b2
+a
+1out/production/RPRprojekat/fxml/chooseSeats3.fxml,7\b\7b56453db45e54779805fb5b1e9852edd8b8797a
+a
+1out/production/RPRprojekat/fxml/chooseSeats4.fxml,c\c\cc804eeb3dc94b28aca37705aefb2794996fd13f
+a
+1out/production/RPRprojekat/fxml/chooseSeats5.fxml,4\e\4e132c6f67a87d5954c52bbc5ae393e8842376fb

@@ -1,25 +1,24 @@
 
+r
+java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+T
+java:S1172/"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
+w
+java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
 £
 java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
-v
-java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-p
-java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
 v
 java:S1104"YMake screeningTime a static final constant or non-public and provide accessors if needed.(õÛİ8§Áª¿·/
 m
 java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
-r
-java:S1104"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
 s
 java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
-w
-java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
-r
-java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
-T
-java:S11720"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
+p
+java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
+v
+java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
 T
 java:S1172!"2Remove this unused method parameter "actionEvent".(†òÌÙüÿÿÿÿ8Ì¼¢ñ¸/
-Z	java:S106&"9Replace this use of System.out or System.err by a logger.(›ÍÙùøÿÿÿÿ8”‘Á¹/
+r
+java:S1104"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
