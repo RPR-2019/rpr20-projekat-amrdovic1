@@ -85,8 +85,6 @@ c
 3out/production/RPRprojekat/fxml/addFilmSuccess.fxml,3\7\378604630d4498b9e398e396ab7cff2459cedea0
 R
 "resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f
-f
-6src/RPRMovieApp/controllers/ChooseSeatsController.java,9\c\9c2f3f3a5bd407f0335f23ddad980d89ee42d0e5
 P
  src/RPRMovieApp/models/Seat.java,6\5\65ec4f0b8301a714e8080a92eb74813ea7d7af98
 a
@@ -127,8 +125,6 @@ R
 "resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
 R
 "resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab
-`
-0out/production/RPRprojekat/fxml/chooseSeats.fxml,9\2\92720e3b5d0262d81f208e33bbe44af0784ffd7b
 g
 7out/production/RPRprojekat/fxml/confirmReservation.fxml,e\c\ec8f689034dbf1e4e5a458f70db8a787b7701a03
 `
@@ -169,3 +165,13 @@ f
 6out/production/RPRprojekat/fxml/chooseFoodnDrinks.fxml,2\a\2a8ad882b8b3d35ba5619c67725ecaee71a6295f
 l
 <src/RPRMovieApp/controllers/ChooseFoodnDrinksController.java,c\c\cc1ad119e22120271565a5cb8f90811d22f48094
+g
+7src/RPRMovieApp/controllers/ChooseSeats1Controller.java,0\1\0104f89cbdc830dfc3b077b7d04a75139bd9b0ed
+g
+7src/RPRMovieApp/controllers/ChooseSeats2Controller.java,3\b\3b19e0c0beb5305be75feb2fa0bf542a919ec27b
+g
+7src/RPRMovieApp/controllers/ChooseSeats3Controller.java,8\e\8e388e431fab0f0fc259dae6fd87f26fc6d31377
+g
+7src/RPRMovieApp/controllers/ChooseSeats4Controller.java,9\2\92c873f0e611a8893c91ee0da579d91f42bbf24e
+g
+7src/RPRMovieApp/controllers/ChooseSeats5Controller.java,5\d\5dee1e195c381e0ca8ac3d2ecbe6b033c8dabd93

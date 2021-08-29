@@ -76,8 +76,7 @@ public class LatestMovieDetailController
                 getSelectedScreening.setInt(5, cinema);
                 ResultSet rsgss = getSelectedScreening.executeQuery(); //There should only be one!
                 int scr_id = rsgss.getInt(1);
-                ChosenProjection.setChosenProjection(new Screening(rsgss.getInt(1), rsgss.getInt(2), rsgss.getInt(3), rsgss.getInt(4), rsgss.getInt(5)));
-
+                ChosenProjection.setChosenProjection(new Screening(rsgss.getInt(1), rsgss.getInt(2), rsgss.getInt(3), rsgss.getInt(4), rsgss.getInt(5), rsgss.getInt(6)));
                 Stage newReservationStage = new Stage();
                 FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
                 Parent root = newReservationLoader.load();

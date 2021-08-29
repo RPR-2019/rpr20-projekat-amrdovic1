@@ -1,21 +1,0 @@
-
-m	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂƒÃ·8ø­Ğ˜·/
-W
-java:S1068	":Remove this unused "getCinemaForProjection" private field.(¿ÂôÀ8Š³²ñ¸/
-U
-java:S1068
-"9Remove this unused "getSeatsForProjection" private field.(åÆ8Š³²ñ¸/
-E
-java:S1068")Remove this unused "seats" private field.(ıÄÙ78´¾˜·/
-N
-java:S1068",Remove this unused "no_seats" private field.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
-t	java:S116"SRename this field "no_seats" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
-s	java:S116"RRename this field "no_rows" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ•‹Ïÿÿÿÿÿ8ü¶Ë—·/
-m	java:S116"RRename this field "no_cols" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ï­:8ü¶Ë—·/
-X	java:S125"<This block of commented-out lines of code should be removed.(ùèì8Š³²ñ¸/
-J
-java:S1068"(Remove this unused "conn" private field.(´¤´‚ıÿÿÿÿ8Š³²ñ¸/
-m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›»§á8ÍÏ¸˜·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-[
-java:S1144)"9Remove this unused private "getSeatNameForNumber" method.(ûŠ¿ıÿÿÿÿ8ó¿¨˜·/

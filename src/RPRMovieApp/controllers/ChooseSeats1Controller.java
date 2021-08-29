@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 
 import java.sql.*;
 
-public class ChooseSeatsController
+public class ChooseSeats1Controller
 {
     private PreparedStatement getCinemaForProjection;
     private PreparedStatement getSeatsForProjection;
