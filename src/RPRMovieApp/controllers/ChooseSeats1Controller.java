@@ -3,7 +3,9 @@ package RPRMovieApp.controllers;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -30,7 +32,6 @@ public class ChooseSeats1Controller
     private PreparedStatement getTickets;
 
     private ArrayList<Integer> takenSeats = new ArrayList<>();
-
 
     public Button[][] seats;
 
@@ -66,14 +67,20 @@ public class ChooseSeats1Controller
         {
             takenSeats.add(rs.getInt(2));
         }
-        for (int i = 0; i < 15; i++)
+        int i, j;
+        for (i = 0; i < 15; i++)
         {
-            for (int j = 0; j < 25; j++)
+            for (j = 0; j < 25; j++)
             {
                 Button b = seats[i][j];
-                if (takenSeats.contains(25*i + j + 1))
+                int p = 25*i + j + 1;
+                if (takenSeats.contains(p))
                 {
                     b.setStyle("-fx-background-color: lightpink");
+                }
+                if (ChosenSeats.getSeats().contains(p))
+                {
+                    b.setStyle("-fx-background-color: lightblue");
                 }
                 else
                 {
@@ -85,10 +92,12 @@ public class ChooseSeats1Controller
                             if (b.getStyle().equals("-fx-background-color: yellowgreen")) //Take a free seat
                             {
                                 b.setStyle("-fx-background-color: lightblue");
+                                ChosenSeats.getSeats().add(p);
                             }
                             else if (b.getStyle().equals("-fx-background-color: lightblue")) //Free a taken seat
                             {
                                 b.setStyle("-fx-background-color: yellowgreen");
+                                ChosenSeats.getSeats().remove(p);
                             }
                         }
                     });
@@ -113,6 +122,10 @@ public class ChooseSeats1Controller
         return 0;
     }
 
-    public void takeSeatsClick(ActionEvent actionEvent) {
+    public void takeSeatsClick(ActionEvent actionEvent)
+    {
+        Node n = (Node) actionEvent.getSource();
+        Stage seatsStage = (Stage) n.getScene().getWindow();
+        seatsStage.close();
     }
 }

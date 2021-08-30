@@ -1,21 +1,1496 @@
 
-s	java:S116"RRename this field "no_rows" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ•‹Ïÿÿÿÿÿ8ü¶Ë—·/
-m	java:S116"RRename this field "no_cols" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ï­:8ü¶Ë—·/
-X	java:S125"<This block of commented-out lines of code should be removed.(ùèì8Š³²ñ¸/
-m	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂƒÃ·8ø­Ğ˜·/
+B
+java:S1659" Declare "n8" on a separate line.(Ë“ÿÅüÿÿÿÿ8â­µ·¹/
+=
+java:S1659" Declare "j9" on a separate line.(Ùñà8÷¢·¹/
+>
+java:S1659"!Declare "e14" on a separate line.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "n15" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+C
+java:S1659"!Declare "d22" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "d10" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake a1 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Â¢ºº¹/
+C
+java:S1659"!Declare "f19" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "h9" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake a15 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+B
+java:S1659" Declare "d7" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake n10 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Ìäµ·¹/
+=
+java:S1659" Declare "a4" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "g14" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m20 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+l
+java:S1104"OMake a14 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+p
+java:S1104"NMake d3 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake l12 a static final constant or non-public and provide accessors if needed.(›™‰8‘Ğ®·¹/
+>
+java:S1659"!Declare "e18" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake e15 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake n17 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+C
+java:S1659"!Declare "f24" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+<
+java:S1659" Declare "k6" on a separate line.(‹Úÿ=8Ä”ª·¹/
+l
+java:S1104"OMake l24 a static final constant or non-public and provide accessors if needed.(›™‰8©ã°·¹/
+B
+java:S1659" Declare "m5" on a separate line.(¯¹¤ûÿÿÿÿ8Œì±·¹/
+C
+java:S1659"!Declare "n17" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+p
+java:S1104"NMake o2 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8‚»·¹/
+C
+java:S1659"!Declare "d25" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o14" on a separate line.(íÇôøÿÿÿÿ8Œ“½·¹/
+<
+java:S1659" Declare "k2" on a separate line.(‹Úÿ=8”°©·¹/
+q
+java:S1104"OMake h18 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659"!Declare "k11" on a separate line.(‹Úÿ=8‰Îª·¹/
+>
+java:S1659"!Declare "l10" on a separate line.(›™‰8¹¹®·¹/
+k
+java:S1104"NMake j4 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+=
+java:S1659" Declare "b6" on a separate line.(¬ÿ8©ç ·¹/
+=
+java:S1659" Declare "e2" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake j10 a static final constant or non-public and provide accessors if needed.(Ùñà8÷¢·¹/
+C
+java:S1659"!Declare "i19" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "c11" on a separate line.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake m1 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake i5 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "n9" on a separate line.(Ë“ÿÅüÿÿÿÿ8Ìäµ·¹/
+>
+java:S1659"!Declare "e20" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake c23 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659" Declare "e6" on a separate line.(ëá8©ç ·¹/
+q
+java:S1104"OMake o15 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ùÃ½·¹/
+C
+java:S1659"!Declare "n14" on a separate line.(Ë“ÿÅüÿÿÿÿ8œù¸·¹/
+l
+java:S1104"OMake j23 a static final constant or non-public and provide accessors if needed.(Ùñà8°é¨·¹/
+>
+java:S1659"!Declare "c12" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake d22 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake g1 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "j20" on a separate line.(Ùñà8ª´¥·¹/
+>
+java:S1659"!Declare "b19" on a separate line.(¬ÿ8©ç ·¹/
+k
+java:S1104"NMake l6 a static final constant or non-public and provide accessors if needed.(›™‰8¹¹®·¹/
+q
+java:S1104"OMake f15 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g24" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e13 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake h22 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e22" on a separate line.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "f17" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake h5 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k11 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8‰Îª·¹/
+l
+java:S1104"OMake a21 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake b10 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake o23 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+<
+java:S1659" Declare "k9" on a separate line.(‹Úÿ=8Ä”ª·¹/
+B
+java:S1659" Declare "h2" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "c17" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake f13 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m11 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8ôá²·¹/
+=
+java:S1659" Declare "j2" on a separate line.(Ùñà8©ç ·¹/
+C
+java:S1659"!Declare "h14" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake j13 a static final constant or non-public and provide accessors if needed.(Ùñà8µ¡¢·¹/
+>
+java:S1659"!Declare "a11" on a separate line.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake g23 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake b8 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake i7 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake j5 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+q
+java:S1104"OMake d11 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "f6" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+=
+java:S1659"!Declare "k20" on a separate line.(‹Úÿ=8Ü‹¬·¹/
+>
+java:S1659"!Declare "e25" on a separate line.(ëá8©ç ·¹/
+q
+java:S1104"OMake o21 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+C
+java:S1659"!Declare "o16" on a separate line.(íÇôøÿÿÿÿ8ùÃ½·¹/
+p
+java:S1104"NMake i6 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "h7" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h16" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a24" on a separate line.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "l25" on a separate line.(›™‰8´ƒ±·¹/
+G
+java:S1172u"+Remove this unused method parameter "seat".(²œû`8ïú¾·¹/
 E
-java:S1068")Remove this unused "seats" private field.(ıÄÙ78´¾˜·/
-U
-java:S1068
-"9Remove this unused "getSeatsForProjection" private field.(åÆ8Š³²ñ¸/
+java:S1604U"(Make this anonymous inner class a lambda(¤–ÒÉ8ÆıÅ»¹/
+C
+java:S1659"!Declare "g25" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake f4 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a15" on a separate line.(ŒìŒ¨8Š§¶¹/
+=
+java:S1659" Declare "j5" on a separate line.(Ùñà8Ç¡·¹/
+l
+java:S1104"OMake a16 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake b19 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "b12" on a separate line.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "m21" on a separate line.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+q
+java:S1104"OMake g16 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e10" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake l14 a static final constant or non-public and provide accessors if needed.(›™‰8¹Š¯·¹/
+l
+java:S1104"OMake b21 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake i11 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+<
+java:S1659" Declare "k4" on a separate line.(‹Úÿ=8úØ©·¹/
+=
+java:S1659" Declare "c2" on a separate line.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "m12" on a separate line.(¯¹¤ûÿÿÿÿ8ôá²·¹/
+>
+java:S1659"!Declare "b25" on a separate line.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "i15" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d13 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g12" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake l5 a static final constant or non-public and provide accessors if needed.(›™‰8ÌÕ­·¹/
+l
+java:S1104"OMake j21 a static final constant or non-public and provide accessors if needed.(Ùñà8°é¨·¹/
+k
+java:S1104"NMake c1 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8åÛª¶¹/
+B
+java:S1659" Declare "o5" on a separate line.(íÇôøÿÿÿÿ8‚»·¹/
+q
+java:S1104"OMake m23 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+l
+java:S1104"OMake e20 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+l
+java:S1104"OMake a17 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+p
+java:S1104"NMake g4 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m12 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8ôá²·¹/
+C
+java:S1659"!Declare "f10" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake a5 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake j12 a static final constant or non-public and provide accessors if needed.(Ùñà8÷¢·¹/
+C
+java:S1659"!Declare "n23" on a separate line.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+l
+java:S1104"OMake a19 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "a18" on a separate line.(ŒìŒ¨8Š§¶¹/
+B
+java:S1659" Declare "d6" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake h24 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "b16" on a separate line.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake h16 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake a6 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake j11 a static final constant or non-public and provide accessors if needed.(Ùñà8÷¢·¹/
+q
+java:S1104"OMake m15 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+C
+java:S1659"!Declare "d21" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a21" on a separate line.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "e12" on a separate line.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "l22" on a separate line.(›™‰8•¼°·¹/
+C
+java:S1659"!Declare "f20" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e17" on a separate line.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "g23" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b23 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "d18" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "l13" on a separate line.(›™‰8õõ®·¹/
+>
+java:S1659"!Declare "j21" on a separate line.(Ùñà8°é¨·¹/
+k
+java:S1104"NMake b9 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake f12 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake o11 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+q
+java:S1104"OMake o19 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+>
+java:S1659"!Declare "e11" on a separate line.(ëá8©ç ·¹/
+p
+java:S1104"NMake d2 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g17" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o13" on a separate line.(íÇôøÿÿÿÿ8Œ“½·¹/
+q
+java:S1104"OMake f17 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake o7 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+C
+java:S1659"!Declare "f23" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "d2" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake b1 a static final constant or non-public and provide accessors if needed.(¬ÿ8›Æª¶¹/
+C
+java:S1659"!Declare "d13" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake c12 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake d19 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "i2" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a16" on a separate line.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "l19" on a separate line.(›™‰8Û÷¯·¹/
+<
+java:S1659" Declare "k3" on a separate line.(‹Úÿ=8ÎÃ©·¹/
+k
+java:S1104"NMake c2 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "m11" on a separate line.(¯¹¤ûÿÿÿÿ8ôá²·¹/
+C
+java:S1659"!Declare "o17" on a separate line.(íÇôøÿÿÿÿ8Õ×½·¹/
+>
+java:S1659"!Declare "j17" on a separate line.(Ùñà8’ó¢·¹/
+l
+java:S1104"OMake l18 a static final constant or non-public and provide accessors if needed.(›™‰8¥Ã¯·¹/
+C
+java:S1659"!Declare "g18" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "m4" on a separate line.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+q
+java:S1104"OMake o24 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+C
+java:S1659"!Declare "f14" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "j16" on a separate line.(Ùñà8‘Ü¢·¹/
+u
+java:S1450"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8±´›º¹/
+B
+java:S1659" Declare "i9" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake c19 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake d5 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake e3 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "b21" on a separate line.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "f18" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "m20" on a separate line.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+C
+java:S1659"!Declare "o19" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+k
+java:S1104"OMake k15 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8ç³«·¹/
+q
+java:S1104"OMake i16 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "m15" on a separate line.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+l
+java:S1104"OMake e12 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "d24" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k2 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8”°©·¹/
+B
+java:S1659" Declare "h8" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake a20 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake f18 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k12 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Š÷ª·¹/
+p
+java:S1104"NMake o3 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8‚»·¹/
+C
+java:S1659"!Declare "g22" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake h23 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake n4 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+l
+java:S1104"OMake b16 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+l
+java:S1104"OMake a23 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "m14" on a separate line.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+>
+java:S1659"!Declare "b14" on a separate line.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake m9 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Œ·²·¹/
+p
+java:S1104"NMake o1 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ªûª¶¹/
+q
+java:S1104"OMake f23 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g11" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "e4" on a separate line.(ëá8©ç ·¹/
+q
+java:S1104"OMake n19 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+q
+java:S1104"OMake i12 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake n20 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+C
+java:S1659"!Declare "m13" on a separate line.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+q
+java:S1104"OMake i18 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake h20 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n24" on a separate line.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+l
+java:S1104"OMake l13 a static final constant or non-public and provide accessors if needed.(›™‰8õõ®·¹/
+q
+java:S1104"OMake n15 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+=
+java:S1659" Declare "l9" on a separate line.(›™‰8¹¹®·¹/
+C
+java:S1659"!Declare "d20" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "l14" on a separate line.(›™‰8¹Š¯·¹/
+>
+java:S1659"!Declare "b24" on a separate line.(¬ÿ8©ç ·¹/
+l
+java:S1104"OMake e16 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake o22 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+p
+java:S1104"NMake h6 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h24" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake f2 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o22" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+B
+java:S1659" Declare "o9" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+B
+java:S1659" Declare "m3" on a separate line.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+q
+java:S1104"OMake i14 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+m	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—³¶­8ÍÏ¸˜·/
+p
+java:S1104"NMake n9 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Ìäµ·¹/
+C
+java:S1659"!Declare "d11" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "m7" on a separate line.(¯¹¤ûÿÿÿÿ8«“²·¹/
+q
+java:S1104"OMake i19 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e16" on a separate line.(ëá8©ç ·¹/
+q
+java:S1104"OMake h17 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake b5 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+=
+java:S1659" Declare "a5" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "f15" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+<
+java:S1659" Declare "k7" on a separate line.(‹Úÿ=8Ä”ª·¹/
+k
+java:S1104"OMake k18 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8÷Ú«·¹/
+B
+java:S1659" Declare "f4" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d21 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "m8" on a separate line.(¯¹¤ûÿÿÿÿ8«“²·¹/
+p
+java:S1104"NMake f6 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake l2 a static final constant or non-public and provide accessors if needed.(›™‰8«¶­·¹/
+B
+java:S1659" Declare "g3" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k1 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8©ç ·¹/
+>
+java:S1659"!Declare "b20" on a separate line.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake o12 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+l
+java:S1104"OMake l16 a static final constant or non-public and provide accessors if needed.(›™‰8¥Ã¯·¹/
+j
+java:S1104"NMake k5 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8úØ©·¹/
+C
+java:S1659"!Declare "h13" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659"!Declare "k22" on a separate line.(‹Úÿ=8µ¹¬·¹/
+>
+java:S1659"!Declare "e23" on a separate line.(ëá8©ç ·¹/
+B
+java:S1659" Declare "h6" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h18" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake c8 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659"!Declare "k15" on a separate line.(‹Úÿ=8ç³«·¹/
+p
+java:S1104"NMake i8 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k25 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ëû¬·¹/
+>
+java:S1659"!Declare "c24" on a separate line.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "o23" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+=
+java:S1659" Declare "a7" on a separate line.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "l12" on a separate line.(›™‰8‘Ğ®·¹/
+C
+java:S1659"!Declare "n20" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+B
+java:S1659" Declare "n5" on a separate line.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+q
+java:S1104"OMake h13 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "b7" on a separate line.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "b13" on a separate line.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "h22" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "n4" on a separate line.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+p
+java:S1104"NMake m4 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+>
+java:S1659"!Declare "l21" on a separate line.(›™‰8•¼°·¹/
+l
+java:S1104"OMake j24 a static final constant or non-public and provide accessors if needed.(Ùñà8°é¨·¹/
+>
+java:S1659"!Declare "c13" on a separate line.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake o4 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8‚»·¹/
+B
+java:S1659" Declare "n7" on a separate line.(Ë“ÿÅüÿÿÿÿ8â­µ·¹/
+C
+java:S1659"!Declare "d17" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "e7" on a separate line.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "n22" on a separate line.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+=
+java:S1659" Declare "c3" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake o17 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8Õ×½·¹/
+B
+java:S1659" Declare "o4" on a separate line.(íÇôøÿÿÿÿ8‚»·¹/
+k
+java:S1104"NMake a2 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+k
+java:S1104"NMake l4 a static final constant or non-public and provide accessors if needed.(›™‰8«¶­·¹/
+l
+java:S1104"OMake l22 a static final constant or non-public and provide accessors if needed.(›™‰8•¼°·¹/
+q
+java:S1104"OMake g24 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o10" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+=
+java:S1659" Declare "c4" on a separate line.(ÇèÓ¡8©ç ·¹/
+<
+java:S1659" Declare "k5" on a separate line.(‹Úÿ=8úØ©·¹/
+q
+java:S1104"OMake d14 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "l23" on a separate line.(›™‰8©ã°·¹/
+l
+java:S1104"OMake a24 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+V
+java:S3400w"9Remove this method and declare a constant for this value.(”·³›8ïú¾·¹/
+q
+java:S1104"OMake d17 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k10 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8‰Îª·¹/
+C
+java:S1659"!Declare "n19" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+>
+java:S1659"!Declare "a23" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "f11" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "c14" on a separate line.(ÇèÓ¡8©ç ·¹/
+k
+java:S1104"NMake l7 a static final constant or non-public and provide accessors if needed.(›™‰8¹¹®·¹/
+v
+java:S1450"YRemove the "getTickets" field and declare it as a local variable in the relevant methods.(­öú8¼¡ú¹¹/
+C
+java:S1659"!Declare "i10" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "l20" on a separate line.(›™‰8Û÷¯·¹/
+q
+java:S1104"OMake o10 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+l
+java:S1104"OMake a22 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "m22" on a separate line.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+l
+java:S1104"OMake c20 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "j24" on a separate line.(Ùñà8°é¨·¹/
+C
+java:S1659"!Declare "n25" on a separate line.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+>
+java:S1659"!Declare "l17" on a separate line.(›™‰8¥Ã¯·¹/
+q
+java:S1104"OMake d25 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake i13 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake g3 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake a7 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake e17 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+B
+java:S1659" Declare "h4" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "f22" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d23 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b22 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake o18 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+C
+java:S1659"!Declare "h12" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m21 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+C
+java:S1659"!Declare "g15" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i25" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "j13" on a separate line.(Ùñà8µ¡¢·¹/
+B
+java:S1659" Declare "d4" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n13" on a separate line.(Ë“ÿÅüÿÿÿÿ8½¶·¹/
+q
+java:S1104"OMake g21 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o11" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+>
+java:S1659"!Declare "e24" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake b12 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake m22 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+>
+java:S1659"!Declare "c21" on a separate line.(ÇèÓ¡8©ç ·¹/
+l
+java:S1104"OMake j16 a static final constant or non-public and provide accessors if needed.(Ùñà8‘Ü¢·¹/
+p
+java:S1104"NMake n2 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+B
+java:S1659" Declare "i8" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "l15" on a separate line.(›™‰8‰¯·¹/
+>
+java:S1659"!Declare "b22" on a separate line.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "a14" on a separate line.(ŒìŒ¨8Š§¶¹/
+B
+java:S1659" Declare "i7" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake n7 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8â­µ·¹/
+q
+java:S1104"OMake n12 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Õ…¶·¹/
+=
+java:S1659" Declare "j8" on a separate line.(Ùñà8Ç¡·¹/
+>
+java:S1659"!Declare "j12" on a separate line.(Ùñà8÷¢·¹/
+q
+java:S1104"OMake m10 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Œ·²·¹/
+B
+java:S1659" Declare "m9" on a separate line.(¯¹¤ûÿÿÿÿ8Œ·²·¹/
+p
+java:S1104"NMake n8 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8â­µ·¹/
+=
+java:S1659"!Declare "k19" on a separate line.(‹Úÿ=8Öó«·¹/
+q
+java:S1104"OMake d10 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake n18 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+>
+java:S1659"!Declare "b15" on a separate line.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "a19" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "h19" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b24 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+B
+java:S1659" Declare "d8" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k3 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8ÎÃ©·¹/
+q
+java:S1104"OMake n24 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+q
+java:S1104"OMake f21 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n11" on a separate line.(Ë“ÿÅüÿÿÿÿ8®œª¶¹/
+p
+java:S1104"NMake h9 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake f1 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g13 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake o8 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+B
+java:S1659" Declare "g6" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n16" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+C
+java:S1659"!Declare "g21" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m14 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+q
+java:S1104"OMake d18 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k6 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ä”ª·¹/
+q
+java:S1104"OMake m13 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+>
+java:S1659"!Declare "b18" on a separate line.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake m17 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
 [
-java:S1144)"9Remove this unused private "getSeatNameForNumber" method.(ûŠ¿ıÿÿÿÿ8ó¿¨˜·/
-J
-java:S1068"(Remove this unused "conn" private field.(´¤´‚ıÿÿÿÿ8Š³²ñ¸/
+java:S1144j"9Remove this unused private "getSeatNameForNumber" method.(ûŠ¿ıÿÿÿÿ8ïú¾·¹/
+C
+java:S1659"!Declare "i23" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+=
+java:S1659"!Declare "k10" on a separate line.(‹Úÿ=8‰Îª·¹/
+p
+java:S1104"NMake i1 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake a12 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+=
+java:S1659"!Declare "k24" on a separate line.(‹Úÿ=8˜æ¬·¹/
+k
+java:S1104"NMake e6 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake i21 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "i5" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i12" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+<
+java:S1659" Declare "k8" on a separate line.(‹Úÿ=8Ä”ª·¹/
+C
+java:S1659"!Declare "g16" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a17" on a separate line.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake n21 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+>
+java:S1659"!Declare "c20" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake m24 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8ôº´·¹/
+k
+java:S1104"OMake k16 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8ç³«·¹/
+B
+java:S1659" Declare "m6" on a separate line.(¯¹¤ûÿÿÿÿ8Œì±·¹/
+B
+java:S1659" Declare "i3" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k7 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ä”ª·¹/
+>
+java:S1659"!Declare "l18" on a separate line.(›™‰8¥Ã¯·¹/
+B
+java:S1659" Declare "f5" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b14 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+B
+java:S1659" Declare "d9" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake m7 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8«“²·¹/
+k
+java:S1104"NMake e7 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake g22 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake d1 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake l17 a static final constant or non-public and provide accessors if needed.(›™‰8¥Ã¯·¹/
+k
+java:S1104"NMake b7 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake o9 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+C
+java:S1659"!Declare "o25" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+j
+java:S1104"NMake k9 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ä”ª·¹/
+q
+java:S1104"OMake h12 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "o8" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+C
+java:S1659"!Declare "h20" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake c10 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake n13 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8½¶·¹/
+B
+java:S1659" Declare "g2" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake i25 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e23 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+p
+java:S1104"NMake n3 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+=
+java:S1659"!Declare "k13" on a separate line.(‹Úÿ=8Š÷ª·¹/
+l
+java:S1104"OMake l15 a static final constant or non-public and provide accessors if needed.(›™‰8‰¯·¹/
+k
+java:S1104"NMake l3 a static final constant or non-public and provide accessors if needed.(›™‰8«¶­·¹/
+k
+java:S1104"NMake a8 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake j22 a static final constant or non-public and provide accessors if needed.(Ùñà8°é¨·¹/
+p
+java:S1104"NMake m6 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Œì±·¹/
+k
+java:S1104"NMake j2 a static final constant or non-public and provide accessors if needed.(Ùñà8©ç ·¹/
+l
+java:S1104"OMake e22 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake g10 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake h3 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake l21 a static final constant or non-public and provide accessors if needed.(›™‰8•¼°·¹/
+p
+java:S1104"NMake n1 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¶¥«¶¹/
+l
+java:S1104"OMake c18 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake f20 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+n
+java:S1104%"QMake seats a static final constant or non-public and provide accessors if needed.(Û…‡Ö8›—³º¹/
+k
+java:S1104"OMake k24 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8˜æ¬·¹/
+C
+java:S1659"!Declare "d23" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "c9" on a separate line.(ÇèÓ¡8©ç ·¹/
+l
+java:S1104"OMake c17 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake h1 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b25 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+k
+java:S1104"NMake e8 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake g11 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b11 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+k
+java:S1104"OMake k20 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ü‹¬·¹/
+>
+java:S1659"!Declare "l11" on a separate line.(›™‰8‘Ğ®·¹/
+k
+java:S1104"NMake c6 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659" Declare "a6" on a separate line.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake f24 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b15 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake n14 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8œù¸·¹/
+>
+java:S1659"!Declare "j23" on a separate line.(Ùñà8°é¨·¹/
+q
+java:S1104"OMake o25 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+q
+java:S1104"OMake i17 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake i10 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake i22 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g15 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake j25 a static final constant or non-public and provide accessors if needed.(Ùñà8°é¨·¹/
+q
+java:S1104"OMake i15 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "j3" on a separate line.(Ùñà8Ç¡·¹/
+B
+java:S1659" Declare "f3" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake h2 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake c3 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake f14 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e21" on a separate line.(ëá8©ç ·¹/
+l
+java:S1104"OMake c15 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake m25 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8ôº´·¹/
+C
+java:S1659"!Declare "i21" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake b20 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake h4 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "e13" on a separate line.(ëá8©ç ·¹/
+q
+java:S1104"OMake o14 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8Œ“½·¹/
+=
+java:S1659" Declare "a2" on a separate line.(ŒìŒ¨8Â¢ºº¹/
+=
+java:S1659" Declare "b8" on a separate line.(¬ÿ8©ç ·¹/
+l
+java:S1104"OMake a10 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "j10" on a separate line.(Ùñà8÷¢·¹/
+B
+java:S1659" Declare "g8" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "b9" on a separate line.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake g9 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "j6" on a separate line.(Ùñà8Ç¡·¹/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›»§á8ÍÏ¸˜·/
-W
-java:S1068	":Remove this unused "getCinemaForProjection" private field.(¿ÂôÀ8Š³²ñ¸/
-t	java:S116"SRename this field "no_seats" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
-N
-java:S1068",Remove this unused "no_seats" private field.(¯ÿŠôşÿÿÿÿ8êÍÌ—·/
+k
+java:S1104"NMake j1 a static final constant or non-public and provide accessors if needed.(Ùñà8©ç ·¹/
+k
+java:S1104"NMake j9 a static final constant or non-public and provide accessors if needed.(Ùñà8÷¢·¹/
+q
+java:S1104"OMake n16 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+p
+java:S1104"NMake o6 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8¨‡¼·¹/
+C
+java:S1659"!Declare "i13" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "m24" on a separate line.(¯¹¤ûÿÿÿÿ8ôº´·¹/
+C
+java:S1659"!Declare "h11" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h15" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g19" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "e3" on a separate line.(ëá8©ç ·¹/
+k
+java:S1104"NMake b3 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake i20 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake f10 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake g8 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "b2" on a separate line.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "f25" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "j11" on a separate line.(Ùñà8÷¢·¹/
+B
+java:S1659" Declare "f9" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e21 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake n11 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8®œª¶¹/
+=
+java:S1659" Declare "b3" on a separate line.(¬ÿ8©ç ·¹/
+B
+java:S1659" Declare "n2" on a separate line.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+k
+java:S1104"NMake j7 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+q
+java:S1104"OMake n25 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+p
+java:S1104"NMake f7 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake c5 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+l
+java:S1104"OMake c16 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "a12" on a separate line.(ŒìŒ¨8Š§¶¹/
+p
+java:S1104"NMake d4 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake c4 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "c16" on a separate line.(ÇèÓ¡8©ç ·¹/
+l
+java:S1104"OMake e10 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+p
+java:S1104"NMake g2 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake i23 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake l19 a static final constant or non-public and provide accessors if needed.(›™‰8Û÷¯·¹/
+l
+java:S1104"OMake j14 a static final constant or non-public and provide accessors if needed.(Ùñà8Ğ´¢·¹/
+l
+java:S1104"OMake a13 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake o13 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8Œ“½·¹/
+=
+java:S1659" Declare "l8" on a separate line.(›™‰8¹¹®·¹/
+k
+java:S1104"OMake k13 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Š÷ª·¹/
+l
+java:S1104"OMake c11 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "g13" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d15 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g17 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h25" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake b2 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "c23" on a separate line.(ÇèÓ¡8©ç ·¹/
+k
+java:S1104"NMake b6 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+B
+java:S1659" Declare "g5" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d20 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n21" on a separate line.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+=
+java:S1659"!Declare "k23" on a separate line.(‹Úÿ=8…Ô¬·¹/
+p
+java:S1104"NMake d8 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k19 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Öó«·¹/
+q
+java:S1104"OMake o16 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ùÃ½·¹/
+k
+java:S1104"OMake k23 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8…Ô¬·¹/
+=
+java:S1659" Declare "e9" on a separate line.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "f12" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+
+java:S1192T"bDefine a constant instead of duplicating this literal "-fx-background-color: yellowgreen" 3 times.(ÿÇÅ8ÆıÅ»¹/
+>
+java:S1659"!Declare "l16" on a separate line.(›™‰8¥Ã¯·¹/
+k
+java:S1104"NMake c7 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "a10" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "m23" on a separate line.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+q
+java:S1104"OMake d24 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g25 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake f25 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a22" on a separate line.(ŒìŒ¨8Š§¶¹/
+£
+java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(º²³îıÿÿÿÿ8‘­Ñ»¹/
+p
+java:S1104"NMake f3 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake f22 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g12 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "e8" on a separate line.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "e19" on a separate line.(ëá8©ç ·¹/
+=
+java:S1659"!Declare "k21" on a separate line.(‹Úÿ=8šŸ¬·¹/
+C
+java:S1659"!Declare "m10" on a separate line.(¯¹¤ûÿÿÿÿ8Œ·²·¹/
+k
+java:S1104"OMake k21 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8šŸ¬·¹/
+l
+java:S1104"OMake e25 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "b17" on a separate line.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake g18 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake m18 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8®œª¶¹/
+B
+java:S1659" Declare "o3" on a separate line.(íÇôøÿÿÿÿ8‚»·¹/
+l
+java:S1104"OMake j20 a static final constant or non-public and provide accessors if needed.(Ùñà8ª´¥·¹/
+p
+java:S1104"NMake o5 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8‚»·¹/
+=
+java:S1659"!Declare "k18" on a separate line.(‹Úÿ=8÷Ú«·¹/
+q
+java:S1104"OMake h25 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "a3" on a separate line.(ŒìŒ¨8Š§¶¹/
+k
+java:S1104"NMake a3 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+p
+java:S1104"NMake n5 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+=
+java:S1659" Declare "l5" on a separate line.(›™‰8ÌÕ­·¹/
+q
+java:S1104"OMake h19 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "j4" on a separate line.(Ùñà8Ç¡·¹/
+>
+java:S1659"!Declare "a25" on a separate line.(ŒìŒ¨8Š§¶¹/
+q
+java:S1104"OMake h21 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i11" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+A
+java:S1659G"Declare "j" on a separate line.(¦¢Éëùÿÿÿÿ8¨úß»¹/
+=
+java:S1659"!Declare "k16" on a separate line.(‹Úÿ=8ç³«·¹/
+=
+java:S1659" Declare "a8" on a separate line.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "h10" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "m16" on a separate line.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+>
+java:S1659"!Declare "e15" on a separate line.(ëá8©ç ·¹/
+k
+java:S1104"NMake l1 a static final constant or non-public and provide accessors if needed.(›™‰8©ç ·¹/
+C
+java:S1659"!Declare "m18" on a separate line.(¯¹¤ûÿÿÿÿ8®œª¶¹/
+l
+java:S1104"OMake j15 a static final constant or non-public and provide accessors if needed.(Ùñà8îÈ¢·¹/
+C
+java:S1659"!Declare "m17" on a separate line.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+k
+java:S1104"NMake j3 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+=
+java:S1659" Declare "c6" on a separate line.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659"!Declare "k12" on a separate line.(‹Úÿ=8Š÷ª·¹/
+l
+java:S1104"OMake j19 a static final constant or non-public and provide accessors if needed.(Ùñà8ª´¥·¹/
+C
+java:S1659"!Declare "f16" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o18" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+p
+java:S1104"NMake g6 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake a11 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "d12" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "g10" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake d6 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake o20 a static final constant or non-public and provide accessors if needed.(íÇôøÿÿÿÿ8ïú¾·¹/
+l
+java:S1104"OMake c24 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "n10" on a separate line.(Ë“ÿÅüÿÿÿÿ8Ìäµ·¹/
+q
+java:S1104"OMake f19 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake i9 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k22 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8µ¹¬·¹/
+k
+java:S1104"NMake j6 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+l
+java:S1104"OMake c25 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "b11" on a separate line.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "a13" on a separate line.(ŒìŒ¨8Š§¶¹/
+B
+java:S1659" Declare "h3" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e11 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+B
+java:S1659" Declare "h5" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i16" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake j17 a static final constant or non-public and provide accessors if needed.(Ùñà8’ó¢·¹/
+C
+java:S1659"!Declare "o12" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+j
+java:S1104"NMake k4 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8úØ©·¹/
+B
+java:S1659" Declare "n3" on a separate line.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+C
+java:S1659"!Declare "g20" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake d7 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "c8" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake i24 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i22" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "o6" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
+l
+java:S1104"OMake b13 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake m2 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+C
+java:S1659"!Declare "i14" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+U
+java:S1144u"9Remove this unused private "getSeatNumberForName" method.(²œû`8ïú¾·¹/
+q
+java:S1104"OMake h14 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake l9 a static final constant or non-public and provide accessors if needed.(›™‰8¹¹®·¹/
+B
+java:S1659" Declare "d5" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "f2" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "j7" on a separate line.(Ùñà8Ç¡·¹/
+k
+java:S1104"NMake e5 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "j18" on a separate line.(Ùñà8‹Œ¥·¹/
+l
+java:S1104"OMake c14 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+B
+java:S1659" Declare "f7" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "c10" on a separate line.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "d16" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "i4" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "e5" on a separate line.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "j15" on a separate line.(Ùñà8îÈ¢·¹/
+q
+java:S1104"OMake m16 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Õ¶³·¹/
+p
+java:S1104"NMake d9 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake l10 a static final constant or non-public and provide accessors if needed.(›™‰8¹¹®·¹/
+=
+java:S1659"!Declare "k14" on a separate line.(‹Úÿ=8İ‘«·¹/
+C
+java:S1659"!Declare "o24" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+q
+java:S1104"OMake n22 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+l
+java:S1104"OMake c22 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake i2 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o21" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+C
+java:S1659"!Declare "m19" on a separate line.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+C
+java:S1659"!Declare "m25" on a separate line.(¯¹¤ûÿÿÿÿ8ôº´·¹/
+>
+java:S1659"!Declare "b10" on a separate line.(¬ÿ8©ç ·¹/
+B
+java:S1659" Declare "d3" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k17 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8÷Ú«·¹/
+=
+java:S1659" Declare "l2" on a separate line.(›™‰8«¶­·¹/
+q
+java:S1104"OMake f16 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "f8" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake g19 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake a9 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+C
+java:S1659"!Declare "h17" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake m5 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8Œì±·¹/
+l
+java:S1104"OMake b18 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake f8 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake b4 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+C
+java:S1659"!Declare "h21" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e24 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "d15" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake h8 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+k
+java:S1104"NMake e2 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+C
+java:S1659"!Declare "o20" on a separate line.(íÇôøÿÿÿÿ8ïú¾·¹/
+>
+java:S1659"!Declare "j25" on a separate line.(Ùñà8°é¨·¹/
+p
+java:S1104"NMake g5 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "h23" on a separate line.(‡•—¶şÿÿÿÿ8©ç ·¹/
+=
+java:S1659"!Declare "k25" on a separate line.(‹Úÿ=8Ëû¬·¹/
+>
+java:S1659"!Declare "j22" on a separate line.(Ùñà8°é¨·¹/
+k
+java:S1104"NMake a4 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+k
+java:S1104"NMake e1 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+=
+java:S1659" Declare "c7" on a separate line.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "n12" on a separate line.(Ë“ÿÅüÿÿÿÿ8Õ…¶·¹/
+p
+java:S1104"NMake i4 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "g4" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake i3 a static final constant or non-public and provide accessors if needed.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+k
+java:S1104"OMake k14 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8İ‘«·¹/
+=
+java:S1659" Declare "l7" on a separate line.(›™‰8¹¹®·¹/
+k
+java:S1104"NMake j8 a static final constant or non-public and provide accessors if needed.(Ùñà8Ç¡·¹/
+q
+java:S1104"OMake h15 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "g9" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "n18" on a separate line.(Ë“ÿÅüÿÿÿÿ8ÃÜ¹·¹/
+q
+java:S1104"OMake d16 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake n23 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8Å±º·¹/
+p
+java:S1104"NMake g7 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake c21 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+>
+java:S1659"!Declare "l24" on a separate line.(›™‰8©ã°·¹/
+C
+java:S1659"!Declare "f13" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+m	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂƒÃ·8ø­Ğ˜·/
+l
+java:S1104"OMake e19 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+k
+java:S1104"NMake e4 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+l
+java:S1104"OMake b17 a static final constant or non-public and provide accessors if needed.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake f9 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "l4" on a separate line.(›™‰8«¶­·¹/
+p
+java:S1104"NMake h7 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake j18 a static final constant or non-public and provide accessors if needed.(Ùñà8‹Œ¥·¹/
+l
+java:S1104"OMake l11 a static final constant or non-public and provide accessors if needed.(›™‰8‘Ğ®·¹/
+k
+java:S1104"NMake l8 a static final constant or non-public and provide accessors if needed.(›™‰8¹¹®·¹/
+p
+java:S1104"NMake n6 a static final constant or non-public and provide accessors if needed.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+>
+java:S1659"!Declare "j19" on a separate line.(Ùñà8ª´¥·¹/
+B
+java:S1659" Declare "o2" on a separate line.(íÇôøÿÿÿÿ8‚»·¹/
+>
+java:S1659"!Declare "c22" on a separate line.(ÇèÓ¡8©ç ·¹/
+C
+java:S1659"!Declare "i20" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e18 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+l
+java:S1104"OMake l25 a static final constant or non-public and provide accessors if needed.(›™‰8´ƒ±·¹/
+B
+java:S1659" Declare "n6" on a separate line.(Ë“ÿÅüÿÿÿÿ8¢µ·¹/
+>
+java:S1659"!Declare "b23" on a separate line.(¬ÿ8©ç ·¹/
+>
+java:S1659"!Declare "j14" on a separate line.(Ùñà8Ğ´¢·¹/
+l
+java:S1104"OMake c13 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+p
+java:S1104"NMake m8 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8«“²·¹/
+l
+java:S1104"OMake a18 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+B
+java:S1659" Declare "m2" on a separate line.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+C
+java:S1659"!Declare "f21" on a separate line.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+j
+java:S1104"NMake k8 a static final constant or non-public and provide accessors if needed.(‹Úÿ=8Ä”ª·¹/
+l
+java:S1104"OMake l20 a static final constant or non-public and provide accessors if needed.(›™‰8Û÷¯·¹/
+B
+java:S1659" Declare "i6" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "c15" on a separate line.(ÇèÓ¡8©ç ·¹/
+k
+java:S1104"NMake c9 a static final constant or non-public and provide accessors if needed.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659" Declare "b4" on a separate line.(¬ÿ8©ç ·¹/
+p
+java:S1104"NMake f5 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i24" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "d14" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "o15" on a separate line.(íÇôøÿÿÿÿ8ùÃ½·¹/
+q
+java:S1104"OMake g14 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "c5" on a separate line.(ÇèÓ¡8©ç ·¹/
+l
+java:S1104"OMake l23 a static final constant or non-public and provide accessors if needed.(›™‰8©ã°·¹/
+q
+java:S1104"OMake h10 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+p
+java:S1104"NMake m3 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8óÈ±·¹/
+=
+java:S1659" Declare "a9" on a separate line.(ŒìŒ¨8Š§¶¹/
+=
+java:S1659"!Declare "k17" on a separate line.(‹Úÿ=8÷Ú«·¹/
+k
+java:S1104"NMake e9 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+>
+java:S1659"!Declare "c25" on a separate line.(ÇèÓ¡8©ç ·¹/
+q
+java:S1104"OMake h11 a static final constant or non-public and provide accessors if needed.(‡•—¶şÿÿÿÿ8©ç ·¹/
+B
+java:S1659" Declare "g7" on a separate line.(ßõıîüÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "d19" on a separate line.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "l3" on a separate line.(›™‰8«¶­·¹/
+q
+java:S1104"OMake g20 a static final constant or non-public and provide accessors if needed.(ßõıîüÿÿÿÿ8©ç ·¹/
+q
+java:S1104"OMake d12 a static final constant or non-public and provide accessors if needed.(®şÙ¥ùÿÿÿÿ8©ç ·¹/
+C
+java:S1659"!Declare "i18" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+l
+java:S1104"OMake e14 a static final constant or non-public and provide accessors if needed.(ëá8©ç ·¹/
+q
+java:S1104"OMake m19 a static final constant or non-public and provide accessors if needed.(¯¹¤ûÿÿÿÿ8š˜´·¹/
+>
+java:S1659"!Declare "c19" on a separate line.(ÇèÓ¡8©ç ·¹/
+=
+java:S1659" Declare "l6" on a separate line.(›™‰8¹¹®·¹/
+C
+java:S1659"!Declare "i17" on a separate line.(¡•î¾ûÿÿÿÿ8©ç ·¹/
+=
+java:S1659" Declare "b5" on a separate line.(¬ÿ8©ç ·¹/
+q
+java:S1104"OMake f11 a static final constant or non-public and provide accessors if needed.(½Æ„Ïşÿÿÿÿ8©ç ·¹/
+>
+java:S1659"!Declare "a20" on a separate line.(ŒìŒ¨8Š§¶¹/
+l
+java:S1104"OMake a25 a static final constant or non-public and provide accessors if needed.(ŒìŒ¨8Š§¶¹/
+>
+java:S1659"!Declare "c18" on a separate line.(ÇèÓ¡8©ç ·¹/
+B
+java:S1659" Declare "o7" on a separate line.(íÇôøÿÿÿÿ8¨‡¼·¹/
