@@ -134,7 +134,7 @@
         <Button mnemonicParsing="false" text="D3" GridPane.columnIndex="2" GridPane.rowIndex="12" />
         <Button mnemonicParsing="false" text="D2" GridPane.columnIndex="1" GridPane.rowIndex="12" />
         <Button mnemonicParsing="false" text="D1" GridPane.rowIndex="12" />
-        
+
         <Button mnemonicParsing="false" text="C10" GridPane.columnIndex="9" GridPane.rowIndex="13" />
         <Button mnemonicParsing="false" text="C9" GridPane.columnIndex="8" GridPane.rowIndex="13" />
         <Button mnemonicParsing="false" text="C8" GridPane.columnIndex="7" GridPane.rowIndex="13" />

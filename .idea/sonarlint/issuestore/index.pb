@@ -159,8 +159,6 @@ U
 %src/RPRMovieApp/models/Screening.java,a\f\af96b54427b3371d5391dac921d414e02b78a71a
 X
 (src/RPRMovieApp/models/ScreeningRow.java,c\8\c8107c0aeb3fb62ed1924d3c46077a8d08db2eda
-M
-resources/css/chooseSeats.css,d\e\de911b1b8ce1d722306b45a6f3179d92876e0354
 f
 6out/production/RPRprojekat/fxml/chooseFoodnDrinks.fxml,2\a\2a8ad882b8b3d35ba5619c67725ecaee71a6295f
 l
