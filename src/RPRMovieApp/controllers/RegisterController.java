@@ -60,8 +60,8 @@ public class RegisterController
         int day   = now.getDayOfMonth();
         if (month == 2 && day == 29) //We're nice to kids who had this bad luck
         {
-            month = 3;
-            day = 1;
+            month = 2;
+            day = 28;
         }
         return List.of(day, month, year);
     }

@@ -18,6 +18,10 @@ import javafx.util.StringConverter;
 import javax.xml.transform.Result;
 import java.io.IOException;
 import java.sql.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.chrono.ChronoLocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
@@ -31,9 +35,6 @@ public class AddFilmController
     public TextField moviename;
     public Button addGenre;
     public Spinner<Integer> durationSpinner; //Issue when user manually types in value in spinner
-    public ChoiceBox selectDay;
-    public ChoiceBox selectYear;
-    public ChoiceBox selectMonth;
     public Button cancel;
     public Button addFilm; //Return this as default button as soon as spinner issue is resolved
     public ChoiceBox<Genre> selectGenre;
@@ -42,6 +43,12 @@ public class AddFilmController
     public Label selectedGenres;
     public Label selectedLanguages;
     public TextArea synopsisText;
+    public DatePicker releaseDatePicker;
+    public Label dateError;
+    public Label genreError;
+    public Label languageError;
+    public Label synopsisError;
+    public Label titleError;
 
     private ObservableList<Genre> remainingGenres;
     private ObservableList<Language> remainingLanguages;
@@ -62,6 +69,52 @@ public class AddFilmController
     private PreparedStatement getMaxDirectorID;
     private PreparedStatement getExistingDirectorID;
     private PreparedStatement getMaxFilmID;
+
+    private boolean hasPassed ()
+    {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        int day = now.getDayOfMonth();
+        int month = now.getMonthValue();
+        int year = now.getYear();
+        LocalDate selected = releaseDatePicker.getValue();
+        int sday = selected.getDayOfMonth();
+        int smonth = selected.getMonthValue();
+        int syear = selected.getYear();
+        if (syear < year)
+        {
+            return false;
+        }
+        else
+        {
+            if (syear > year)
+            {
+                return true;
+            }
+            else
+            {
+                if (smonth < month)
+                {
+                    return false;
+                }
+                else
+                {
+                    if (smonth > month)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        if (sday <= day) //Movie should be released at least one day after
+                        {
+                            return false;
+                        }
+                        return true;
+                    }
+                }
+            }
+        }
+    }
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
@@ -140,44 +193,83 @@ public class AddFilmController
 
     }
 
-    public void addFilmClick(ActionEvent actionEvent) throws SQLException, IOException {
+    public void addFilmClick(ActionEvent actionEvent) throws SQLException, IOException
+    {
         int directorid;
-        if (selectDirector.getValue() == null)
+        boolean error = false;
+        if (moviename.getText().isBlank())
         {
-            ResultSet gmdid = getMaxDirectorID.executeQuery();
-            directorid = gmdid.getInt(1) + 1;
-            addDirector.setInt(1, directorid);
-            addDirector.setString(2, addNewDirector.getText());
-            addDirector.execute();
+            titleError.setText("Film must have a title!");
+            error = true;
+        }
+        if (releaseDatePicker.getValue() == null)
+        {
+            dateError.setText("You must choose a release date!");
+            error = true;
+        }
+        else if (!hasPassed())
+        {
+            dateError.setText("Release date must be in the future (preferably at least 7 days)");
+            error = true;
         }
         else
         {
-            getExistingDirectorID.setString(1, selectDirector.getSelectionModel().getSelectedItem().toString());
-            ResultSet gedid = getExistingDirectorID.executeQuery();
-            directorid = gedid.getInt(1);
+            dateError.setText("");
         }
-        ResultSet gmfid = getMaxFilmID.executeQuery();
-        addNewFilm.setInt(1, gmfid.getInt(1) + 1);
-        addNewFilm.setString(2, moviename.getText());
-        addNewFilm.setInt(3, durationSpinner.getValue());
-        addNewFilm.setInt(4, directorid);
-        addNewFilm.setInt(5, calculateGenres);
-        addNewFilm.setInt(6, calculateLanguages);
-        addNewFilm.setString(7, synopsisText.getText());
-        addNewFilm.execute();
-        conn.close();
-        Node n = (Node) actionEvent.getSource();
-        Stage addFilmStage = (Stage) n.getScene().getWindow();
-        addFilmStage.close();
-        conn.close();
+        if (selectedGenres.getText().isBlank())
+        {
+            genreError.setText("The movie must be of at least one genre!");
+            error = true;
+        }
+        if (selectedLanguages.getText().isBlank())
+        {
+            languageError.setText("The movie must have at least one language\nIn case of a silent film, select 'Silent'");
+            error = true;
+        }
+        if (synopsisText.getText().isBlank())
+        {
+            synopsisError.setText("The movie must have a synopsis!");
+            error = true;
+        }
+        if (!error)
+        {
+            if (selectDirector.getValue() == null)
+            {
+                ResultSet gmdid = getMaxDirectorID.executeQuery();
+                directorid = gmdid.getInt(1) + 1;
+                addDirector.setInt(1, directorid);
+                addDirector.setString(2, addNewDirector.getText());
+                addDirector.execute();
+            }
+            else
+            {
+                getExistingDirectorID.setString(1, selectDirector.getSelectionModel().getSelectedItem().toString());
+                ResultSet gedid = getExistingDirectorID.executeQuery();
+                directorid = gedid.getInt(1);
+            }
+            ResultSet gmfid = getMaxFilmID.executeQuery();
+            addNewFilm.setInt(1, gmfid.getInt(1) + 1);
+            addNewFilm.setString(2, moviename.getText());
+            addNewFilm.setInt(3, durationSpinner.getValue());
+            addNewFilm.setInt(4, directorid);
+            addNewFilm.setInt(5, calculateGenres);
+            addNewFilm.setInt(6, calculateLanguages);
+            addNewFilm.setString(7, synopsisText.getText());
+            addNewFilm.execute();
+            conn.close();
+            Node n = (Node) actionEvent.getSource();
+            Stage addFilmStage = (Stage) n.getScene().getWindow();
+            addFilmStage.close();
+            conn.close();
 
-        Stage addFilmSuccessStage = new Stage();
-        FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/addFilmSuccess.fxml")); //This path is temporary
-        Parent root = signUpLoader.load();
-        addFilmSuccessStage.setTitle("Registration successful!");
-        addFilmSuccessStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        addFilmSuccessStage.setResizable(false);
-        addFilmSuccessStage.show();
+            Stage addFilmSuccessStage = new Stage();
+            FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/addFilmSuccess.fxml")); //This path is temporary
+            Parent root = signUpLoader.load();
+            addFilmSuccessStage.setTitle("Registration successful!");
+            addFilmSuccessStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+            addFilmSuccessStage.setResizable(false);
+            addFilmSuccessStage.show();
+        }
     }
 
     public void addLanguageClick(ActionEvent actionEvent)
