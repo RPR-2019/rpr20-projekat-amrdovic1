@@ -191,9 +191,9 @@ j
 :src/RPRMovieApp/controllers/ChooseSeatsNoteController.java,b\3\b3750561fe5fc0c59db32a51e40a811de866431d
 V
 &src/RPRMovieApp/controllers/Price.java,0\1\0133c316bc769c7d8f3943b66f7ae336a8695842
-P
- resources/fxml/chooseSeats1.fxml,6\e\6e2997a36aaa05e693c062d920a8fb00a1764e46
 V
 &resources/fxml/reservationPayment.fxml,2\d\2d311c8838dafafcea9d59b0301017ff8acf9fcf
 U
 %resources/fxml/reservationThanks.fxml,1\b\1b50e2ebd5ffbf4d4d651eef903aa51f01d8351a
+R
+"resources/fxml/newReservation.fxml,d\0\d0bf8d31b31c98e3ea3b33635e5b39fb10b36806

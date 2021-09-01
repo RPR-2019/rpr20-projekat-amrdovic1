@@ -1,12 +1,12 @@
 
 r
 java:S1104"WMake findUserBtn a static final constant or non-public and provide accessors if needed.(†ác8Ğ‘ûÀ·/
-|
-java:S1450"ZRemove the "getAllUsers" field and declare it as a local variable in the relevant methods.(àë“ëıÿÿÿÿ8Û‚Á·/
 E
 java:S1604,"(Make this anonymous inner class a lambda(û§÷¤8ÇÍ³Ã·/
-v
-java:S1104"TMake userList a static final constant or non-public and provide accessors if needed.(ê¨¦ñùÿÿÿÿ8İÑüÀ·/
 u
 java:S1450"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8÷˜Á·/
+|
+java:S1450"ZRemove the "getAllUsers" field and declare it as a local variable in the relevant methods.(àë“ëıÿÿÿÿ8Û‚Á·/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+v
+java:S1104"TMake userList a static final constant or non-public and provide accessors if needed.(ê¨¦ñùÿÿÿÿ8İÑüÀ·/

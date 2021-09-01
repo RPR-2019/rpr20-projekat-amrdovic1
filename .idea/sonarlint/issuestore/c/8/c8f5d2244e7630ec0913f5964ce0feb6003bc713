@@ -1,20 +1,20 @@
 
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†¼¼¥µ/
-x
-java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(¦øÑßùÿÿÿÿ8ÖÓ¥µ/
-E
-java:S16047"(Make this anonymous inner class a lambda(ÃŞÀ½8µüåæ·/
-L
-java:S3740"/Provide the parametrized type for this generic.(Àªü‚8—Àˆç·/
-e
-java:S2095%"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8·×Û«´/
 r
 java:S1104"UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚8—Àˆç·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+d
+java:S1128"GRemove this unused import 'javafx.beans.property.SimpleObjectProperty'.(¶Ö­¤8ŞšÆ¥µ/
+u
+java:S1450 "SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8Âû»º/
+x
+java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(¦øÑßùÿÿÿÿ8ÖÓ¥µ/
+L
+java:S3740"/Provide the parametrized type for this generic.(Àªü‚8—Àˆç·/
+E
+java:S1604:"(Make this anonymous inner class a lambda(ÃŞÀ½8µüåæ·/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†¼¼¥µ/
 s
 java:S1450"VRemove the "getDays" field and declare it as a local variable in the relevant methods.(›Å¹Ã8÷Ú‹ç·/
 y
 java:S1450"\Remove the "prepareMovies" field and declare it as a local variable in the relevant methods.(éâ”Ä8·×Û«´/
-d
-java:S1128"GRemove this unused import 'javafx.beans.property.SimpleObjectProperty'.(¶Ö­¤8ŞšÆ¥µ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
