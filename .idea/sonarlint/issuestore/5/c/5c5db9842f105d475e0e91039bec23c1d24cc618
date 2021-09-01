@@ -1,32 +1,32 @@
 
-|
-java:S1450!"_Remove the "getAllScreenings" field and declare it as a local variable in the relevant methods.(Î”ò­8…ÍÚé·/
-v
-java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(­œÃ£8ÌßÓ–¸/
-r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô¾ÈÛûÿÿÿÿ8ÌÓğ¸/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
 u
 java:S1104"XMake extendedInfo a static final constant or non-public and provide accessors if needed.(®ìº³8âÊé·/
-}
-java:S1104"[Make screeningCinema a static final constant or non-public and provide accessors if needed.(á±ˆËøÿÿÿÿ8Éù–¸/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-|
-java:S1104"ZMake screeningTable a static final constant or non-public and provide accessors if needed.(³ã»­üÿÿÿÿ8ù•½é·/
-{
-java:S1104"YMake screeningHour a static final constant or non-public and provide accessors if needed.(¬áúÿÿÿÿÿ8ø¾ùé·/
-}
-java:S1104"[Make selectScreening a static final constant or non-public and provide accessors if needed.(Üÿ†»şÿÿÿÿ8ŠŒÉê·/
-x
-java:S1104"VMake movieTitle a static final constant or non-public and provide accessors if needed.(˜ˆ‘Æşÿÿÿÿ8çÂ¼é·/
-m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÃ¯¶8¬…à†º/
-e
-java:S1128"HRemove this unused import 'javafx.beans.property.SimpleIntegerProperty'.(©Ú¡8˜—–¸/
-e
-java:S2095,"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8ÃıÔé·/
-u
-java:S1104"XMake screeningDay a static final constant or non-public and provide accessors if needed.(Â†Ä‹8ø¾ùé·/
 U
 java:S1117,"8Rename "conn" which hides the field declared at line 32.(ØÇü¬8ÃıÔé·/
-H
-java:S1481T"+Remove this unused "scr_id" local variable.(äÃ¯¶8¬…à†º/
+|
+java:S1450!"_Remove the "getAllScreenings" field and declare it as a local variable in the relevant methods.(Î”ò­8…ÍÚé·/
+e
+java:S2095,"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬8ÃıÔé·/
+r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô¾ÈÛûÿÿÿÿ8ÌÓğ¸/
+x
+java:S1104"VMake movieTitle a static final constant or non-public and provide accessors if needed.(˜ˆ‘Æşÿÿÿÿ8çÂ¼é·/
+u
+java:S1104"XMake screeningDay a static final constant or non-public and provide accessors if needed.(Â†Ä‹8ø¾ùé·/
+}
+java:S1104"[Make selectScreening a static final constant or non-public and provide accessors if needed.(Üÿ†»şÿÿÿÿ8ŠŒÉê·/
 J
 java:S1068 "(Remove this unused "conn" private field.(´¤´‚ıÿÿÿÿ8ÊÓé·/
+{
+java:S1104"YMake screeningHour a static final constant or non-public and provide accessors if needed.(¬áúÿÿÿÿÿ8ø¾ùé·/
+m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÃ¯¶8¬…à†º/
+}
+java:S1104"[Make screeningCinema a static final constant or non-public and provide accessors if needed.(á±ˆËøÿÿÿÿ8Éù–¸/
+e
+java:S1128"HRemove this unused import 'javafx.beans.property.SimpleIntegerProperty'.(©Ú¡8˜—–¸/
+H
+java:S1481T"+Remove this unused "scr_id" local variable.(äÃ¯¶8¬…à†º/
+v
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(­œÃ£8ÌßÓ–¸/
+|
+java:S1104"ZMake screeningTable a static final constant or non-public and provide accessors if needed.(³ã»­üÿÿÿÿ8ù•½é·/

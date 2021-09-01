@@ -13,6 +13,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
@@ -44,6 +50,56 @@ public class RegisterController
     private PreparedStatement getMaxID;
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private String mandatory = "This is a mandatory field!";
+
+    private List<Integer> getThresholdDate ()
+    {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+        int year  = now.getYear() - 15;
+        int month = now.getMonthValue();
+        int day   = now.getDayOfMonth();
+        if (month == 2 && day == 29) //We're nice to kids who had this bad luck
+        {
+            month = 3;
+            day = 1;
+        }
+        return List.of(day, month, year);
+    }
+
+    private Boolean isValidDate (Integer day, Integer month, Integer year)
+    {
+        List<Integer> today = getThresholdDate();
+        if ((Integer)selectYear.getValue() > today.get(2))
+        {
+            return false;
+        }
+        else if ((Integer)selectYear.getValue() < today.get(2))
+        {
+            return true;
+        }
+        else
+        {
+            if ((Integer)selectMonth.getValue() > today.get(1))
+            {
+                return false;
+            }
+            else if ((Integer)selectMonth.getValue() < today.get(1))
+            {
+                return true;
+            }
+            else
+            {
+                if ((Integer)selectDay.getValue() > today.get(0))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+    }
 
     private int isLeap (int year)
     {
@@ -196,6 +252,11 @@ public class RegisterController
         if (semrs.getInt(1) != 0)
         {
             emailError.setText("User with email " + email.getText() + " already exists!");
+            error = true;
+        }
+        if (!isValidDate((Integer)selectDay.getValue(),(Integer)selectMonth.getValue(),(Integer)selectYear.getValue()))
+        {
+            dateError.setText("User must be at least 15 years old to register!");
             error = true;
         }
         if (!error)
