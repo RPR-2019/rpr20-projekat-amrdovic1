@@ -1,24 +1,29 @@
 
-r
-java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-T
-java:S1172/"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
-w
-java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
-v
-java:S1104"YMake screeningTime a static final constant or non-public and provide accessors if needed.(õÛİ8§Áª¿·/
-m
-java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
-s
-java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
-p
-java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
-v
-java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
 T
 java:S1172!"2Remove this unused method parameter "actionEvent".(†òÌÙüÿÿÿÿ8Ì¼¢ñ¸/
+w
+java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
+v
+java:S1104"YMake screeningTime a static final constant or non-public and provide accessors if needed.(õÛİ8§Áª¿·/
+v
+java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
 r
 java:S1104"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
+T
+java:S1172/"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
+O
+java:S11729"2Remove this unused method parameter "actionEvent".(¾÷ï÷8——£‡º/
+s
+java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
+r
+java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
+m
+java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
+p
+java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+`
+java:S1155;">Use isEmpty() to check whether the collection is empty or not.(ğŒ Åûÿÿÿÿ8ÈÓí‡º/
+J	java:S108<")Either remove or fill this block of code.(ÒÌâ–øÿÿÿÿ8ÈÓí‡º/

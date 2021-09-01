@@ -1,4 +1,20 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(…¶œˆøÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+x
+java:S1104"VMake cinemaCard a static final constant or non-public and provide accessors if needed.(ı¨§şÿÿÿÿ8š›Œ‡º/
+O
+java:S1172'"2Remove this unused method parameter "actionEvent".(Ø°¿8ºÛ‡º/
+w
+java:S1104"UMake errorText a static final constant or non-public and provide accessors if needed.(ô‚ïÉşÿÿÿÿ8ì²‡º/
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(Ã•ÊÃ8µÌ‡º/
+r
+java:S1104"PMake cash a static final constant or non-public and provide accessors if needed.( á÷–øÿÿÿÿ8‰ÖŒ‡º/
+s
+java:S1104"VMake creditCard a static final constant or non-public and provide accessors if needed.(ÑĞ­Š8ñ¾Œ‡º/
+w
+java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8ÇÛ‡º/
+O
+java:S1172."2Remove this unused method parameter "actionEvent".(½ÚÅæ8»Şœ‡º/
+O
+java:S1172 "2Remove this unused method parameter "actionEvent".(ïæİá8Í‡º/

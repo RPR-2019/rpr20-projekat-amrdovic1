@@ -124,6 +124,7 @@ public class ChooseSeats1Controller
 
     public void takeSeatsClick(ActionEvent actionEvent)
     {
+        Price.setPrice(ChosenSeats.getSeats().size()*6.0);
         Node n = (Node) actionEvent.getSource();
         Stage seatsStage = (Stage) n.getScene().getWindow();
         seatsStage.close();

@@ -31,6 +31,7 @@ public class LatestMovieDetailController
 
     private Connection conn;
     private PreparedStatement getAllScreenings;
+    private PreparedStatement checkExistingTicket;
     private PreparedStatement getSelectedScreening;
 
     private ObservableList<Screening> allScreenings = FXCollections.observableArrayList();
@@ -67,7 +68,12 @@ public class LatestMovieDetailController
             Integer hour = Integer.parseInt(hour_min[0]);
             Integer minute = Integer.parseInt(hour_min[1]);
             //Find a way to get this info only by passing screening id
-            try {
+            try
+            {
+                checkExistingTicket = conn.prepareStatement("SELECT * FROM ticket WHERE userid=? AND projectionid=?");
+                checkExistingTicket.setInt(1, ChosenUser.getChosen().getId());
+
+
                 getSelectedScreening = conn.prepareStatement("SELECT * FROM projection WHERE filmid=? AND dayid=? AND hour=? AND minute=? AND hallid=?");
                 getSelectedScreening.setInt(1, ChosenFilm.getChosen().getId());
                 getSelectedScreening.setInt(2, day);
@@ -77,17 +83,31 @@ public class LatestMovieDetailController
                 ResultSet rsgss = getSelectedScreening.executeQuery(); //There should only be one!
                 int scr_id = rsgss.getInt(1);
                 ChosenProjection.setChosenProjection(new Screening(rsgss.getInt(1), rsgss.getInt(2), rsgss.getInt(3), rsgss.getInt(4), rsgss.getInt(5), rsgss.getInt(6)));
-                Stage newReservationStage = new Stage();
-                FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
-                Parent root = newReservationLoader.load();
-                ReservationController nrc = newReservationLoader.getController();
-                newReservationStage.setTitle("Projection");
-                newReservationStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-                newReservationStage.setResizable(false);
-                newReservationStage.show();
-                nrc.movieName.setText(nrc.movieName.getText() + " " + ChosenFilm.getChosen().getName());
-                nrc.screeningTime.setText(nrc.screeningTime.getText() + " " + ChosenProjection.getChosenProjection().getDayName() + " " + ChosenProjection.getChosenProjection().getHourInfo());
-                nrc.noOfTickets.setText(nrc.noOfTickets.getText() + " 0");
+
+                checkExistingTicket.setInt(2, ChosenProjection.getChosenProjection().getId());
+                ResultSet rscet = checkExistingTicket.executeQuery();
+                if (rscet.next()) //User can't book the same screening twice
+                {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText("Reservation error");
+                    alert.setContentText("You already booked this screening!\nIn order to book it again, you have to remove your previous reservation.\n" );
+                    alert.showAndWait();
+                }
+                else
+                {
+                    Stage newReservationStage = new Stage();
+                    FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
+                    Parent root = newReservationLoader.load();
+                    ReservationController nrc = newReservationLoader.getController();
+                    newReservationStage.setTitle("Projection");
+                    newReservationStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+                    newReservationStage.setResizable(false);
+                    newReservationStage.show();
+                    nrc.movieName.setText(nrc.movieName.getText() + " " + ChosenFilm.getChosen().getName());
+                    nrc.screeningTime.setText(nrc.screeningTime.getText() + " " + ChosenProjection.getChosenProjection().getDayName() + " " + ChosenProjection.getChosenProjection().getHourInfo());
+                    nrc.noOfTickets.setText(nrc.noOfTickets.getText() + " 0");
+                }
             } catch (SQLException | IOException throwables) {
                 throwables.printStackTrace();
             }

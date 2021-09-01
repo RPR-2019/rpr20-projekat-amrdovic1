@@ -1,4 +1,9 @@
 
-d
-java:S2094"BRemove this empty class, write its code or make it an "interface".(÷óöşÿÿÿÿÿ8ŞƒÚ¿·/
+u
+java:S1450
+"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8Èš½‡º/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+z
+java:S1450"]Remove the "getMaxTicketID" field and declare it as a local variable in the relevant methods.(Üÿ‘Ğ8ì€¿‡º/
+~
+java:S1450"\Remove the "insertTickets" field and declare it as a local variable in the relevant methods.(áÚÖüÿÿÿÿ8¹ÌÃ‡º/

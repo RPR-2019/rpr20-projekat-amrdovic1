@@ -21,7 +21,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Label text="Thank You for choosing our app! In case of any question, please don't hesitate to contact us" GridPane.rowIndex="1" />
+      <Label text="Thank You for choosing our app! In case of any questions, please don't hesitate to contact us" GridPane.rowIndex="1" />
       <Label text="Sincerely" GridPane.rowIndex="2" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="3">
         <buttons>

@@ -1,8 +1,8 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ8Şã·ü³/
-v
-java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8Ë–ú­³/
 }
-java:S1104"[Make usernameOrEMail a static final constant or non-public and provide accessors if needed.(Şëö¼şÿÿÿÿ8²Ñù­³/
+java:S1104"[Make usernameOrEMail a static final constant or non-public and provide accessors if needed.(Şëö¼şÿÿÿÿ8²Ñù­³/
 {
-java:S1104"YMake passwordError a static final constant or non-public and provide accessors if needed.(¡ƒÂşÿÿÿÿ8¥‚ÜÑ³/
+java:S1104"YMake passwordError a static final constant or non-public and provide accessors if needed.(¡ƒÂşÿÿÿÿ8¥‚ÜÑ³/
+v
+java:S1104"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ8Ë–ú­³/

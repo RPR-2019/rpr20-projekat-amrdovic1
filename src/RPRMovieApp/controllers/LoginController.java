@@ -1,5 +1,6 @@
 package RPRMovieApp.controllers;
 
+import RPRMovieApp.models.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,7 +31,7 @@ public class LoginController
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
         conn = DriverManager.getConnection(url, "username", "password");
         checkExistsUsername = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
-        checkPassword = conn.prepareStatement("SELECT password FROM user WHERE username=?");
+        checkPassword = conn.prepareStatement("SELECT * FROM user WHERE username=?");
     }
 
     public void goBackClick (ActionEvent actionEvent)
@@ -45,12 +46,13 @@ public class LoginController
         checkPassword.setString(1, usernameOrEMail.getText());
         ResultSet ceurs = checkExistsUsername.executeQuery();
         ResultSet cprs = checkPassword.executeQuery();
-        if (ceurs.getInt(1) == 0 || !(cprs.getString(1).equals(password.getText())))
+        if (ceurs.getInt(1) == 0 || !(cprs.getString(4).equals(password.getText())))
         {
             passwordError.setText("Login failed. Check your username and password!");
         }
         else
         {
+            ChosenUser.setChosen(new User(cprs.getInt(1), cprs.getString(2), cprs.getString(3)));
             Node n = (Node) actionEvent.getSource();
             Stage loginStage = (Stage) n.getScene().getWindow();
             loginStage.close();

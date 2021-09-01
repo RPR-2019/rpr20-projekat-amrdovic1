@@ -14,16 +14,17 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
       <Label fx:id="movieName" text="Movie name:" />
       <Label fx:id="screeningTime" text="Screening date and time:" GridPane.rowIndex="1" />
       <Label fx:id="noOfTickets" text="Number of tickets:" GridPane.rowIndex="2" />
-      <Label fx:id="price" text="Price:" GridPane.rowIndex="3" />
-      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <Label fx:id="price" text="Price:" GridPane.rowIndex="4" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
         <buttons>
             <Button fx:id="cancelBtn" mnemonicParsing="false" text="Cancel" />
-          <Button fx:id="finishBtn" defaultButton="true" mnemonicParsing="false" text="Finish" />
+          <Button fx:id="finishBtn" defaultButton="true" mnemonicParsing="false" onAction="#finishClick" text="Finish" />
         </buttons>
       </ButtonBar>
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
@@ -32,5 +33,6 @@
             <Button fx:id="foodBtn" mnemonicParsing="false" onAction="#foodClick" text="Food and drinks" />
         </buttons>
       </ButtonBar>
+      <Label fx:id="seatError" textFill="RED" GridPane.rowIndex="3" />
    </children>
 </GridPane>

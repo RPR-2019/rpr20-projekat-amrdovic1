@@ -23,6 +23,7 @@ public class ReservationController
     public Button cancelBtn;
     public Button finishBtn;
     public Button foodBtn;
+    public Label seatError;
 
     @FXML
     public void initialize()
@@ -52,5 +53,23 @@ public class ReservationController
         chooseFoodnDrinksStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         chooseFoodnDrinksStage.setResizable(false);
         chooseFoodnDrinksStage.show();
+    }
+
+    public void finishClick(ActionEvent actionEvent) throws IOException
+    {
+        if (ChosenSeats.getSeats().isEmpty())
+        {
+            seatError.setText("You must choose at least one seat in order to proceed to payment!");
+        }
+        else
+        {
+            Stage reservationPaymentStage = new Stage();
+            FXMLLoader reservationPaymentLoader = new FXMLLoader(getClass().getResource("/fxml/reservationPayment.fxml")); //This path is temporary
+            Parent root = reservationPaymentLoader.load();
+            reservationPaymentStage.setTitle("Choose food and drinks");
+            reservationPaymentStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+            reservationPaymentStage.setResizable(false);
+            reservationPaymentStage.show();
+        }
     }
 }

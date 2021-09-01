@@ -11,20 +11,24 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
       <Label text="Please choose the payment method:" />
       <ButtonBar prefHeight="84.0" prefWidth="432.0" GridPane.rowIndex="1">
          <buttons>
-            <RadioButton mnemonicParsing="false" text="CinemaCard" />
-            <RadioButton mnemonicParsing="false" text="Credit Card" />
-            <RadioButton mnemonicParsing="false" text="Cash (on the spot)" />
+            <RadioButton fx:id="cinemaCard" mnemonicParsing="false" onAction="#cinemaCardClick" text="CinemaCard" />
+            <RadioButton fx:id="creditCard" mnemonicParsing="false" onAction="#creditCardClick" text="Credit Card" />
+            <RadioButton fx:id="cash" mnemonicParsing="false" onAction="#cashClick" text="Cash (on the spot)" />
          </buttons>
       </ButtonBar>
-      <ButtonBar prefHeight="117.0" prefWidth="432.0" GridPane.rowIndex="2">
+      <Label fx:id="errorText" textFill="RED" GridPane.rowIndex="4" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="5">
         <buttons>
           <Button mnemonicParsing="false" text="Cancel" />
-            <Button defaultButton="true" mnemonicParsing="false" text="Finish" />
+            <Button fx:id="finishBtn" defaultButton="true" mnemonicParsing="false" onAction="#finishClick" text="Finish" />
         </buttons>
       </ButtonBar>
    </children>
