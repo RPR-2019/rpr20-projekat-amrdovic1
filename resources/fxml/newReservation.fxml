@@ -33,6 +33,6 @@
             <Button fx:id="foodBtn" mnemonicParsing="false" onAction="#foodClick" text="Food and drinks" />
         </buttons>
       </ButtonBar>
-      <Label fx:id="seatError" textFill="RED" GridPane.rowIndex="3" />
+      <Label fx:id="seatError" textFill="RED" GridPane.columnSpan="2" GridPane.rowIndex="3" />
    </children>
 </GridPane>

@@ -3,12 +3,18 @@ package RPRMovieApp.controllers;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+
+import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class ChooseSeats1Controller
 {
@@ -63,6 +69,10 @@ public class ChooseSeats1Controller
         getTickets = conn.prepareStatement("SELECT * FROM ticket WHERE projectionid=?");
         getTickets.setInt(1, ChosenProjection.getChosenProjection().getId());
         ResultSet rs = getTickets.executeQuery();
+        String taken = "-fx-background-color: lightpink";
+        String available = "-fx-background-color: yellowgreen";
+        String selected = "-fx-background-color: lightblue";
+
         while (rs.next())
         {
             takenSeats.add(rs.getInt(2));
@@ -76,27 +86,27 @@ public class ChooseSeats1Controller
                 int p = 25*i + j + 1;
                 if (takenSeats.contains(p))
                 {
-                    b.setStyle("-fx-background-color: lightpink");
+                    b.setStyle(taken);
                 }
-                if (ChosenSeats.getSeats().contains(p))
+                else if (ChosenSeats.getSeats().contains(p)) //Though this can't happen before user selects a seat
                 {
-                    b.setStyle("-fx-background-color: lightblue");
+                    b.setStyle(selected);
                 }
                 else
                 {
-                    b.setStyle("-fx-background-color: yellowgreen");
+                    b.setStyle(available);
                     b.setOnAction(new EventHandler<ActionEvent>() {
                         @Override
                         public void handle(ActionEvent actionEvent)
                         {
-                            if (b.getStyle().equals("-fx-background-color: yellowgreen")) //Take a free seat
+                            if (b.getStyle().equals(available)) //Take a free seat
                             {
-                                b.setStyle("-fx-background-color: lightblue");
+                                b.setStyle(selected);
                                 ChosenSeats.getSeats().add(p);
                             }
-                            else if (b.getStyle().equals("-fx-background-color: lightblue")) //Free a taken seat
+                            else if (b.getStyle().equals(selected)) //Free a taken seat
                             {
-                                b.setStyle("-fx-background-color: yellowgreen");
+                                b.setStyle(available);
                                 ChosenSeats.getSeats().remove(p);
                             }
                         }
@@ -106,27 +116,19 @@ public class ChooseSeats1Controller
         }
     }
 
-    private String getSeatNameForNumber (int n) //As will be shown in the selection window
-    {
-        int offset = n/15 + 65;
-        char c = (char) offset;
-        Character first_part = c;
-        String fp = first_part.toString();
-        Integer second_part = n%25;
-        String sp = second_part.toString();
-        return fp + sp;
-    }
-
-    private int getSeatNumberForName (String seat)
-    {
-        return 0;
-    }
-
-    public void takeSeatsClick(ActionEvent actionEvent)
-    {
+    public void takeSeatsClick(ActionEvent actionEvent) throws SQLException, IOException {
         Price.setPrice(ChosenSeats.getSeats().size()*6.0);
         Node n = (Node) actionEvent.getSource();
         Stage seatsStage = (Stage) n.getScene().getWindow();
         seatsStage.close();
+        conn.close();
+
+        Stage chooseSeatsNoteStage = new Stage();
+        FXMLLoader chooseSeatsNoteLoader = new FXMLLoader(getClass().getResource("/fxml/chooseSeatsNote.fxml")); //This path is temporary
+        Parent root = chooseSeatsNoteLoader.load();
+        chooseSeatsNoteStage.setTitle("NOTE!");
+        chooseSeatsNoteStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+        chooseSeatsNoteStage.setResizable(false);
+        chooseSeatsNoteStage.show();
     }
 }

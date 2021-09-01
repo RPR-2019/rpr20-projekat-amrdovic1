@@ -29,12 +29,14 @@ public class LatestMoviesController
     public ListView<Film> moviesList;
     private ObservableList<String> days = FXCollections.observableArrayList();
 
+    private Connection conn;
+
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        Connection conn = DriverManager.getConnection(url, "username", "password");
+        conn = DriverManager.getConnection(url, "username", "password");
         prepareMovies = conn.prepareStatement("SELECT * FROM Film"); //This is not the correct statement (now it's only used for testing purposes)
         ResultSet pmrs = prepareMovies.executeQuery();
         while (pmrs.next())
@@ -49,6 +51,7 @@ public class LatestMoviesController
         {
             days.add(gdrs.getString(1));
         }
+        conn.close();
         selectDay.setItems(days);
         selectDay.setValue("Monday");
         moviesList.setItems(movies);

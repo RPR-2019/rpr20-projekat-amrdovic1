@@ -107,6 +107,7 @@ public class LatestMovieDetailController
                     nrc.movieName.setText(nrc.movieName.getText() + " " + ChosenFilm.getChosen().getName());
                     nrc.screeningTime.setText(nrc.screeningTime.getText() + " " + ChosenProjection.getChosenProjection().getDayName() + " " + ChosenProjection.getChosenProjection().getHourInfo());
                     nrc.noOfTickets.setText(nrc.noOfTickets.getText() + " 0");
+                    conn.close();
                 }
             } catch (SQLException | IOException throwables) {
                 throwables.printStackTrace();

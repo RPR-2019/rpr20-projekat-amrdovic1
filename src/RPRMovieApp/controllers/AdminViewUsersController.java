@@ -39,6 +39,7 @@ public class AdminViewUsersController
         {
             users.add(new User(gaurs.getInt(1), gaurs.getString(2), gaurs.getString(3)));
         }
+        conn.close();
         userList.setItems(FXCollections.observableArrayList(users));
         userList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override

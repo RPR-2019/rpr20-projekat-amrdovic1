@@ -169,6 +169,7 @@ public class AddFilmController
         Node n = (Node) actionEvent.getSource();
         Stage addFilmStage = (Stage) n.getScene().getWindow();
         addFilmStage.close();
+        conn.close();
 
         Stage addFilmSuccessStage = new Stage();
         FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/addFilmSuccess.fxml")); //This path is temporary
