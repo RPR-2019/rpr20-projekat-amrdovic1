@@ -1,0 +1,24 @@
+
+x
+java:S1450%"[Remove the "filmsByTitle" field and declare it as a local variable in the relevant methods.(ĞÀêÔ8›äü±º/
+w
+java:S1450!"[Remove the "findAllFilms" field and declare it as a local variable in the relevant methods.(Û™ÿ18ÒÏÄ±º/
+s
+java:S1104"VMake searchText a static final constant or non-public and provide accessors if needed.(÷¹ÊÓ8¢Œé±º/
+u
+java:S1104"SMake backBtn a static final constant or non-public and provide accessors if needed.(ı·ŠÁÿÿÿÿÿ8­°†²º/
+Q
+java:S3740"/Provide the parametrized type for this generic.(¼”–ªşÿÿÿÿ8ù¹é±º/
+O
+java:S1172Q"2Remove this unused method parameter "actionEvent".(¼ÓåĞ8œ±í±º/
+E
+java:S16045"(Make this anonymous inner class a lambda(·¡¢Å8¦ì¡²º/
+v
+java:S1104"TMake filmList a static final constant or non-public and provide accessors if needed.(¼”–ªşÿÿÿÿ8Ãî÷±º/
+W
+java:S1141?"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ãĞ²º/
+{
+java:S1104 "YMake noMoviesError a static final constant or non-public and provide accessors if needed.(·ƒø¸üÿÿÿÿ8ô‘²º/
+w
+java:S1104"UMake searchBtn a static final constant or non-public and provide accessors if needed.(‡ÜĞ•ÿÿÿÿÿ8ù¹é±º/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ

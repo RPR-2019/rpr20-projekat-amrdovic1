@@ -195,3 +195,15 @@ R
 "resources/fxml/newReservation.fxml,d\0\d0bf8d31b31c98e3ea3b33635e5b39fb10b36806
 R
 "resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f
+K
+resources/fxml/addFilm.fxml,d\e\de93854149c4f22cf15df447af3bc80da9b5df58
+m
+=src/RPRMovieApp/controllers/AdminAddScreeningsController.java,d\7\d782643fd8a3add5760fc1cab48daff6a5576b15
+R
+"resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
+i
+9src/RPRMovieApp/controllers/AdminFindFilmsController.java,2\1\217779191b274fa6ab14d01230547544ccfa9ebc
+k
+;src/RPRMovieApp/controllers/AdminMovieDetailController.java,f\8\f841d26bae9723ca5ec2a09bc7f85369bb96ab15
+m
+=src/RPRMovieApp/controllers/AdminNextWeekFilmsController.java,0\1\01ca3a154d73f4303c1497920ebfa39cc5677ada

@@ -65,12 +65,10 @@ public class LatestMoviesController
                 Parent root = null;
                 try {
                     root = latestFilmDetailLoader.load();
-                    LatestMovieDetailController lmdc = latestFilmDetailLoader.getController();
                     latestFilmDetailStage.setTitle("Movie details - " + ChosenFilm.getChosen().getName());
                     latestFilmDetailStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                     latestFilmDetailStage.setResizable(false);
                     latestFilmDetailStage.show();
-                    lmdc.movieTitle.setText(ChosenFilm.getChosen().getName());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
