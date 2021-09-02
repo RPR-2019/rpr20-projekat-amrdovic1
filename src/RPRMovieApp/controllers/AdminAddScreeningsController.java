@@ -78,6 +78,7 @@ public class AdminAddScreeningsController
             alert.setTitle("Success!");
             alert.setHeaderText("Adding new screening successful!");
             alert.setContentText("You successfully added the screening for " + ChosenFilm.getChosen().getName());
+            alert.showAndWait();
         }
     }
 }
