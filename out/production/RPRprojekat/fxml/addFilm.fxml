@@ -35,7 +35,8 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </ChoiceBox>
-            <TextField fx:id="addNewDirector" text="Add new director" />
+            <TextField fx:id="addNewDirector" />
+            <Label fx:id="directorError" textFill="RED" />
          </children>
       </VBox>
       <Label text="Genres:" GridPane.rowIndex="5" />
@@ -91,7 +92,7 @@
       <TextArea fx:id="synopsisText" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
       <DatePicker fx:id="releaseDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="8" />
       <Label fx:id="dateError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-      <Label fx:id="synopsisError" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <Label fx:id="synopsisError" GridPane.columnIndex="1" GridPane.rowIndex="11" />
       <Label fx:id="titleError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

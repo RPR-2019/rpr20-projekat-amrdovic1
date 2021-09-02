@@ -120,8 +120,6 @@ l
 Q
 !resources/fxml/adminHomepage.fxml,7\b\7b24dc128784c3fc8eb055a9606766a052327c6b
 R
-"resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
-R
 "resources/fxml/adminViewUsers.fxml,a\6\a6e628779a8b883eae8e1a626eea4b147ce6c5ab
 g
 7out/production/RPRprojekat/fxml/confirmReservation.fxml,e\c\ec8f689034dbf1e4e5a458f70db8a787b7701a03
@@ -195,3 +193,5 @@ U
 %resources/fxml/reservationThanks.fxml,1\b\1b50e2ebd5ffbf4d4d651eef903aa51f01d8351a
 R
 "resources/fxml/newReservation.fxml,d\0\d0bf8d31b31c98e3ea3b33635e5b39fb10b36806
+R
+"resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f

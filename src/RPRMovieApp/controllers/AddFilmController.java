@@ -49,6 +49,7 @@ public class AddFilmController
     public Label languageError;
     public Label synopsisError;
     public Label titleError;
+    public Label directorError;
 
     private ObservableList<Genre> remainingGenres;
     private ObservableList<Language> remainingLanguages;
@@ -200,6 +201,13 @@ public class AddFilmController
         if (moviename.getText().isBlank())
         {
             titleError.setText("Film must have a title!");
+            error = true;
+        }
+        if (selectDirector.getValue() == null || addNewDirector.getText().isBlank())
+        {
+            directorError.setText("Movie must have a director.\n" +
+                    "Either choose from the list of existing ones\n" +
+                    "or add a new one by typing the name in the text field!");
             error = true;
         }
         if (releaseDatePicker.getValue() == null)

@@ -23,4 +23,13 @@ public class AdminViewFilmsController
         addFilmStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         addFilmStage.show();
     }
+
+    public void findFilmsClick(ActionEvent actionEvent) throws IOException {
+        Stage findFilmsStage = new Stage();
+        FXMLLoader addFilmLoader = new FXMLLoader(getClass().getResource("/fxml/adminFindFilm.fxml")); //This path is temporary
+        Parent root = addFilmLoader.load();
+        findFilmsStage.setTitle("Find a film");
+        findFilmsStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+        findFilmsStage.show();
+    }
 }
