@@ -205,5 +205,15 @@ i
 9src/RPRMovieApp/controllers/AdminFindFilmsController.java,2\1\217779191b274fa6ab14d01230547544ccfa9ebc
 k
 ;src/RPRMovieApp/controllers/AdminMovieDetailController.java,f\8\f841d26bae9723ca5ec2a09bc7f85369bb96ab15
-m
-=src/RPRMovieApp/controllers/AdminNextWeekFilmsController.java,0\1\01ca3a154d73f4303c1497920ebfa39cc5677ada
+b
+2out/production/RPRprojekat/fxml/adminFindFilm.fxml,c\9\c9ddd6bcec9b14a293927de2b59f370f01216b4a
+Q
+!resources/fxml/adminFindFilm.fxml,7\4\74a4036f9292f3d0c5b036fc21b784f2a7eb9bac
+e
+5out/production/RPRprojekat/fxml/adminMovieDetail.fxml,6\c\6c14a70601588214293090eb9c49c92ae3f3de51
+T
+$resources/fxml/adminMovieDetail.fxml,9\5\95293fdf40db99f9014a062d166c74a75241bea1
+g
+7out/production/RPRprojekat/fxml/adminAddScreenings.fxml,4\5\45b103383f1e959a6f30ed636215f29f1ddaf9a2
+V
+&resources/fxml/adminAddScreenings.fxml,5\1\51a445d8d278daaed92285cd8f0802f115238eba

@@ -1,28 +1,28 @@
 
-s
-java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
-v
-java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
+m
+java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
 r
 java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8 Ò«¿·/
-p
-java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
-T
-java:S1172""2Remove this unused method parameter "actionEvent".(†òÌÙüÿÿÿÿ8Ì¼¢ñ¸/
-T
-java:S11720"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
-w
-java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
+r
+java:S1104"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
 v
 java:S1104"YMake screeningTime a static final constant or non-public and provide accessors if needed.(õÛİ8§Áª¿·/
 w
+java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ8—ğ«¿·/
+p
+java:S1104"SMake foodBtn a static final constant or non-public and provide accessors if needed.(ªÌİ£8Î‡¬¿·/
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8é¬¿·/
+T
+java:S1172""2Remove this unused method parameter "actionEvent".(†òÌÙüÿÿÿÿ8Ì¼¢ñ¸/
+v
+java:S1104"TMake seatsBtn a static final constant or non-public and provide accessors if needed.(Úÿùÿÿÿÿ8í®«¿·/
+w
 java:S1104"UMake seatError a static final constant or non-public and provide accessors if needed.(¿š¹æûÿÿÿÿ8Şÿö‡º/
-r
-java:S1104"UMake movieName a static final constant or non-public and provide accessors if needed.(áºµì8à¶¨¿·/
+s
+java:S1104"WMake noOfTickets a static final constant or non-public and provide accessors if needed.(şÚÿ'8‹åª¿·/
+T
+java:S11720"2Remove this unused method parameter "actionEvent".(İ÷Ãúÿÿÿÿ8çß¨ñ¸/
 O
 java:S1172:"2Remove this unused method parameter "actionEvent".(¾÷ï÷8——£‡º/
-m
-java:S1104"QMake price a static final constant or non-public and provide accessors if needed.(¿æ‡'8”«¿·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
