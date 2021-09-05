@@ -1,8 +1,0 @@
-
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(§ÇÃ8Ü¢»³º/
-}
-java:S1104"[Make addScreeningBtn a static final constant or non-public and provide accessors if needed.(å·€·øÿÿÿÿ8÷Ô¹³º/
-x
-java:S1104"VMake movieTitle a static final constant or non-public and provide accessors if needed.(˜ˆ‘Æşÿÿÿÿ8 óş²º/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ

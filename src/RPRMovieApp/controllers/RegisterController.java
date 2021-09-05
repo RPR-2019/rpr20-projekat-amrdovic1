@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import org.apache.commons.validator.routines.EmailValidator;
 
 import java.io.IOException;
 import java.sql.*;
@@ -193,7 +194,16 @@ public class RegisterController
         }
         else
         {
-            emailError.setText("");
+            EmailValidator ev = EmailValidator.getInstance();
+            if (!ev.isValid(email.getText()))
+            {
+                error = true;
+                emailError.setText("Invalid email!\n");
+            }
+            else
+            {
+                emailError.setText("");
+            }
         }
         if (username.getText().isBlank())
         {

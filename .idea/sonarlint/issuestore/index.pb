@@ -1,24 +1,14 @@
 
-J
-.idea/libraries/javafx.xml,f\0\f01fa3cc38467805c9ad58fa176b2fe7146a6a5c
-e
-5.idea/libraries/mysql_mysql_connector_java_8_0_22.xml,e\4\e44e5eafe975517e3e0037703356757b9b13dd95
 a
 1.idea/libraries/org_xerial_sqlite_jdbc_3_34_0.xml,b\c\bc565f60bd79348b9fe8034b07d89fcb77d3a39e
-?
-RPRprojekat.iml,5\8\58249d4124d4bfd327c8097cec7e23ef52dd7b9f
 B
 RPRMovieApp.sqbpro,8\c\8cd4666c24fdeeb7c5249cef804ee64a69e87138
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ?
 RPRMovieApp.sql,0\b\0be2b365832bfafe8446a584e962da0902fee39b
 a
 1src/RPRMovieApp/controllers/WelcomeControler.java,3\7\377f3e6251ae41c29229a2816e2297b27a54e18b
 j
 :src/RPRMovieApp/controllers/RegisterSuccessController.java,a\d\ad00e44e5f57dfe9977be475c52bbf4c23b71654
-c
-3src/RPRMovieApp/controllers/RegisterController.java,b\7\b7867db520c92903d85812e58e0df9c7fbff0420
 c
 3src/RPRMovieApp/controllers/HomepageController.java,d\b\db7c110b53ccc772dc0cb0139ff3cdb62e6e4d24
 `
@@ -197,8 +187,6 @@ R
 "resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f
 K
 resources/fxml/addFilm.fxml,d\e\de93854149c4f22cf15df447af3bc80da9b5df58
-m
-=src/RPRMovieApp/controllers/AdminAddScreeningsController.java,d\7\d782643fd8a3add5760fc1cab48daff6a5576b15
 R
 "resources/fxml/adminViewFilms.fxml,0\3\036e9143a13ec729db89456b46a10351fc917880
 i
@@ -207,13 +195,9 @@ k
 ;src/RPRMovieApp/controllers/AdminMovieDetailController.java,f\8\f841d26bae9723ca5ec2a09bc7f85369bb96ab15
 b
 2out/production/RPRprojekat/fxml/adminFindFilm.fxml,c\9\c9ddd6bcec9b14a293927de2b59f370f01216b4a
-Q
-!resources/fxml/adminFindFilm.fxml,7\4\74a4036f9292f3d0c5b036fc21b784f2a7eb9bac
 e
 5out/production/RPRprojekat/fxml/adminMovieDetail.fxml,6\c\6c14a70601588214293090eb9c49c92ae3f3de51
 T
 $resources/fxml/adminMovieDetail.fxml,9\5\95293fdf40db99f9014a062d166c74a75241bea1
 g
 7out/production/RPRprojekat/fxml/adminAddScreenings.fxml,4\5\45b103383f1e959a6f30ed636215f29f1ddaf9a2
-V
-&resources/fxml/adminAddScreenings.fxml,5\1\51a445d8d278daaed92285cd8f0802f115238eba
