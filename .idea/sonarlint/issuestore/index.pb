@@ -5,8 +5,6 @@ B
 RPRMovieApp.sqbpro,8\c\8cd4666c24fdeeb7c5249cef804ee64a69e87138
 ?
 RPRMovieApp.sql,0\b\0be2b365832bfafe8446a584e962da0902fee39b
-a
-1src/RPRMovieApp/controllers/WelcomeControler.java,3\7\377f3e6251ae41c29229a2816e2297b27a54e18b
 j
 :src/RPRMovieApp/controllers/RegisterSuccessController.java,a\d\ad00e44e5f57dfe9977be475c52bbf4c23b71654
 c
