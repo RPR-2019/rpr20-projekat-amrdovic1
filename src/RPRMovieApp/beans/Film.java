@@ -1,10 +1,12 @@
 package RPRMovieApp.beans;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.stream.Collectors;
+
 
 public class Film
 {
@@ -16,7 +18,8 @@ public class Film
     private int languages; //Conversion logic follows in the code below
     private int directorid; //Every film is assumed to have a single director
     //Actors should somehow be stored here (ActorFilm table should probably be used)
-    private Date releasedate;
+    private String synopsis;
+    private LocalDate releasedate;
 
     public Film(String name, int duration, int genres, int languages) {
         this.name = name;
@@ -32,6 +35,16 @@ public class Film
         this.genres = genres;
         this.languages = languages;
         this.directorid = directorid;
+    }
+
+    public Film(int id, String name, int duration, int genres, int languages, int directorid, String synopsis) {
+        this.id = id;
+        this.name = name;
+        this.duration = duration;
+        this.genres = genres;
+        this.languages = languages;
+        this.directorid = directorid;
+        this.synopsis = synopsis;
     }
 
     private String getDirectorName () throws ClassNotFoundException, SQLException {
@@ -156,11 +169,11 @@ public class Film
         this.languages = languages;
     }
 
-    public Date getReleasedate() {
+    public LocalDate getReleasedate() {
         return releasedate;
     }
 
-    public void setReleasedate(Date releasedate) {
+    public void setReleasedate(LocalDate releasedate) {
         this.releasedate = releasedate;
     }
 
@@ -170,6 +183,20 @@ public class Film
 
     public void setDirectorid(int directorid) {
         this.directorid = directorid;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public int getGenreNumber()
+    {
+        return genres;
+    }
+
+    public int getLanguageNumber()
+    {
+        return languages;
     }
 
     @Override

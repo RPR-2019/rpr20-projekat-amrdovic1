@@ -1,6 +1,0 @@
-
-A
-java:S1700	"Rename field "chosenProjection"(ÛÚ¥ôùÿÿÿÿ8Êû×—·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-W
-java:S1118":Add a private constructor to hide the implicit public one.(’á‰ß8Œ‚˜—·/

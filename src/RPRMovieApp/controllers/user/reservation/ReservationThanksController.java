@@ -8,12 +8,10 @@ import java.util.Collections;
 public class ReservationThanksController
 {
     private Connection conn;
-    private PreparedStatement getMaxTicketID;
-    private PreparedStatement insertTickets;
 
 
     @FXML
-    public void initialize() throws ClassNotFoundException
+    public void initialize()
     {
 
     }
