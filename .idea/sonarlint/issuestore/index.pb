@@ -81,7 +81,5 @@ f
 6src/RPRMovieApp/controllers/FilmElementController.java,2\8\28713c10b3b435e36bb0f2930f4997e4827f80aa
 c
 3src/RPRMovieApp/controllers/HomepageController.java,d\b\db7c110b53ccc772dc0cb0139ff3cdb62e6e4d24
-a
-1src/RPRMovieApp/controllers/WelcomeControler.java,3\7\377f3e6251ae41c29229a2816e2297b27a54e18b
 s
 Csrc/RPRMovieApp/controllers/admin/home/AdminHomepageController.java,d\c\dc44ed634c5fc46d978e242d131c357969abbc73

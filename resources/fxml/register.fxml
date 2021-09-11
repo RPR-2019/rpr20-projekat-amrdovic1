@@ -5,12 +5,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.user.registration.RegisterController">
+<GridPane prefHeight="326.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.user.registration.RegisterController">
   <stylesheets>
       <URL value="@../css/register.css" />
   </stylesheets>
     <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="ALWAYS" />
   </columnConstraints>
   <rowConstraints>
@@ -41,30 +41,30 @@
       </ButtonBar>
       <Label text="Gender:" GridPane.rowIndex="4" />
       <Label text="Date of birth:" GridPane.rowIndex="6" />
-      <TextField fx:id="email" GridPane.columnIndex="1" />
-      <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <ButtonBar fx:id="genders" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <TextField fx:id="email" GridPane.columnIndex="1" GridPane.hgrow="NEVER" />
+      <TextField fx:id="username" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="2" />
+      <ButtonBar fx:id="genders" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="4">
          <buttons>
             <RadioButton fx:id="male" mnemonicParsing="false" onAction="#selectMale" text="Male" />
             <RadioButton fx:id="female" mnemonicParsing="false" onAction="#selectFemale" text="Female" />
          </buttons>
       </ButtonBar>
-      <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-      <PasswordField fx:id="repeatPassword" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-      <Label fx:id="emailError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+      <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="8" />
+      <PasswordField fx:id="repeatPassword" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="10" />
+      <Label fx:id="emailError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label fx:id="usernameError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Label fx:id="gendersError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+      <Label fx:id="gendersError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Label fx:id="dateError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="7" />
       <Label fx:id="passwordError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-      <Label fx:id="repeatPasswordError" textFill="RED" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11" />
-      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+      <Label fx:id="repeatPasswordError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <HBox prefHeight="45.0" prefWidth="172.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="6">
          <children>
-            <ChoiceBox fx:id="selectDay" prefHeight="25.0" prefWidth="53.0" />
-            <ChoiceBox fx:id="selectMonth" prefHeight="25.0" prefWidth="59.0" />
-            <ChoiceBox fx:id="selectYear" prefHeight="25.0" prefWidth="105.0" />
+            <ChoiceBox fx:id="selectDay" />
+            <ChoiceBox fx:id="selectMonth" />
+            <ChoiceBox fx:id="selectYear" />
          </children>
          <GridPane.margin>
-            <Insets />
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
