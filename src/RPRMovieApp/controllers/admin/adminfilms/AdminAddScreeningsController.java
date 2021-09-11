@@ -1,5 +1,8 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.DAO.CinemaDAO;
+import RPRMovieApp.beans.Screening;
 import RPRMovieApp.controllers.ChosenFilm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,6 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.time.LocalDate;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
@@ -20,19 +24,17 @@ public class AdminAddScreeningsController
     public Label movieTitle;
     public Button addScreeningBtn;
     public DatePicker newDate;
-    public Spinner newTimeHour;
-    public Spinner newTimeMinute;
-    public ChoiceBox cinemaChoiceBox;
+    public Spinner<Integer> newTimeHour;
+    public Spinner<Integer> newTimeMinute;
+    public ChoiceBox<Integer> cinemaChoiceBox;
     public Label dateError;
     public Label screeningError;
 
-    private Connection conn;
-    private PreparedStatement getMaxScreeningID;
-    private PreparedStatement addScreening;
+    private CinemaDAO cDAO;
 
     @FXML
-    public void initialize()
-    {
+    public void initialize() throws SQLException, ClassNotFoundException {
+        cDAO = CinemaDAO.getInstance();
         movieTitle.setText(ChosenFilm.getChosen().getName() + "- screenings for week ");
         for (int i = 1; i <= 5; i++)
         {
@@ -54,26 +56,15 @@ public class AdminAddScreeningsController
         }
         if (!error)
         {
-            Class.forName("org.sqlite.JDBC");
-            String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-            conn = DriverManager.getConnection(url, "username", "password");
-            getMaxScreeningID = conn.prepareStatement("SELECT MAX(id) FROM projection");
-            ResultSet gmsidrs = getMaxScreeningID.executeQuery();
-            int new_id = gmsidrs.getInt(1) + 1;
-            addScreening = conn.prepareStatement("INSERT INTO projection VALUES(?,?,?,?,?,?)");
-            addScreening.setInt(1, new_id);
-            addScreening.setInt(2, ChosenFilm.getChosen().getId());
-            int day = newDate.getValue().getDayOfWeek().getValue();
-            addScreening.setInt(3, day);
-            addScreening.setInt(4, (Integer)newTimeHour.getValue());
-            addScreening.setInt(5, (Integer)newTimeMinute.getValue());
-            addScreening.setInt(6, (Integer)cinemaChoiceBox.getValue());
-            addScreening.execute();
+            int max = cDAO.getMaxScreeningID();
+            LocalDate date = newDate.getValue();
+            Screening s = new Screening(max, CurrentData.getCurrentFilm().getId(), date.getDayOfWeek().getValue(), newTimeHour.getValue(), newTimeMinute.getValue(), cinemaChoiceBox.getValue());
+            cDAO.addScreening(s);
 
             Node n = (Node) actionEvent.getSource();
             Stage addScreeningStage = (Stage) n.getScene().getWindow();
             addScreeningStage.close();
-            conn.close();
+            CinemaDAO.removeInstance();
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Success!");

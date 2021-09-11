@@ -1,5 +1,6 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
+import RPRMovieApp.CurrentData;
 import RPRMovieApp.controllers.ChosenFilm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,14 +25,14 @@ public class AdminMovieDetailController
     @FXML
     public void initialize()
     {
-        selectedMovie.setText(ChosenFilm.getChosen().getName());
+        selectedMovie.setText(CurrentData.getCurrentFilm().getName());
     }
 
     public void nextWeekScrBtnClick(ActionEvent actionEvent) throws IOException {
         Stage nextWeekStage = new Stage();
         FXMLLoader nextWeekLoader = new FXMLLoader(getClass().getResource("/fxml/adminAddScreenings.fxml")); //This path is temporary
         Parent root = nextWeekLoader.load();
-        nextWeekStage.setTitle("Screenings for next week - " + ChosenFilm.getChosen().getName());
+        nextWeekStage.setTitle("Screenings for next week - " + CurrentData.getCurrentFilm().getName());
         nextWeekStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         nextWeekStage.setResizable(false);
         nextWeekStage.show();

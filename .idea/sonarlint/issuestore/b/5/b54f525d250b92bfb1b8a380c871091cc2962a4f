@@ -1,8 +1,0 @@
-
-’
-java:S1319	"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–¨ÔÛûÿÿÿÿ8¯İ…¾¹/
-\
-java:S1118":Add a private constructor to hide the implicit public one.(µ¦¹Œüÿÿÿÿ8É¢„¾¹/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-
-java:S1319"pThe type of the "seats" object should be an interface such as "List" rather than the implementation "ArrayList".(œãì¸8¯İ…¾¹/

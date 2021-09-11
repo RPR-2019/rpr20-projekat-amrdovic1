@@ -47,6 +47,17 @@ public class Film
         this.synopsis = synopsis;
     }
 
+    public Film(int id, String name, int duration, int genres, int languages, int directorid, String synopsis, LocalDate releasedate) {
+        this.id = id;
+        this.name = name;
+        this.duration = duration;
+        this.genres = genres;
+        this.languages = languages;
+        this.directorid = directorid;
+        this.synopsis = synopsis;
+        this.releasedate = releasedate;
+    }
+
     private String getDirectorName () throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";

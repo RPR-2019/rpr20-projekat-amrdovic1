@@ -27,7 +27,7 @@
             <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#loginClick" text="Login" />
         </buttons>
       </ButtonBar>
-      <TextField fx:id="usernameOrEMail" GridPane.columnIndex="1" />
+      <TextField fx:id="username" GridPane.columnIndex="1" />
       <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label fx:id="passwordError" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>

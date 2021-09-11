@@ -14,7 +14,7 @@ public class CinemaDAO
     private Connection conn;
 
     //AddFilmController statements
-    private PreparedStatement getDirectors, addNewFilm, addDirector, getMaxDirectorID, getExistingDirectorID, getMaxFilmID;
+    private PreparedStatement getDirectors, addNewFilm, addDirector, getMaxDirectorID, getExistingDirector, getMaxFilmID;
     //AdminAddScreeningsController statements
     private PreparedStatement getMaxScreeningID, addScreening;
     //AdminFindFilmsController statements
@@ -32,9 +32,11 @@ public class CinemaDAO
     //LatestMovieDetailController statements
     private PreparedStatement getAllScreenings, checkExistingTicket, getSelectedScreening;
     //LatestMovieController statements
-    private PreparedStatement prepareMovies, getDays;
+    private PreparedStatement getDays;
+    //LoginController statements
+    private PreparedStatement checkPassword, getUserByName;
 
-    public CinemaDAO getInstance() throws SQLException, ClassNotFoundException {
+    public static CinemaDAO getInstance() throws SQLException, ClassNotFoundException {
         if (cinema == null)
         {
             cinema = new CinemaDAO();
@@ -50,7 +52,7 @@ public class CinemaDAO
         addNewFilm = conn.prepareStatement("INSERT INTO film VALUES(?,?,?,?,?,?,?,?,?,?)");
         addDirector = conn.prepareStatement("INSERT INTO director VALUES(?,?)");
         getMaxDirectorID = conn.prepareStatement("SELECT MAX(id) FROM director");
-        getExistingDirectorID = conn.prepareStatement("SELECT id FROM director WHERE name=?");
+        getExistingDirector = conn.prepareStatement("SELECT * FROM director WHERE name=?");
         getMaxFilmID = conn.prepareStatement("SELECT MAX(id) FROM film");
 
         getMaxScreeningID = conn.prepareStatement("SELECT MAX(id) FROM projection");
@@ -77,6 +79,25 @@ public class CinemaDAO
         checkExistingTicket = conn.prepareStatement("SELECT * FROM ticket WHERE userid=? AND projectionid=?");
 
         getDays = conn.prepareStatement("SELECT name FROM day");
+
+        checkPassword = conn.prepareStatement("SELECT password FROM user WHERE username=?");
+        getUserByName = conn.prepareStatement("SELECT * FROM user WHERE username=?");
+    }
+
+    public static void removeInstance()
+    {
+        if (cinema == null) return;
+        cinema.close();
+        cinema = null;
+    }
+
+    public void close()
+    {
+        try {
+            conn.close();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     private int getMaxID(PreparedStatement ps)
@@ -122,7 +143,7 @@ public class CinemaDAO
         try {
             sameUsernameCheck.setString(1, username);
             ResultSet sucrs = sameUsernameCheck.executeQuery();
-            res = sucrs.next();
+            res = (sucrs.getInt(1) != 0);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -135,7 +156,7 @@ public class CinemaDAO
         try {
             sameEMailCheck.setString(1, email);
             ResultSet semcrs = sameEMailCheck.executeQuery();
-            res = semcrs.next();
+            res = (semcrs.getInt(1) != 0);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -154,6 +175,22 @@ public class CinemaDAO
             throwables.printStackTrace();
         }
         return res;
+    }
+
+    public boolean checkPasswordForUser (String u, String password)
+    {
+        boolean ok = false;
+        try {
+            checkPassword.setString(1, u);
+            ResultSet rscp = checkPassword.executeQuery();
+            if (rscp.getString(1).equals(password))
+            {
+                ok = true;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return ok;
     }
 
     public ArrayList<String> getDirectors()
@@ -268,6 +305,19 @@ public class CinemaDAO
         return days;
     }
 
+    public User getUser (String name)
+    {
+        User u = null;
+        try {
+            getUserByName.setString(1, name);
+            ResultSet gubnrs = getUserByName.executeQuery();
+            u = new User(gubnrs.getInt(1), gubnrs.getString(2), gubnrs.getString(3), gubnrs.getString(4));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return u;
+    }
+
     public void addFilm (Film f)
     {
         try {
@@ -349,5 +399,19 @@ public class CinemaDAO
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+
+
+    public Director getDirector(String name)
+    {
+        Director d = null;
+        try {
+            getExistingDirector.setString(1, name);
+            ResultSet rsged = getExistingDirector.executeQuery();
+            d = new Director(rsged.getInt(1), rsged.getString(2));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return d;
     }
 }

@@ -1,7 +1,8 @@
 package RPRMovieApp.controllers;
 
-import RPRMovieApp.controllers.admin.home.AdminHomepageController;
+import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.beans.User;
+import RPRMovieApp.controllers.admin.home.AdminHomepageController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,25 +15,21 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class LoginController
 {
-    public TextField usernameOrEMail;
+    public TextField username;
     public PasswordField password;
     public Label passwordError;
-    private PreparedStatement checkExistsUsername;
-    private PreparedStatement checkPassword;
-    private Connection conn;
+    private CinemaDAO cDAO;
+
     @FXML
-    public void initialize() throws ClassNotFoundException, SQLException {
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        checkExistsUsername = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
-        checkPassword = conn.prepareStatement("SELECT * FROM user WHERE username=?");
+    public void initialize() throws ClassNotFoundException, SQLException
+    {
+        cDAO = CinemaDAO.getInstance();
     }
 
     public void goBackClick (ActionEvent actionEvent)
@@ -43,25 +40,23 @@ public class LoginController
     }
 
     public void loginClick(ActionEvent actionEvent) throws SQLException, IOException {
-        checkExistsUsername.setString(1, usernameOrEMail.getText());
-        checkPassword.setString(1, usernameOrEMail.getText());
-        ResultSet ceurs = checkExistsUsername.executeQuery();
-        ResultSet cprs = checkPassword.executeQuery();
-        if (ceurs.getInt(1) == 0 || !(cprs.getString(4).equals(password.getText())))
+
+        if (!cDAO.checkPasswordForUser(username.getText(), password.getText()))
         {
-            passwordError.setText("Login failed. Check your username and password!");
+            passwordError.setText("Login failed. Please check your username and password!");
         }
         else
         {
-            ChosenUser.setChosen(new User(cprs.getInt(1), cprs.getString(2), cprs.getString(3)));
+            User u = cDAO.getUser(username.getText());
+            ChosenUser.setChosen(u);
+            CinemaDAO.removeInstance();
             Node n = (Node) actionEvent.getSource();
             Stage loginStage = (Stage) n.getScene().getWindow();
             loginStage.close();
-            conn.close();
 
             Stage homeStage = new Stage();
             FXMLLoader homePageLoader;
-            if (usernameOrEMail.getText().equals("admin"))
+            if (username.getText().equals("admin"))
             {
                 homePageLoader = new FXMLLoader(getClass().getResource("/fxml/adminHomepage.fxml"));
                 Parent root = homePageLoader.load();
@@ -70,7 +65,7 @@ public class LoginController
                 homeStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                 homeStage.setResizable(false);
                 homeStage.show();
-                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + usernameOrEMail.getText()); //This is not how it will be done in the final project
+                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + username.getText()); //This is not how it will be done in the final project
             }
             else
             {
@@ -81,7 +76,7 @@ public class LoginController
                 homeStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                 homeStage.setResizable(false);
                 homeStage.show();
-                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + usernameOrEMail.getText()); //This is not how it will be done in the final project
+                rc.welcomeMessage.setText(rc.welcomeMessage.getText() + username.getText()); //This is not how it will be done in the final project
             }
 
         }

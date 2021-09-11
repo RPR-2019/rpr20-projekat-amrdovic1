@@ -1,5 +1,8 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
+import RPRMovieApp.DAO.CinemaDAO;
+import RPRMovieApp.beans.Director;
+import RPRMovieApp.beans.Film;
 import RPRMovieApp.beans.Genre;
 import RPRMovieApp.beans.Language;
 import javafx.collections.FXCollections;
@@ -25,7 +28,7 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class AddFilmController
 {
-    public ChoiceBox selectDirector;
+    public ChoiceBox<String> selectDirector;
     public TextField addNewDirector;
     public TextField moviename;
     public Button addGenre;
@@ -52,19 +55,11 @@ public class AddFilmController
     private ArrayList<String> sgenres = new ArrayList<>();
     private ArrayList<String> slanguages = new ArrayList<>();
 
-    private ArrayList<String> directors = new ArrayList<>();
 
     private int calculateGenres = 0;
     private int calculateLanguages = 0;
 
-    private Connection conn;
-
-    private PreparedStatement getDirectors;
-    private PreparedStatement addNewFilm;
-    private PreparedStatement addDirector;
-    private PreparedStatement getMaxDirectorID;
-    private PreparedStatement getExistingDirectorID;
-    private PreparedStatement getMaxFilmID;
+    private CinemaDAO cDAO;
 
     private boolean hasPassed ()
     {
@@ -115,6 +110,7 @@ public class AddFilmController
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
+        cDAO = CinemaDAO.getInstance();
         SpinnerValueFactory<Integer> dsvf = new SpinnerValueFactory<>() {
             @Override
             public void decrement(int i) {
@@ -133,24 +129,11 @@ public class AddFilmController
                 durationSpinner.increment(0);
             }
         });
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        getDirectors = conn.prepareStatement("SELECT name FROM director");
-        addNewFilm = conn.prepareStatement("INSERT INTO film VALUES(?,?,?,?,?,?,?)");
-        addDirector = conn.prepareStatement("INSERT INTO director VALUES(?,?)");
-        getMaxDirectorID = conn.prepareStatement("SELECT MAX(id) FROM director");
-        getExistingDirectorID = conn.prepareStatement("SELECT id FROM director WHERE name=?");
-        getMaxFilmID = conn.prepareStatement("SELECT MAX(id) FROM film");
         remainingGenres = FXCollections.observableArrayList(Genre.values());
         selectGenre.setItems(remainingGenres);
         remainingLanguages = FXCollections.observableArrayList(Language.values());
         selectLanguage.setItems(remainingLanguages);
-        ResultSet rs = getDirectors.executeQuery();
-        while (rs.next())
-        {
-            directors.add(rs.getString(1));
-        }
+        ArrayList<String> directors = cDAO.getDirectors();
         Collections.sort(directors);
         selectDirector.setItems(FXCollections.observableArrayList(directors));
     }
@@ -181,7 +164,7 @@ public class AddFilmController
                 selectedGenres.setText(selectedGenres.getText() + "|");
             }
         }
-        selectGenre.setValue(null);
+        selectGenre.getSelectionModel().selectFirst();
     }
 
     public void cancelClick(ActionEvent actionEvent)
@@ -198,7 +181,7 @@ public class AddFilmController
             titleError.setText("Film must have a title!");
             error = true;
         }
-        if (selectDirector.getValue() == null || addNewDirector.getText().isBlank())
+        if (selectDirector.getValue() == null && addNewDirector.getText().isBlank())
         {
             directorError.setText("Movie must have a director.\n" +
                     "Either choose from the list of existing ones\n" +
@@ -236,42 +219,30 @@ public class AddFilmController
         }
         if (!error)
         {
+            Director d = null;
             if (selectDirector.getValue() == null)
             {
-                ResultSet gmdid = getMaxDirectorID.executeQuery();
-                directorid = gmdid.getInt(1) + 1;
-                addDirector.setInt(1, directorid);
-                addDirector.setString(2, addNewDirector.getText());
-                addDirector.execute();
+                d = new Director(cDAO.getMaxDirectorID() + 1, addNewDirector.getText());
+                cDAO.addDirector(d);
             }
             else
             {
-                getExistingDirectorID.setString(1, selectDirector.getSelectionModel().getSelectedItem().toString());
-                ResultSet gedid = getExistingDirectorID.executeQuery();
-                directorid = gedid.getInt(1);
+                d = cDAO.getDirector(selectDirector.getValue());
             }
-            ResultSet gmfid = getMaxFilmID.executeQuery();
-            addNewFilm.setInt(1, gmfid.getInt(1) + 1);
-            addNewFilm.setString(2, moviename.getText());
-            addNewFilm.setInt(3, durationSpinner.getValue());
-            addNewFilm.setInt(4, directorid);
-            addNewFilm.setInt(5, calculateGenres);
-            addNewFilm.setInt(6, calculateLanguages);
-            addNewFilm.setString(7, synopsisText.getText());
-            addNewFilm.execute();
-            conn.close();
+            int max = cDAO.getMaxFilmID();
+            Film f = new Film(max + 1, moviename.getText(), durationSpinner.getValue(), d.getId(), calculateGenres, calculateLanguages, synopsisText.getText(), releaseDatePicker.getValue());
+            cDAO.addFilm(f);
+            CinemaDAO.removeInstance();
             Node n = (Node) actionEvent.getSource();
             Stage addFilmStage = (Stage) n.getScene().getWindow();
             addFilmStage.close();
-            conn.close();
 
-            Stage addFilmSuccessStage = new Stage();
-            FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/addFilmSuccess.fxml")); //This path is temporary
-            Parent root = signUpLoader.load();
-            addFilmSuccessStage.setTitle("Registration successful!");
-            addFilmSuccessStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-            addFilmSuccessStage.setResizable(false);
-            addFilmSuccessStage.show();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Film successfully added!");
+            alert.setHeaderText(null);
+            alert.setContentText("You successfully added the film " + f.getName() + "!");
+
+            alert.showAndWait();
         }
     }
 
@@ -291,6 +262,6 @@ public class AddFilmController
                 selectedLanguages.setText(selectedLanguages.getText() + "|");
             }
         }
-        selectLanguage.setValue(null);
+        selectLanguage.getSelectionModel().selectFirst();
     }
 }

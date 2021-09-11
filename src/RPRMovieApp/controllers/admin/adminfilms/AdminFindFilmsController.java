@@ -1,5 +1,7 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.controllers.ChosenFilm;
 import RPRMovieApp.beans.Film;
 import javafx.collections.FXCollections;
@@ -26,55 +28,41 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class AdminFindFilmsController
 {
-    public ListView filmList;
+    public ListView<Film> filmList;
     public TextField searchText;
     public Button searchBtn;
     public Button backBtn;
     public Label noMoviesError;
-    private PreparedStatement findAllFilms;
-    private Connection conn;
 
     private ObservableList<Film> films = FXCollections.observableArrayList();
     private ObservableList<Film> filmsByTitle = FXCollections.observableArrayList();
 
+    private CinemaDAO cDAO;
+
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        findAllFilms = conn.prepareStatement("SELECT * FROM film");
-        ResultSet rsfaf = findAllFilms.executeQuery();
-        while (rsfaf.next())
-        {
-            films.add(new Film(rsfaf.getInt(1), rsfaf.getString(2), rsfaf.getInt(3), rsfaf.getInt(4), rsfaf.getInt(5), rsfaf.getInt(6)));
-        }
-        conn.close();
+        films = FXCollections.observableArrayList(cDAO.getAllFilms());
         filmList.setItems(films);
         filmList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent)
             {
-                try {
-                    conn = DriverManager.getConnection(url, "username", "password");
-                    ChosenFilm.setChosen((Film)filmList.getSelectionModel().getSelectedItem());
+                    CurrentData.setCurrentFilm(filmList.getSelectionModel().getSelectedItem());
                     Stage filmDetailsStage = new Stage();
                     FXMLLoader filmDetailsLoader = new FXMLLoader(getClass().getResource("/fxml/adminMovieDetail.fxml")); //This path is temporary
                     Parent root;
                     try {
                         root = filmDetailsLoader.load();
                         AdminMovieDetailController amdc = filmDetailsLoader.getController();
-                        filmDetailsStage.setTitle("Movie details - " + ChosenFilm.getChosen().getName());
+                        filmDetailsStage.setTitle("Movie details - " + CurrentData.getCurrentFilm().getName());
                         filmDetailsStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                         filmDetailsStage.setResizable(false);
                         filmDetailsStage.show();
-                        amdc.selectedMovie.setText(ChosenFilm.getChosen().getName());
+                        amdc.selectedMovie.setText(CurrentData.getCurrentFilm().getName());
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                } catch (SQLException throwables) {
-                    throwables.printStackTrace();
-                }
             }
         });
     }

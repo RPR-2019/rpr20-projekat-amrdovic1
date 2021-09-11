@@ -91,14 +91,8 @@ g
 7src/RPRMovieApp/controllers/ChooseSeats5Controller.java,5\d\5dee1e195c381e0ca8ac3d2ecbe6b033c8dabd93
 d
 4out/production/RPRprojekat/fxml/chooseSeatsNote.fxml,f\a\fa1024f17a8f45a023dc0faa5e4a8e589fec35cc
-\
-,src/RPRMovieApp/controllers/ChosenSeats.java,b\5\b54f525d250b92bfb1b8a380c871091cc2962a4f
 j
 :src/RPRMovieApp/controllers/ChooseSeatsNoteController.java,b\3\b3750561fe5fc0c59db32a51e40a811de866431d
-V
-&src/RPRMovieApp/controllers/Price.java,0\1\0133c316bc769c7d8f3943b66f7ae336a8695842
-R
-"resources/fxml/addFilmSuccess.fxml,c\5\c5278c911230adc8eadbb9e99071d0113eaa363f
 i
 9src/RPRMovieApp/controllers/AdminFindFilmsController.java,2\1\217779191b274fa6ab14d01230547544ccfa9ebc
 k

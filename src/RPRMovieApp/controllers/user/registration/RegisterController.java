@@ -1,5 +1,7 @@
 package RPRMovieApp.controllers.user.registration;
 
+import RPRMovieApp.DAO.CinemaDAO;
+import RPRMovieApp.beans.User;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -22,7 +24,6 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class RegisterController
 {
-    private Connection conn;
     public TextField email;
     public TextField username;
     public ButtonBar genders;
@@ -42,12 +43,12 @@ public class RegisterController
     public Label dateError; //Text: User should be at least 15 years old
     public Label passwordError; //Text: Password is too short; Password doesn't contain all types of characters required
     public Label repeatPasswordError; //Text: Passwords do not match
-    private PreparedStatement sameUsernameCheck;
-    private PreparedStatement sameEMailCheck;
-    private PreparedStatement registerNewUser;
-    private PreparedStatement getMaxID;
+    private CinemaDAO cDAO;
     private int days[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     private String mandatory = "This is a mandatory field!";
+
+    public RegisterController() throws SQLException, ClassNotFoundException {
+    }
 
     private List<Integer> getThresholdDate ()
     {
@@ -119,13 +120,7 @@ public class RegisterController
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        sameUsernameCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE username=?");
-        sameEMailCheck = conn.prepareStatement("SELECT COUNT(*) FROM user WHERE email=?");
-        registerNewUser = conn.prepareStatement("INSERT INTO user VALUES(?,?,?,?)");
-        getMaxID = conn.prepareStatement("SELECT MAX(id) FROM user");
+        cDAO = CinemaDAO.getInstance();
         for (int i = 1; i <= 31; i++)
         {
             selectDay.getItems().add(i);
@@ -247,16 +242,12 @@ public class RegisterController
         {
             repeatPasswordError.setText("");
         }
-        sameUsernameCheck.setString(1, username.getText());
-        sameEMailCheck.setString(1, email.getText());
-        ResultSet surs = sameUsernameCheck.executeQuery();
-        ResultSet semrs = sameEMailCheck.executeQuery();
-        if (surs.getInt(1) != 0)
+        if (cDAO.checkExistingUsername(username.getText()))
         {
             usernameError.setText("User with username " + username.getText() + "already exists!");
             error = true;
         }
-        if (semrs.getInt(1) != 0)
+        if (cDAO.checkExistingMail(email.getText()))
         {
             emailError.setText("User with email " + email.getText() + " already exists!");
             error = true;
@@ -268,26 +259,20 @@ public class RegisterController
         }
         if (!error)
         {
-            ResultSet getmaxidrs = getMaxID.executeQuery();
-            int new_id = getmaxidrs.getInt(1) + 1;
-            registerNewUser.setInt(1, new_id);
-            registerNewUser.setString(2, username.getText());
-            registerNewUser.setString(3, email.getText());
-            registerNewUser.setString(4, password.getText());
-            registerNewUser.execute();
+            int new_id = cDAO.getMaxUserID() + 1;
+            User u = new User(new_id, username.getText(), email.getText(), password.getText());
+            cDAO.addNewUser(u);
+            CinemaDAO.removeInstance();
             Node n = (Node) actionEvent.getSource();
             Stage registerStage = (Stage) n.getScene().getWindow();
             registerStage.close();
-            conn.close();
 
-            Stage regSuccessStage = new Stage();
-            FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/registerSuccess.fxml")); //This path is temporary
-            Parent root = signUpLoader.load();
-            RegisterController rc = signUpLoader.getController();
-            regSuccessStage.setTitle("Registration successful!");
-            regSuccessStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-            regSuccessStage.setResizable(false);
-            regSuccessStage.show();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Registration successful!");
+            alert.setHeaderText(null);
+            alert.setContentText(u.getUsername() + ", you have successfully registered into the system!");
+
+            alert.showAndWait();
         }
     }
 
