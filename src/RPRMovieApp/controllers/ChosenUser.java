@@ -1,6 +1,6 @@
 package RPRMovieApp.controllers;
 
-import RPRMovieApp.models.User;
+import RPRMovieApp.beans.User;
 
 //Auxilliary class which stores chosen user when admin browses users
 

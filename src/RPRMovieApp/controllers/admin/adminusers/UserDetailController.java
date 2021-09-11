@@ -1,7 +1,7 @@
 package RPRMovieApp.controllers.admin.adminusers;
 
 import RPRMovieApp.controllers.ChosenUser;
-import RPRMovieApp.models.User;
+import RPRMovieApp.beans.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,8 +13,6 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 

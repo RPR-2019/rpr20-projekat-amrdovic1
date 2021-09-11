@@ -1,8 +1,7 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
-import RPRMovieApp.models.Genre;
-import RPRMovieApp.models.Language;
-import javafx.beans.Observable;
+import RPRMovieApp.beans.Genre;
+import RPRMovieApp.beans.Language;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,18 +12,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import javafx.util.StringConverter;
 
-import javax.xml.transform.Result;
 import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Locale;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 

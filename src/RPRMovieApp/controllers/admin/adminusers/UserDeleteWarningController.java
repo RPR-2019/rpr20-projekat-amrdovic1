@@ -1,7 +1,7 @@
 package RPRMovieApp.controllers.admin.adminusers;
 
 import RPRMovieApp.controllers.ChosenUser;
-import RPRMovieApp.models.User;
+import RPRMovieApp.beans.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

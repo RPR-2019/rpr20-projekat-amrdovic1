@@ -1,9 +1,8 @@
 package RPRMovieApp.controllers;
 
-import RPRMovieApp.models.Film;
+import RPRMovieApp.beans.Film;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 

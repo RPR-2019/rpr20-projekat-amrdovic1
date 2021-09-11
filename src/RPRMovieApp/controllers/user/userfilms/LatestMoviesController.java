@@ -1,8 +1,7 @@
 package RPRMovieApp.controllers.user.userfilms;
 
 import RPRMovieApp.controllers.ChosenFilm;
-import RPRMovieApp.models.Film;
-import javafx.beans.property.SimpleObjectProperty;
+import RPRMovieApp.beans.Film;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
@@ -17,7 +16,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.List;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 

@@ -2,7 +2,7 @@ package RPRMovieApp.controllers;
 
 //This class serves as an auxiliary class so that the same controller can be used for different cinema halls
 
-import RPRMovieApp.models.Screening;
+import RPRMovieApp.beans.Screening;
 
 public class ChosenProjection
 {

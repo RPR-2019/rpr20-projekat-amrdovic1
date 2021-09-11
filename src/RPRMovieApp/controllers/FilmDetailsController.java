@@ -1,6 +1,6 @@
 package RPRMovieApp.controllers;
 
-import RPRMovieApp.models.Film;
+import RPRMovieApp.beans.Film;
 
 public class FilmDetailsController
 {

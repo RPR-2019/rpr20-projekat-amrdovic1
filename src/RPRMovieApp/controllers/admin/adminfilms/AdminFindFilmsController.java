@@ -1,7 +1,7 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
 import RPRMovieApp.controllers.ChosenFilm;
-import RPRMovieApp.models.Film;
+import RPRMovieApp.beans.Film;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
