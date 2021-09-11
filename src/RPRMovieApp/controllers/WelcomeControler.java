@@ -40,7 +40,6 @@ public class WelcomeControler
         Stage registerStage = new Stage();
         FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/register.fxml")); //This path is temporary
         Parent root = signUpLoader.load();
-        RegisterController rc = signUpLoader.getController();
         registerStage.setTitle("Register as a new user");
         registerStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         registerStage.setResizable(false);

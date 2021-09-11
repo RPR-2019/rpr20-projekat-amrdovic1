@@ -1,14 +1,0 @@
-
-x
-java:S1104"VMake deleteUser a static final constant or non-public and provide accessors if needed.(„ÕÎñÿÿÿÿÿ8ÒãÁ·/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-u
-java:S1450"SRemove the "user" field and declare it as a local variable in the relevant methods.(’Ø¾ıÿÿÿÿ8ãÛĞÄ·/
-O
-java:S1172,"2Remove this unused method parameter "actionEvent".(Ì„øˆ8ÉÿñÁ·/
-r
-java:S1104"UMake cancelBtn a static final constant or non-public and provide accessors if needed.(»’’é8²¸ãÁ·/
-u
-java:S1450"SRemove the "conn" field and declare it as a local variable in the relevant methods.(´¤´‚ıÿÿÿÿ8Ô·íÁ·/
-w
-java:S1104"ZMake warningMessage a static final constant or non-public and provide accessors if needed.(¿Í‚ğ8”ãÁ·/
