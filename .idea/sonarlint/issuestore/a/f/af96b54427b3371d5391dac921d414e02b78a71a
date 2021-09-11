@@ -1,6 +1,0 @@
-
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8È‡áê·/
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ûÊáê·/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò ¹í

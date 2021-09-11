@@ -1,6 +1,7 @@
 package RPRMovieApp.controllers.admin.adminusers;
 
-import RPRMovieApp.controllers.ChosenUser;
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.beans.User;
 import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
@@ -22,31 +23,22 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 public class AdminViewUsersController
 {
     public Button findUserBtn;
+    public ArrayList<User> users;
     public ListView<User> userList;
 
-    private Connection conn;
-    private PreparedStatement getAllUsers;
+    private CinemaDAO cDAO;
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        getAllUsers = conn.prepareStatement("SELECT * FROM user WHERE username != 'admin' ORDER BY username");
-        ResultSet gaurs = getAllUsers.executeQuery();
-        ArrayList<User> users = new ArrayList<>();
-        while (gaurs.next())
-        {
-            users.add(new User(gaurs.getInt(1), gaurs.getString(2), gaurs.getString(3)));
-        }
-        conn.close();
+        cDAO = CinemaDAO.getInstance();
+        users = cDAO.getAllUsers();
         userList.setItems(FXCollections.observableArrayList(users));
         userList.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent)
             {
-                ChosenUser.setChosen(userList.getSelectionModel().getSelectedItem());
+                CurrentData.setCurrentSelectedUser(userList.getSelectionModel().getSelectedItem());
                 Stage viewUserDetailsStage = new Stage();
                 FXMLLoader userDetailLoader = new FXMLLoader(getClass().getResource("/fxml/userDetail.fxml")); //This path is temporary
                 Parent root;
@@ -62,5 +54,6 @@ public class AdminViewUsersController
                 }
             }
         });
+        CinemaDAO.removeInstance();
     }
 }

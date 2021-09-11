@@ -1,7 +1,6 @@
 package RPRMovieApp.controllers.admin.adminfilms;
 
 import RPRMovieApp.CurrentData;
-import RPRMovieApp.controllers.ChosenFilm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

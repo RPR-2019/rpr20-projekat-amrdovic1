@@ -1,5 +1,6 @@
 package RPRMovieApp.controllers;
 
+import RPRMovieApp.CurrentData;
 import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.beans.User;
 import RPRMovieApp.controllers.admin.home.AdminHomepageController;
@@ -48,7 +49,7 @@ public class LoginController
         else
         {
             User u = cDAO.getUser(username.getText());
-            ChosenUser.setChosen(u);
+            CurrentData.setCurrentUser(u);
             CinemaDAO.removeInstance();
             Node n = (Node) actionEvent.getSource();
             Stage loginStage = (Stage) n.getScene().getWindow();

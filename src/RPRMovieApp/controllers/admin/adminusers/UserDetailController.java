@@ -1,6 +1,6 @@
 package RPRMovieApp.controllers.admin.adminusers;
 
-import RPRMovieApp.controllers.ChosenUser;
+import RPRMovieApp.CurrentData;
 import RPRMovieApp.beans.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,7 +27,7 @@ public class UserDetailController
     @FXML
     public void initialize()
     {
-        user = ChosenUser.getChosen();
+        user = CurrentData.getCurrentUser();
         user.setMode(true);
         mainMessage.setText(mainMessage.getText() + " " + user.getUsername());
         userInfo.setText(user.toString());

@@ -1,16 +1,0 @@
-
-^
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(­æıò
-@
-java:S1659"*Declare "addfilmquery" on a separate line.(¯û†
-?
-java:S2115")Add password protection to this database.(­æıò
->
-java:S1659"(Declare "newidquery" on a separate line.(¯û†
-C
-java:S1659"-Declare "removefilmquery" on a separate line.(¯û†
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÏü•
-?
-java:S1481")Remove this unused "conn" local variable.(­æıò
-C
-java:S1659"-Declare "modifyfilmquery" on a separate line.(¯û†

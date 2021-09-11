@@ -1,0 +1,8 @@
+
+u
+java:S1104"SMake moreBtn a static final constant or non-public and provide accessors if needed.(é„äúÿÿÿÿ8°Ï¸¾·/
+v
+java:S1104"TMake filmInfo a static final constant or non-public and provide accessors if needed.(¤÷¤ãùÿÿÿÿ8ÇáÄ¾·/
+w
+java:S1104"UMake filmImage a static final constant or non-public and provide accessors if needed.(“ å¿øÿÿÿÿ8œñ¶¾·/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ

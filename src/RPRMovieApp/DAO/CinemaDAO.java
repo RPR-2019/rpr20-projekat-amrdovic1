@@ -287,7 +287,7 @@ public class CinemaDAO
             ResultSet gssrs = getSelectedScreening.executeQuery();
             if (gssrs.next())
             {
-                s = new Screening(gssrs.getInt(1), gssrs.getInt(2), gssrs.getInt(3), gssrs.getInt(4), gssrs.getInt(5));
+                s = new Screening(gssrs.getInt(1), gssrs.getInt(2), gssrs.getInt(3), gssrs.getInt(4), gssrs.getInt(5), gssrs.getInt(6));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();

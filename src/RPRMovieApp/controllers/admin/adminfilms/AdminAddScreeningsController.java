@@ -3,21 +3,15 @@ package RPRMovieApp.controllers.admin.adminfilms;
 import RPRMovieApp.CurrentData;
 import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.beans.Screening;
-import RPRMovieApp.controllers.ChosenFilm;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
-
-import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class AdminAddScreeningsController
 {
@@ -35,7 +29,7 @@ public class AdminAddScreeningsController
     @FXML
     public void initialize() throws SQLException, ClassNotFoundException {
         cDAO = CinemaDAO.getInstance();
-        movieTitle.setText(ChosenFilm.getChosen().getName() + "- screenings for week ");
+        movieTitle.setText(CurrentData.getCurrentFilm().getName() + "- screenings for week ");
         for (int i = 1; i <= 5; i++)
         {
             cinemaChoiceBox.getItems().add(i);
@@ -69,7 +63,7 @@ public class AdminAddScreeningsController
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Success!");
             alert.setHeaderText("Adding new screening successful!");
-            alert.setContentText("You successfully added the screening for " + ChosenFilm.getChosen().getName());
+            alert.setContentText("You successfully added the screening for " + CurrentData.getCurrentFilm().getName());
             alert.showAndWait();
         }
     }

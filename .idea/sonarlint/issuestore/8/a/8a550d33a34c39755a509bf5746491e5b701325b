@@ -1,0 +1,21 @@
+
+E
+java:S3740L"/Provide the parametrized type for this generic.(×³‰¯
+J
+java:S3740`"/Provide the parametrized type for this generic.(í®×«ûÿÿÿÿ
+E
+java:S3740t"/Provide the parametrized type for this generic.(†›Ðþ
+F
+java:S3740‚"/Provide the parametrized type for this generic.(çëþŠ
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8Êá¿£½/
+b	java:S1072"AConstructor has 8 parameters, which is greater than 7 authorized.(Ô¤Ëúøÿÿÿÿ8ÒþÀª½/
+@
+java:S5411w"*Use the primitive boolean expression here.(ßÄï÷
+A
+java:S5411…"*Use the primitive boolean expression here.(àö¡Ó
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(þ¹õÿÿÿÿÿÿ
+j
+java:S2095A"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(“ÖÙ½øÿÿÿÿ
+^
+java:S2095@"HUse try-with-resources or close this "Connection" in a "finally" clause.(ØÇü¬

@@ -10,7 +10,7 @@ public class CurrentData
 {
     private static Film currentFilm;
     private static Screening currentScreening;
-    private static ArrayList<Integer> currentSeats;
+    private static ArrayList<Integer> currentSeats = new ArrayList<>();
     private static User currentUser; //User currently using the system
     private static User currentSelectedUser; //User admin has currently selected
 

@@ -1,10 +1,0 @@
-
-^
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(­æıò
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÏü•
-?
-java:S1481")Remove this unused "conn" local variable.(­æıò
-E
-java:S1068"*Remove this unused "fdconn" private field.(Îñåüÿÿÿÿ
-C
-java:S1068"(Remove this unused "fdps" private field.(ß‚ñ×ûÿÿÿÿ

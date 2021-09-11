@@ -1,0 +1,76 @@
+
+˜
+java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ª¡æÿ
+h
+java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ıİ…˜
+R
+java:S1854B"7Remove this useless assignment to local variable "dtf".(’Û‚éûÿÿÿÿ
+C
+java:S1481B"(Remove this unused "dtf" local variable.(’Û‚éûÿÿÿÿ
+W
+java:S1126c"AReplace this if-then-else statement by a single return statement.(¹ñ¨Ï
+J
+java:S1854u"5Remove this useless assignment to local variable "i".(¨…ÄK
+K
+java:S1854z"5Remove this useless assignment to local variable "i".(Ì‚ˆÌ
+N
+java:S1172—"2Remove this unused method parameter "actionEvent".(˜‘‚¿ıÿÿÿÿ
+…
+java:S1130¯"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(¦Î¾¦
+ƒ
+java:S1130¯"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¦Î¾¦
+F
+java:S1481±"/Remove this unused "directorid" local variable.(İÊÆç
+I
+java:S6126º"2Replace this String concatenation with Text block.(Ã×ùÜ
+N
+java:S1172ù"2Remove this unused method parameter "actionEvent".(‹íÚŠúÿÿÿÿ
+U
+java:S1128"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8ÔïĞª½/
+M
+java:S1128"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8ÔïĞª½/
+L
+java:S1128"/Remove this unused import 'javafx.scene.Scene'.(Õü²8ÔïĞª½/
+f
+java:S1128"IRemove this unused import 'javafx.scene.layout.Region.USE_COMPUTED_SIZE'.(òê¹ÿ8ÕïĞª½/
+p
+java:S1104"ZMake selectDirector a static final constant or non-public and provide accessors if needed.(Œ‘–í
+p
+java:S1104 "ZMake addNewDirector a static final constant or non-public and provide accessors if needed.(Ìóÿ½
+k
+java:S1104!"UMake moviename a static final constant or non-public and provide accessors if needed.(‡âæÓ
+o
+java:S1104""TMake addGenre a static final constant or non-public and provide accessors if needed.(àüÿµúÿÿÿÿ
+v
+java:S1104#"[Make durationSpinner a static final constant or non-public and provide accessors if needed.(›ıÜ›ÿÿÿÿÿ
+m
+java:S1104$"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ
+n
+java:S1104%"SMake addFilm a static final constant or non-public and provide accessors if needed.(ˆÇ‹¿üÿÿÿÿ
+r
+java:S1104&"WMake selectGenre a static final constant or non-public and provide accessors if needed.(«´“£üÿÿÿÿ
+p
+java:S1104'"ZMake selectLanguage a static final constant or non-public and provide accessors if needed.(ú•‚Ñ
+r
+java:S1104("WMake addLanguage a static final constant or non-public and provide accessors if needed.(’É¶¾øÿÿÿÿ
+p
+java:S1104)"ZMake selectedGenres a static final constant or non-public and provide accessors if needed.(¡¡Œû
+s
+java:S1104*"]Make selectedLanguages a static final constant or non-public and provide accessors if needed.(Â™ù¥
+s
+java:S1104+"XMake synopsisText a static final constant or non-public and provide accessors if needed.(÷š¡äüÿÿÿÿ
+s
+java:S1104,"]Make releaseDatePicker a static final constant or non-public and provide accessors if needed.(Ç“±Ó
+j
+java:S1104-"UMake dateError a static final constant or non-public and provide accessors if needed.(ş›è-
+k
+java:S1104."VMake genreError a static final constant or non-public and provide accessors if needed.(ñ¬ép
+o
+java:S1104/"YMake languageError a static final constant or non-public and provide accessors if needed.(ßûâ¥
+t
+java:S11040"YMake synopsisError a static final constant or non-public and provide accessors if needed.(Î±ØÖşÿÿÿÿ
+q
+java:S11041"VMake titleError a static final constant or non-public and provide accessors if needed.(’şí‹úÿÿÿÿ
+o
+java:S11042"YMake directorError a static final constant or non-public and provide accessors if needed.(ëŞõ¡
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åíª

@@ -1,20 +1,19 @@
 package RPRMovieApp.controllers.user.reservation;
 
-import RPRMovieApp.controllers.*;
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.DAO.CinemaDAO;
+import RPRMovieApp.beans.Ticket;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collections;
-
-import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class ReservationPaymentController
 {
@@ -25,9 +24,12 @@ public class ReservationPaymentController
     public Label errorText;
     public Button finishBtn;
 
-    private Connection conn;
-    private PreparedStatement insertTickets;
-    private PreparedStatement getMaxTicketID;
+    private CinemaDAO cDAO;
+
+    @FXML
+    public void initialize() throws SQLException, ClassNotFoundException {
+        cDAO = CinemaDAO.getInstance();
+    }
 
     public void cinemaCardClick(ActionEvent actionEvent)
     {
@@ -57,53 +59,25 @@ public class ReservationPaymentController
         }
         else
         {
-            Class.forName("org.sqlite.JDBC");
-            String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-            try {
-                conn = DriverManager.getConnection(url, "username", "password");
-                getMaxTicketID = conn.prepareStatement("SELECT MAX(id) FROM ticket");
-                ResultSet gmtid = getMaxTicketID.executeQuery();
-                int n = gmtid.getInt(1) + 1;
-                Collections.sort(ChosenSeats.getSeats());
-                getMaxTicketID.close();
-                conn.close();
-                conn = DriverManager.getConnection(url, "username", "password");
-                for (int i = 0; i < ChosenSeats.getSeats().size(); i++)
+                int n = cDAO.getMaxTicketID() + 1;
+                Collections.sort(CurrentData.getCurrentSeats());
+                for (int i = 0; i < CurrentData.getCurrentSeats().size(); i++)
                 {
-                    insertTickets = conn.prepareStatement("INSERT INTO ticket VALUES(?,?,?,?)");
-                    insertTickets.setInt(1, n + i);
-                    insertTickets.setInt(2, ChosenSeats.getSeats().get(i));
-                    insertTickets.setInt(3, ChosenProjection.getChosenProjection().getId());
-                    insertTickets.setInt(4, ChosenUser.getChosen().getId());
-                    insertTickets.executeUpdate();
-                    insertTickets.close();
+                    int seat = CurrentData.getCurrentSeats().get(i);
+                    Ticket t = new Ticket(n + i, seat, CurrentData.getCurrentScreening().getId(), CurrentData.getCurrentUser().getId());
+                    cDAO.addTicket(t);
                 }
-                ChosenSeats.getSeats().removeAll(ChosenSeats.getSeats());
-                Price.setPrice(0);
-                ChosenFilm.setChosen(null);
-                ChosenProjection.setChosenProjection(null);
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            finally
-            {
-                try {
-                    if (conn != null)
-                    {
-                        conn.close();
-                    }
-                } catch (SQLException throwables) {
-                    throwables.printStackTrace();
-                }
-            }
+            CinemaDAO.removeInstance();
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Reservation successful");
+            alert.setHeaderText(null);
+            alert.setContentText("Congratulations, your reservation for film " + CurrentData.getCurrentFilm().getName() + " was successful!\n" +
+                    "Thank you for using our app!");
+            CurrentData.setCurrentSeats(new ArrayList<>());
+            CurrentData.setCurrentFilm(null);
+            CurrentData.setCurrentScreening(null);
 
-            Stage reservationThanks = new Stage();
-            FXMLLoader reservationThanksLoader = new FXMLLoader(getClass().getResource("/fxml/reservationThanks.fxml")); //This path is temporary
-            Parent root = reservationThanksLoader.load();
-            reservationThanks.setTitle("Thank you for your reservation!");
-            reservationThanks.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-            reservationThanks.setResizable(false);
-            reservationThanks.show();
+            alert.showAndWait();
         }
     }
 }

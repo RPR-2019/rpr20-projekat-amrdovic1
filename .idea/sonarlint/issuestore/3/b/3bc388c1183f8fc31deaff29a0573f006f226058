@@ -1,8 +1,0 @@
-
-O
-java:S1172"2Remove this unused method parameter "actionEvent".(¿¾É²8ßå‰±º/
-T
-java:S1172"2Remove this unused method parameter "actionEvent".(Ÿ®œŞşÿÿÿÿ8Ü÷Ş®µ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ
-x
-java:S1104"VMake addNewFilm a static final constant or non-public and provide accessors if needed.(¿±ãüÿÿÿÿ8ÂÒÜ®µ/

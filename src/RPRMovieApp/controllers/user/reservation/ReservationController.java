@@ -1,7 +1,7 @@
 package RPRMovieApp.controllers.user.reservation;
 
-import RPRMovieApp.controllers.ChosenProjection;
-import RPRMovieApp.controllers.ChosenSeats;
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.beans.Screening;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,7 +36,8 @@ public class ReservationController
     public void seatsClick(ActionEvent actionEvent) throws IOException {
         Stage chooseSeatsStage = new Stage();
         FXMLLoader chooseSeatsLoader = null;
-        int n = ChosenProjection.getChosenProjection().getCinemaid();
+        Screening s = CurrentData.getCurrentScreening();
+        int n = s.getCinemaid();
         String path = "/fxml/chooseSeats" + n + ".fxml";
         chooseSeatsLoader = new FXMLLoader(getClass().getResource(path)); //This path is temporary
         Parent root = chooseSeatsLoader.load();
@@ -59,7 +60,7 @@ public class ReservationController
 
     public void finishClick(ActionEvent actionEvent) throws IOException
     {
-        if (ChosenSeats.getSeats().isEmpty())
+        if (CurrentData.getCurrentSeats().isEmpty())
         {
             seatError.setText("You must choose at least one seat in order to proceed to payment!");
         }

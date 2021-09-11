@@ -7,7 +7,7 @@ public class Ticket
     private int cinemaid;
     private int userid;
 
-    public Ticket(int id, int seatid, int cinemaid, int userid, double price) {
+    public Ticket(int id, int seatid, int cinemaid, int userid) {
         this.id = id;
         this.seatid = seatid;
         this.cinemaid = cinemaid;

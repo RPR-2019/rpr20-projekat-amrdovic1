@@ -1,8 +1,7 @@
 package RPRMovieApp.controllers.user.reservation.seatselection;
 
-import RPRMovieApp.controllers.ChosenProjection;
-import RPRMovieApp.controllers.ChosenSeats;
-import RPRMovieApp.controllers.Price;
+import RPRMovieApp.CurrentData;
+import RPRMovieApp.DAO.CinemaDAO;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
@@ -39,10 +39,12 @@ public class ChooseSeats5Controller
 
     public Button[][] seats;
 
+    private CinemaDAO cDAO;
 
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
+        cDAO = CinemaDAO.getInstance();
         seats = new Button[][]
                 {
                         {a1, a2, a3, a4, a5, a6, a7, a8},
@@ -56,20 +58,10 @@ public class ChooseSeats5Controller
                         {i1, i2, i3, i4, i5, i6, i7, i8},
                         {j1, j2, j3, j4, j5, j6, j7, j8}
                 };
-        Class.forName("org.sqlite.JDBC");
-        String url = "jdbc:sqlite:" + System.getProperty("user.home") + "\\IdeaProjects\\RPRprojekat\\RPRMovieApp.db";
-        conn = DriverManager.getConnection(url, "username", "password");
-        getTickets = conn.prepareStatement("SELECT * FROM ticket WHERE projectionid=?");
-        getTickets.setInt(1, ChosenProjection.getChosenProjection().getId());
-        ResultSet rs = getTickets.executeQuery();
+        takenSeats = cDAO.getTakenSeatsForScreening(CurrentData.getCurrentScreening().getId());
         String taken = "-fx-background-color: lightpink";
         String available = "-fx-background-color: yellowgreen";
         String selected = "-fx-background-color: lightblue";
-
-        while (rs.next())
-        {
-            takenSeats.add(rs.getInt(2));
-        }
         int i, j;
         for (i = 0; i < 10; i++)
         {
@@ -81,7 +73,7 @@ public class ChooseSeats5Controller
                 {
                     b.setStyle(taken);
                 }
-                else if (ChosenSeats.getSeats().contains(p)) //Though this can't happen before user selects a seat
+                else if (CurrentData.getCurrentSeats().contains(p)) //Though this can't happen before user selects a seat
                 {
                     b.setStyle(selected);
                 }
@@ -95,12 +87,12 @@ public class ChooseSeats5Controller
                             if (b.getStyle().equals(available)) //Take a free seat
                             {
                                 b.setStyle(selected);
-                                ChosenSeats.getSeats().add(p);
+                                CurrentData.getCurrentSeats().add(p);
                             }
                             else if (b.getStyle().equals(selected)) //Free a taken seat
                             {
                                 b.setStyle(available);
-                                ChosenSeats.getSeats().remove(p);
+                                CurrentData.getCurrentSeats().remove(p);
                             }
                         }
                     });
@@ -110,18 +102,17 @@ public class ChooseSeats5Controller
     }
 
     public void takeSeatsClick(ActionEvent actionEvent) throws SQLException, IOException {
-        Price.setPrice(ChosenSeats.getSeats().size()*6.0);
         Node n = (Node) actionEvent.getSource();
         Stage seatsStage = (Stage) n.getScene().getWindow();
         seatsStage.close();
-        conn.close();
+        CinemaDAO.removeInstance();
 
-        Stage chooseSeatsNoteStage = new Stage();
-        FXMLLoader chooseSeatsNoteLoader = new FXMLLoader(getClass().getResource("/fxml/chooseSeatsNote.fxml")); //This path is temporary
-        Parent root = chooseSeatsNoteLoader.load();
-        chooseSeatsNoteStage.setTitle("NOTE!");
-        chooseSeatsNoteStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        chooseSeatsNoteStage.setResizable(false);
-        chooseSeatsNoteStage.show();
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("NOTE");
+        alert.setHeaderText("This seat selection isn't final");
+        alert.setContentText("You may proceed to select more\n" +
+                "available seats before finalizing your reservation!");
+
+        alert.showAndWait();
     }
 }

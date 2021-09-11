@@ -270,7 +270,8 @@ public class RegisterController
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Registration successful!");
             alert.setHeaderText(null);
-            alert.setContentText(u.getUsername() + ", you have successfully registered into the system!");
+            alert.setContentText(u.getUsername() + ", you have successfully registered into the system!" +
+                    "\nLog in with your credentials to proceed.");
 
             alert.showAndWait();
         }

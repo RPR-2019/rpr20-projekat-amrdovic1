@@ -1,6 +1,6 @@
 package RPRMovieApp.controllers.admin.adminusers;
 
-import RPRMovieApp.controllers.ChosenUser;
+import RPRMovieApp.CurrentData;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
@@ -11,7 +11,7 @@ public class UserDeleteSuccessController
     @FXML
     public void initialize()
     {
-        userField.setText(userField.getText() + " " + ChosenUser.getChosen() + " ");
-        ChosenUser.setChosen(null);
+        userField.setText(userField.getText() + " " + CurrentData.getCurrentUser().getUsername() + " ");
+        CurrentData.setCurrentSelectedUser(null);
     }
 }

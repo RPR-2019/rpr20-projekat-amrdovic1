@@ -2,7 +2,6 @@ package RPRMovieApp.controllers.admin.adminfilms;
 
 import RPRMovieApp.CurrentData;
 import RPRMovieApp.DAO.CinemaDAO;
-import RPRMovieApp.controllers.ChosenFilm;
 import RPRMovieApp.beans.Film;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
