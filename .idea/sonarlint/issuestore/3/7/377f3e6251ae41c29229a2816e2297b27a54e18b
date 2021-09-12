@@ -1,0 +1,12 @@
+
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Áæşéşÿÿÿÿ8ªá©Ï½/
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(·ã»‰8Şá«Ï½/
+T
+java:S1172#"2Remove this unused method parameter "actionEvent".(³©ÈÌıÿÿÿÿ8úá«Ï½/
+g
+java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(ß‘û¸
+m
+java:S1104"RMake signup a static final constant or non-public and provide accessors if needed.(¸à°×ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íß”ıÿÿÿÿ

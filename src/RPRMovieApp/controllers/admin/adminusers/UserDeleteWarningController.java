@@ -29,7 +29,7 @@ public class UserDeleteWarningController
     public void initialize() throws ClassNotFoundException, SQLException
     {
         cDAO = CinemaDAO.getInstance();
-        user = CurrentData.getCurrentUser();
+        user = CurrentData.getCurrentSelectedUser();
         warningMessage.setText(warningMessage.getText() + " " + user.getUsername());
     }
 

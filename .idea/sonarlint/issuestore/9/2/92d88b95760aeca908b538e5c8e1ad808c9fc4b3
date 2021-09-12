@@ -1,0 +1,22 @@
+
+H
+java:S1172,"2Remove this unused method parameter "actionEvent".(Ã•ÊÃ
+H
+java:S11723"2Remove this unused method parameter "actionEvent".(ïæİá
+H
+java:S1172:"2Remove this unused method parameter "actionEvent".(Ø°¿
+‰
+java:S1130A"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(×¦åĞ8ˆü¬Ï½/
+–
+java:S1130A"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(×¦åĞ8ˆü¬Ï½/
+q
+java:S1104"VMake cinemaCard a static final constant or non-public and provide accessors if needed.(ı¨§şÿÿÿÿ
+l
+java:S1104"VMake creditCard a static final constant or non-public and provide accessors if needed.(ÑĞ­Š
+k
+java:S1104"PMake cash a static final constant or non-public and provide accessors if needed.( á÷–øÿÿÿÿ
+p
+java:S1104"UMake errorText a static final constant or non-public and provide accessors if needed.(ô‚ïÉşÿÿÿÿ
+p
+java:S1104"UMake finishBtn a static final constant or non-public and provide accessors if needed.( õÔ¦ùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÄÈâüÿÿÿÿ

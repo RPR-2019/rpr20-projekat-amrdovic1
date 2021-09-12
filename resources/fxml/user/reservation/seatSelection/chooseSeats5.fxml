@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.user.reservation.seatselection.ChooseSeats5Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Button fx:id="j8" mnemonicParsing="false" text="J8" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+        <Button fx:id="j7" mnemonicParsing="false" text="J7" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+        <Button fx:id="j6" mnemonicParsing="false" text="J6" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+        <Button fx:id="j5" mnemonicParsing="false" text="J5" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+        <Button fx:id="j4" mnemonicParsing="false" text="J4" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+        <Button fx:id="j3" mnemonicParsing="false" text="J3" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <Button fx:id="j2" mnemonicParsing="false" text="J2" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Button fx:id="j1" mnemonicParsing="false" text="J1" GridPane.rowIndex="7" />
+
+        <Button fx:id="i8" mnemonicParsing="false" text="I8" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+        <Button fx:id="i7" mnemonicParsing="false" text="I7" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+        <Button fx:id="i6" mnemonicParsing="false" text="I6" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+        <Button fx:id="i5" mnemonicParsing="false" text="I5" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+        <Button fx:id="i4" mnemonicParsing="false" text="I4" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+        <Button fx:id="i3" mnemonicParsing="false" text="I3" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+        <Button fx:id="i2" mnemonicParsing="false" text="I2" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <Button fx:id="i1" mnemonicParsing="false" text="I1" GridPane.rowIndex="8" />
+
+        <Button fx:id="h8" mnemonicParsing="false" text="H8" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+        <Button fx:id="h7" mnemonicParsing="false" text="H7" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+        <Button fx:id="h6" mnemonicParsing="false" text="H6" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+        <Button fx:id="h5" mnemonicParsing="false" text="H5" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+        <Button fx:id="h4" mnemonicParsing="false" text="H4" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+        <Button fx:id="h3" mnemonicParsing="false" text="H3" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+        <Button fx:id="h2" mnemonicParsing="false" text="H2" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <Button fx:id="h1" mnemonicParsing="false" text="H1" GridPane.rowIndex="9" />
+
+        <Button fx:id="g8" mnemonicParsing="false" text="G8" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+        <Button fx:id="g7" mnemonicParsing="false" text="G7" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+        <Button fx:id="g6" mnemonicParsing="false" text="G6" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+        <Button fx:id="g5" mnemonicParsing="false" text="G5" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+        <Button fx:id="g4" mnemonicParsing="false" text="G4" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+        <Button fx:id="g3" mnemonicParsing="false" text="G3" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+        <Button fx:id="g2" mnemonicParsing="false" text="G2" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <Button fx:id="g1" mnemonicParsing="false" text="G1" GridPane.rowIndex="10" />
+
+        <Button fx:id="f8" mnemonicParsing="false" text="F8" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+        <Button fx:id="f7" mnemonicParsing="false" text="F7" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+        <Button fx:id="f6" mnemonicParsing="false" text="F6" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+        <Button fx:id="f5" mnemonicParsing="false" text="F5" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+        <Button fx:id="f4" mnemonicParsing="false" text="F4" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+        <Button fx:id="f3" mnemonicParsing="false" text="F3" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+        <Button fx:id="f2" mnemonicParsing="false" text="F2" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <Button fx:id="f1" mnemonicParsing="false" text="F1" GridPane.rowIndex="11" />
+
+        <Button fx:id="e8" mnemonicParsing="false" text="E8" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+        <Button fx:id="e7" mnemonicParsing="false" text="E7" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+        <Button fx:id="e6" mnemonicParsing="false" text="E6" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+        <Button fx:id="e5" mnemonicParsing="false" text="E5" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+        <Button fx:id="e4" mnemonicParsing="false" text="E4" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+        <Button fx:id="e3" mnemonicParsing="false" text="E3" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+        <Button fx:id="e2" mnemonicParsing="false" text="E2" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+        <Button fx:id="e1" mnemonicParsing="false" text="E1" GridPane.rowIndex="12" />
+
+        <Button fx:id="d8" mnemonicParsing="false" text="D8" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+        <Button fx:id="d7" mnemonicParsing="false" text="D7" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+        <Button fx:id="d6" mnemonicParsing="false" text="D6" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+        <Button fx:id="d5" mnemonicParsing="false" text="D5" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+        <Button fx:id="d4" mnemonicParsing="false" text="D4" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+        <Button fx:id="d3" mnemonicParsing="false" text="D3" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+        <Button fx:id="d2" mnemonicParsing="false" text="D2" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+        <Button fx:id="d1" mnemonicParsing="false" text="D1" GridPane.rowIndex="13" />
+
+        <Button fx:id="c8" mnemonicParsing="false" text="C8" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+        <Button fx:id="c7" mnemonicParsing="false" text="C7" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+        <Button fx:id="c6" mnemonicParsing="false" text="C6" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+        <Button fx:id="c5" mnemonicParsing="false" text="C5" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+        <Button fx:id="c4" mnemonicParsing="false" text="C4" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+        <Button fx:id="c3" mnemonicParsing="false" text="C3" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+        <Button fx:id="c2" mnemonicParsing="false" text="C2" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+        <Button fx:id="c1" mnemonicParsing="false" text="C1" GridPane.rowIndex="14" />
+
+        <Button fx:id="b8" mnemonicParsing="false" text="B8" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+        <Button fx:id="b7" mnemonicParsing="false" text="B7" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+        <Button fx:id="b6" mnemonicParsing="false" text="B6" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+        <Button fx:id="b5" mnemonicParsing="false" text="B5" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+        <Button fx:id="b4" mnemonicParsing="false" text="B4" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+        <Button fx:id="b3" mnemonicParsing="false" text="B3" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+        <Button fx:id="b2" mnemonicParsing="false" text="B2" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+        <Button fx:id="b1" mnemonicParsing="false" text="B1" GridPane.rowIndex="15" />
+
+        <Button fx:id="a8" mnemonicParsing="false" text="A8" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+        <Button fx:id="a7" mnemonicParsing="false" text="A7" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+        <Button fx:id="a6" mnemonicParsing="false" text="A6" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+        <Button fx:id="a5" mnemonicParsing="false" text="A5" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+        <Button fx:id="a4" mnemonicParsing="false" text="A4" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+        <Button fx:id="a3" mnemonicParsing="false" text="A3" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+        <Button fx:id="a2" mnemonicParsing="false" text="A2" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <Button fx:id="a1" mnemonicParsing="false" text="A1" GridPane.rowIndex="16" />
+
+        <Label text="Cinema screen is on the bottom right of this screen, and the entrance is on the bottom left" GridPane.columnSpan="2147483647">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="takeSeats" mnemonicParsing="false" onAction="#takeSeatsClick" text="OK" GridPane.columnIndex="24" GridPane.rowIndex="17" />
+        <Label text="Seats taken by earlier users are marked in red, available seats are marked in green and seats you took for this screening are marked in blue" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>

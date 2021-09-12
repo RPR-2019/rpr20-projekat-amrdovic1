@@ -27,7 +27,7 @@ public class UserDetailController
     @FXML
     public void initialize()
     {
-        user = CurrentData.getCurrentUser();
+        user = CurrentData.getCurrentSelectedUser();
         user.setMode(true);
         mainMessage.setText(mainMessage.getText() + " " + user.getUsername());
         userInfo.setText(user.toString());

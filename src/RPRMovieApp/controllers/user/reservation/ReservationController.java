@@ -46,7 +46,7 @@ public class ReservationController
         FXMLLoader chooseSeatsLoader = null;
         Screening s = CurrentData.getCurrentScreening();
         int n = s.getCinemaid();
-        String path = "/fxml/chooseSeats" + n + ".fxml";
+        String path = "/fxml/user/reservation/seatSelection/chooseSeats" + n + ".fxml";
         chooseSeatsLoader = new FXMLLoader(getClass().getResource(path)); //This path is temporary
         Parent root = chooseSeatsLoader.load();
         chooseSeatsStage.setTitle("Choose seats");

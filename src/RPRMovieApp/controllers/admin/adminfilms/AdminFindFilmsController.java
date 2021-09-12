@@ -41,6 +41,7 @@ public class AdminFindFilmsController
     @FXML
     public void initialize() throws ClassNotFoundException, SQLException
     {
+        cDAO = CinemaDAO.getInstance();
         films = FXCollections.observableArrayList(cDAO.getAllFilms());
         filmList.setItems(films);
         filmList.setOnMouseClicked(new EventHandler<MouseEvent>() {
