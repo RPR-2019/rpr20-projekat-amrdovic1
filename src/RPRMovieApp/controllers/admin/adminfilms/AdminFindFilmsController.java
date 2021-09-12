@@ -49,7 +49,7 @@ public class AdminFindFilmsController
             {
                     CurrentData.setCurrentFilm(filmList.getSelectionModel().getSelectedItem());
                     Stage filmDetailsStage = new Stage();
-                    FXMLLoader filmDetailsLoader = new FXMLLoader(getClass().getResource("/fxml/adminMovieDetail.fxml")); //This path is temporary
+                    FXMLLoader filmDetailsLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminfilms/adminMovieDetail.fxml")); //This path is temporary
                     Parent root;
                     try {
                         root = filmDetailsLoader.load();

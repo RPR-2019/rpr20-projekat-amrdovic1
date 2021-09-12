@@ -35,7 +35,7 @@ public class UserDetailController
 
     public void deleteUser(ActionEvent actionEvent) throws IOException {
         Stage deleteUserStage = new Stage();
-        FXMLLoader deleteUserLoader = new FXMLLoader(getClass().getResource("/fxml/userDeleteWarning.fxml")); //This path is temporary
+        FXMLLoader deleteUserLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminusers/userDeleteWarning.fxml")); //This path is temporary
         Parent root = deleteUserLoader.load();
         deleteUserStage.setTitle("Warning!");
         deleteUserStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));

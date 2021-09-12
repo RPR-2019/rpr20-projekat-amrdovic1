@@ -58,7 +58,7 @@ public class ReservationController
 
     public void foodClick(ActionEvent actionEvent) throws IOException {
         Stage chooseFoodnDrinksStage = new Stage();
-        FXMLLoader chooseFoodnDrinksLoader = new FXMLLoader(getClass().getResource("/fxml/chooseFoodnDrinks.fxml")); //This path is temporary
+        FXMLLoader chooseFoodnDrinksLoader = new FXMLLoader(getClass().getResource("/fxml/user/reservation/chooseFoodnDrinks.fxml")); //This path is temporary
         Parent root = chooseFoodnDrinksLoader.load();
         chooseFoodnDrinksStage.setTitle("Choose food and drinks");
         chooseFoodnDrinksStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
@@ -76,7 +76,7 @@ public class ReservationController
         {
             close(actionEvent);
             Stage reservationPaymentStage = new Stage();
-            FXMLLoader reservationPaymentLoader = new FXMLLoader(getClass().getResource("/fxml/reservationPayment.fxml")); //This path is temporary
+            FXMLLoader reservationPaymentLoader = new FXMLLoader(getClass().getResource("/fxml/user/reservation/reservationPayment.fxml")); //This path is temporary
             Parent root = reservationPaymentLoader.load();
             reservationPaymentStage.setTitle("Choose payment method");
             reservationPaymentStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));

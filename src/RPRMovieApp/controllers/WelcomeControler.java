@@ -3,17 +3,12 @@ package RPRMovieApp.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
@@ -39,7 +34,7 @@ public class WelcomeControler
 
     public void signupClick(ActionEvent actionEvent) throws IOException {
         Stage registerStage = new Stage();
-        FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/register.fxml")); //This path is temporary
+        FXMLLoader signUpLoader = new FXMLLoader(getClass().getResource("/fxml/user/registration/register.fxml")); //This path is temporary
         Parent root = signUpLoader.load();
         registerStage.setTitle("Register as a new user");
         registerStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));

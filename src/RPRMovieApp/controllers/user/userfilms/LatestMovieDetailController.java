@@ -19,7 +19,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
 
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
@@ -74,7 +73,7 @@ public class LatestMovieDetailController
             else
             {
                 Stage newReservationStage = new Stage();
-                FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/newReservation.fxml")); //This path is temporary
+                FXMLLoader newReservationLoader = new FXMLLoader(getClass().getResource("/fxml/user/reservation/newReservation.fxml")); //This path is temporary
                 Parent root = null;
                 try {
                     root = newReservationLoader.load();

@@ -45,7 +45,7 @@ public class LatestMoviesController
                 CinemaDAO.removeInstance();
                 CurrentData.setCurrentFilm(moviesList.getSelectionModel().getSelectedItem());
                 Stage latestFilmDetailStage = new Stage();
-                FXMLLoader latestFilmDetailLoader = new FXMLLoader(getClass().getResource("/fxml/latestMovieDetail.fxml")); //This path is temporary
+                FXMLLoader latestFilmDetailLoader = new FXMLLoader(getClass().getResource("/fxml/user/films/latestMovieDetail.fxml")); //This path is temporary
                 Parent root = null;
                 try {
                     root = latestFilmDetailLoader.load();

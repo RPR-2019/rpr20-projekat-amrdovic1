@@ -59,7 +59,7 @@ public class LoginController
             FXMLLoader homePageLoader;
             if (username.getText().equals("admin"))
             {
-                homePageLoader = new FXMLLoader(getClass().getResource("/fxml/adminHomepage.fxml"));
+                homePageLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminHomepage.fxml"));
                 Parent root = homePageLoader.load();
                 AdminHomepageController rc = homePageLoader.getController();
                 homeStage.setTitle("Homepage");

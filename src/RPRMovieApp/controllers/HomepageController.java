@@ -35,7 +35,7 @@ public class HomepageController
     public void latestClick(ActionEvent actionEvent) throws IOException
     {
         Stage latestStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/latestMovies.fxml")); //This path is temporary
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/user/films/latestMovies.fxml")); //This path is temporary
         latestStage.setTitle("Now in cinemas");
         latestStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         latestStage.setResizable(false);
@@ -45,7 +45,7 @@ public class HomepageController
     public void upcomingClick(ActionEvent actionEvent) throws IOException
     {
         Stage upcomingStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/upcomingMovies.fxml")); //This path is temporary
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/user/films/upcomingMovies.fxml")); //This path is temporary
         upcomingStage.setTitle("Upcoming movies");
         upcomingStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         upcomingStage.setResizable(false);
@@ -55,7 +55,7 @@ public class HomepageController
     public void checkResClick(ActionEvent actionEvent) throws IOException
     {
         Stage checkResStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/checkReservations.fxml")); //This path is temporary
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/user/reservation/checkReservations.fxml")); //This path is temporary
         checkResStage.setTitle("Check reservations");
         checkResStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         checkResStage.setResizable(false);
@@ -65,7 +65,7 @@ public class HomepageController
     public void cinemaCardClick(ActionEvent actionEvent) throws IOException
     {
         Stage cinemaCardStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/cinemaCard.fxml")); //This path is temporary
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/user/cinemaCard.fxml")); //This path is temporary
         cinemaCardStage.setTitle("Cinema card");
         cinemaCardStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         cinemaCardStage.setResizable(false);

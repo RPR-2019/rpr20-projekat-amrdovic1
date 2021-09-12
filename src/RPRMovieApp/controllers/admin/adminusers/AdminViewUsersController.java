@@ -40,7 +40,7 @@ public class AdminViewUsersController
             {
                 CurrentData.setCurrentSelectedUser(userList.getSelectionModel().getSelectedItem());
                 Stage viewUserDetailsStage = new Stage();
-                FXMLLoader userDetailLoader = new FXMLLoader(getClass().getResource("/fxml/userDetail.fxml")); //This path is temporary
+                FXMLLoader userDetailLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminusers/userDetail.fxml")); //This path is temporary
                 Parent root;
                 try
                 {

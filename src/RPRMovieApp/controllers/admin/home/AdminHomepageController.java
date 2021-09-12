@@ -34,7 +34,7 @@ public class AdminHomepageController
 
     public void viewFilmsClick(ActionEvent actionEvent) throws IOException {
         Stage viewFilmsStage = new Stage();
-        FXMLLoader viewFilmsLoader = new FXMLLoader(getClass().getResource("/fxml/adminViewFilms.fxml")); //This path is temporary
+        FXMLLoader viewFilmsLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminfilms/adminViewFilms.fxml")); //This path is temporary
         Parent root = viewFilmsLoader.load();
         AdminViewFilmsController rc = viewFilmsLoader.getController();
         viewFilmsStage.setTitle("View films");
@@ -45,7 +45,7 @@ public class AdminHomepageController
 
     public void viewUsersClick(ActionEvent actionEvent) throws IOException {
         Stage viewUsersStage = new Stage();
-        FXMLLoader viewUsersLoader = new FXMLLoader(getClass().getResource("/fxml/adminViewUsers.fxml")); //This path is temporary
+        FXMLLoader viewUsersLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminusers/adminViewUsers.fxml")); //This path is temporary
         Parent root = viewUsersLoader.load();
         viewUsersStage.setTitle("View users");
         viewUsersStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));

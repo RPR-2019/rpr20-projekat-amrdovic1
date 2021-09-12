@@ -7,7 +7,7 @@
 
 <GridPane prefHeight="326.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.user.registration.RegisterController">
   <stylesheets>
-      <URL value="@../css/register.css" />
+      <URL value="@../../../css/register.css" />
   </stylesheets>
     <columnConstraints>
     <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />

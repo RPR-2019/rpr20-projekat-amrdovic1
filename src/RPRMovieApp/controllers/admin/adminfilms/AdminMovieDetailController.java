@@ -29,7 +29,7 @@ public class AdminMovieDetailController
 
     public void nextWeekScrBtnClick(ActionEvent actionEvent) throws IOException {
         Stage nextWeekStage = new Stage();
-        FXMLLoader nextWeekLoader = new FXMLLoader(getClass().getResource("/fxml/adminAddScreenings.fxml")); //This path is temporary
+        FXMLLoader nextWeekLoader = new FXMLLoader(getClass().getResource("/fxml/admin/adminfilms/adminAddScreenings.fxml")); //This path is temporary
         Parent root = nextWeekLoader.load();
         nextWeekStage.setTitle("Screenings for next week - " + CurrentData.getCurrentFilm().getName());
         nextWeekStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
