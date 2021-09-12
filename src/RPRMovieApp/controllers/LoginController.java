@@ -44,7 +44,7 @@ public class LoginController
 
         if (!cDAO.checkPasswordForUser(username.getText(), password.getText()))
         {
-            passwordError.setText("Login failed. Please check your username and password!");
+            passwordError.setText("Login failed!\nPlease check your username and password!");
         }
         else
         {

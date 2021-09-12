@@ -5,6 +5,7 @@ import RPRMovieApp.beans.Screening;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -31,6 +32,13 @@ public class ReservationController
     public void initialize()
     {
 
+    }
+
+    public void close(ActionEvent actionEvent)
+    {
+        Node n = (Node) actionEvent.getSource();
+        Stage reservationStage = (Stage) n.getScene().getWindow();
+        reservationStage.close();
     }
 
     public void seatsClick(ActionEvent actionEvent) throws IOException {
@@ -66,10 +74,11 @@ public class ReservationController
         }
         else
         {
+            close(actionEvent);
             Stage reservationPaymentStage = new Stage();
             FXMLLoader reservationPaymentLoader = new FXMLLoader(getClass().getResource("/fxml/reservationPayment.fxml")); //This path is temporary
             Parent root = reservationPaymentLoader.load();
-            reservationPaymentStage.setTitle("Choose food and drinks");
+            reservationPaymentStage.setTitle("Choose payment method");
             reservationPaymentStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
             reservationPaymentStage.setResizable(false);
             reservationPaymentStage.show();

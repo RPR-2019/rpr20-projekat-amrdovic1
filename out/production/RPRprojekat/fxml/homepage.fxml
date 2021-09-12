@@ -46,9 +46,9 @@
          </font></Label>
    </center>
    <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="latest" mnemonicParsing="false" onAction="#latestClick" prefHeight="25.0" prefWidth="105.0" text="Now in cinemas">
+            <Button fx:id="latest" mnemonicParsing="false" onAction="#latestClick" text="Now in cinemas">
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
@@ -60,7 +60,7 @@
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>
-            <Button fx:id="cinemaCard" mnemonicParsing="false" onAction="#cinemaCardClick" prefHeight="25.0" prefWidth="102.0" text="My CinemaCard">
+            <Button fx:id="cinemaCard" mnemonicParsing="false" onAction="#cinemaCardClick" text="My CinemaCard">
                <VBox.margin>
                   <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </VBox.margin></Button>

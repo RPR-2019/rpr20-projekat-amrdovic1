@@ -1,0 +1,84 @@
+
+E
+java:S3740 "/Provide the parametrized type for this generic.(Àªü‚
+D
+java:S3740!"/Provide the parametrized type for this generic.(Îÿœ[
+E
+java:S3740""/Provide the parametrized type for this generic.(Ùò¨Ò
+—
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†œĞ
+N
+java:S1197/"8Move the array designator from the variable to the type.(Õ’¨
+R
+java:S18547"7Remove this useless assignment to local variable "dtf".(’Û‚éûÿÿÿÿ
+C
+java:S14817"(Remove this unused "dtf" local variable.(’Û‚éûÿÿÿÿ
+A
+java:S1172D"&Remove these unused method parameters.(Õ¾Øûÿÿÿÿ
+W
+java:S1126["AReplace this if-then-else statement by a single return statement.(Ü¤ŞÃ
+h
+java:S3776´"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(şñ
+‚
+java:S1130´"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(şñ
+‹
+java:S1130´"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(şñ8ıÅÙª½/
+I
+java:S1172˜"2Remove this unused method parameter "actionEvent".(–ä™
+I
+java:S1172"2Remove this unused method parameter "actionEvent".(¾¹ß÷
+U
+java:S1128	"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8Ã Úª½/
+M
+java:S1128"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8Ã Úª½/
+L
+java:S1128"/Remove this unused import 'javafx.scene.Scene'.(Õü²8Ä Úª½/
+f
+java:S1128"IRemove this unused import 'javafx.scene.layout.Region.USE_COMPUTED_SIZE'.(òê¹ÿ8Ä Úª½/
+K
+java:S1066¤"/Merge this if statement with the enclosing one.(ßÚ—•şÿÿÿÿ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÊÚ
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñîŠ¯
+D
+java:S1604‹"(Make this anonymous inner class a lambda(²‹Ä»şÿÿÿÿ
+D
+java:S1604˜"(Make this anonymous inner class a lambda(æ„¥Ñıÿÿÿÿ
+l
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(ÌÅ‘Çıÿÿÿÿ
+i
+java:S1104"TMake username a static final constant or non-public and provide accessors if needed.(¼·á>
+i
+java:S1104"SMake genders a static final constant or non-public and provide accessors if needed.(¿”ã‡
+k
+java:S1104"PMake male a static final constant or non-public and provide accessors if needed.(éöÚÍüÿÿÿÿ
+g
+java:S1104"RMake female a static final constant or non-public and provide accessors if needed.(µÅœA
+k
+java:S1104 "UMake selectDay a static final constant or non-public and provide accessors if needed.(Àªü‚
+l
+java:S1104!"WMake selectMonth a static final constant or non-public and provide accessors if needed.(Îÿœ[
+l
+java:S1104""VMake selectYear a static final constant or non-public and provide accessors if needed.(Ùò¨Ò
+o
+java:S1104#"TMake password a static final constant or non-public and provide accessors if needed.(Êº©ÿÿÿÿÿÿ
+u
+java:S1104$"ZMake repeatPassword a static final constant or non-public and provide accessors if needed.(ìïòıÿÿÿÿ
+m
+java:S1104%"RMake cancel a static final constant or non-public and provide accessors if needed.(›’Ê²şÿÿÿÿ
+n
+java:S1104&"SMake proceed a static final constant or non-public and provide accessors if needed.(Üÿ¼§şÿÿÿÿ
+l
+java:S1104("VMake emailError a static final constant or non-public and provide accessors if needed.(¾ºî
+t
+java:S1104)"YMake usernameError a static final constant or non-public and provide accessors if needed.(—•í·ûÿÿÿÿ
+s
+java:S1104*"XMake gendersError a static final constant or non-public and provide accessors if needed.(Íƒ…üıÿÿÿÿ
+p
+java:S1104+"UMake dateError a static final constant or non-public and provide accessors if needed.(óáşâüÿÿÿÿ
+t
+java:S1104,"YMake passwordError a static final constant or non-public and provide accessors if needed.(«¥°öùÿÿÿÿ
+z
+java:S1104-"_Make repeatPasswordError a static final constant or non-public and provide accessors if needed.(şñ–Ûÿÿÿÿÿ
+F
+java:S5411ÿ"*Use the primitive boolean expression here.(¯Éğùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†¼šåøÿÿÿÿ

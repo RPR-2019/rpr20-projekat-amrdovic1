@@ -1,0 +1,12 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(ÌÊü­
+H
+java:S1172"2Remove this unused method parameter "actionEvent".(Ÿ©’â
+t
+java:S1104"YMake selectedMovie a static final constant or non-public and provide accessors if needed.(”Ñãÿüÿÿÿÿ
+q
+java:S1104"[Make screeningsTable a static final constant or non-public and provide accessors if needed.(ÌÊü­
+u
+java:S1104"ZMake nextWeekScrBtn a static final constant or non-public and provide accessors if needed.(ò¥íŞüÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åíª

@@ -1,0 +1,12 @@
+
+n
+java:S1450"SRemove the "cDAO" field and declare it as a local variable in the relevant methods.(ïÇœ•øÿÿÿÿ
+i
+java:S1450"SRemove the "days" field and declare it as a local variable in the relevant methods.(œºÎ¡
+>
+java:S1604)"(Make this anonymous inner class a lambda(ÃÞÀ½
+k
+java:S1104"UMake selectDay a static final constant or non-public and provide accessors if needed.(Äßàï
+q
+java:S1104"VMake moviesList a static final constant or non-public and provide accessors if needed.(¦øÑßùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒŸ‰ñ

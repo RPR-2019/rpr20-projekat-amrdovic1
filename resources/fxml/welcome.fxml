@@ -10,17 +10,20 @@
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="195.0" minHeight="92.0" prefHeight="92.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="308.0" prefHeight="308.0" vgrow="ALWAYS" />
   </rowConstraints>
    <children>
-      <Label text="This app is head hurts!" GridPane.columnSpan="2" GridPane.rowIndex="1">
+      <Label text="Welcome! " GridPane.columnSpan="2" GridPane.rowIndex="1">
          <font>
-            <Font size="46.0" />
+            <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="login" mnemonicParsing="false" onAction="#loginClick" text="Log In" />
-      <Button fx:id="signup" mnemonicParsing="false" onAction="#signupClick" text="Sign Up" GridPane.columnIndex="1" />
+      <ButtonBar GridPane.columnIndex="1">
+        <buttons>
+          <Button fx:id="login" mnemonicParsing="false" onAction="#loginClick" text="Login" />
+            <Button mnemonicParsing="false" onAction="#signupClick" text="Sign Up" />
+        </buttons>
+      </ButtonBar>
    </children>
 </GridPane>

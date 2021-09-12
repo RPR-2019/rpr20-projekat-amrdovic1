@@ -1,0 +1,22 @@
+
+q
+java:S1450%"[Remove the "filmsByTitle" field and declare it as a local variable in the relevant methods.(ĞÀêÔ
+–
+java:S1130*"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ÍĞò8á³òª½/
+‹
+java:S1130*"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ÍĞò8ã³òª½/
+H
+java:S1172E"2Remove this unused method parameter "actionEvent".(¼ÓåĞ
+>
+java:S1604."(Make this anonymous inner class a lambda(·¡¢Å
+j
+java:S1104"TMake filmList a static final constant or non-public and provide accessors if needed.(ŸÀœË
+l
+java:S1104"VMake searchText a static final constant or non-public and provide accessors if needed.(÷¹ÊÓ
+p
+java:S1104 "UMake searchBtn a static final constant or non-public and provide accessors if needed.(‡ÜĞ•ÿÿÿÿÿ
+n
+java:S1104!"SMake backBtn a static final constant or non-public and provide accessors if needed.(ı·ŠÁÿÿÿÿÿ
+t
+java:S1104""YMake noMoviesError a static final constant or non-public and provide accessors if needed.(·ƒø¸üÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Åíª

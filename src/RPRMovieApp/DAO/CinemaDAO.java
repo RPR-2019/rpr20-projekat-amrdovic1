@@ -2,11 +2,9 @@ package RPRMovieApp.DAO;
 
 import RPRMovieApp.beans.*;
 
-import javax.xml.transform.Result;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class CinemaDAO
 {
@@ -180,15 +178,28 @@ public class CinemaDAO
     public boolean checkPasswordForUser (String u, String password)
     {
         boolean ok = false;
-        try {
-            checkPassword.setString(1, u);
-            ResultSet rscp = checkPassword.executeQuery();
-            if (rscp.getString(1).equals(password))
+        boolean exists = false;
+        ArrayList<User> users = getAllUsers();
+        for (var user : users)
+        {
+            if (user.getUsername().equals(u))
             {
-                ok = true;
+                exists = true;
+                break;
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        }
+        if (exists)
+        {
+            try {
+                checkPassword.setString(1, u);
+                ResultSet rscp = checkPassword.executeQuery();
+                if (rscp.getString(1).equals(password))
+                {
+                    ok = true;
+                }
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
         }
         return ok;
     }

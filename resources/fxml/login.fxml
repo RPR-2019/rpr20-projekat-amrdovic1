@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.LoginController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPRMovieApp.controllers.LoginController">
     <stylesheets>
         <URL value="@../css/login.css" />
     </stylesheets>
@@ -20,7 +20,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label text="Username or email:" />
+      <Label text="Username:" />
       <Label text="Password:" GridPane.rowIndex="1" />
       <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <buttons>
@@ -31,9 +31,9 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </ButtonBar>
-      <TextField fx:id="username" GridPane.columnIndex="1" />
+      <TextField fx:id="username" prefHeight="25.0" prefWidth="175.0" GridPane.columnIndex="1" />
       <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label fx:id="passwordError" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="passwordError" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

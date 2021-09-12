@@ -5,10 +5,12 @@ import RPRMovieApp.DAO.CinemaDAO;
 import RPRMovieApp.beans.Ticket;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -27,8 +29,16 @@ public class ReservationPaymentController
     private CinemaDAO cDAO;
 
     @FXML
-    public void initialize() throws SQLException, ClassNotFoundException {
+    public void initialize() throws SQLException, ClassNotFoundException
+    {
         cDAO = CinemaDAO.getInstance();
+    }
+
+    public void close(ActionEvent actionEvent)
+    {
+        Node n = (Node) actionEvent.getSource();
+        Stage reservationStage = (Stage) n.getScene().getWindow();
+        reservationStage.close();
     }
 
     public void cinemaCardClick(ActionEvent actionEvent)
@@ -68,6 +78,8 @@ public class ReservationPaymentController
                     cDAO.addTicket(t);
                 }
             CinemaDAO.removeInstance();
+
+            close(actionEvent);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Reservation successful");
             alert.setHeaderText(null);
